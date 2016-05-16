@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+    
+  <url>
+    <loc>https://github.com/2016/05/16/new/</loc>
+    <lastmod>2016-05-16T06:13:19.007Z</lastmod>
+    <data>
+        <display>
+        <title>新文章</title>
+        <pubTime>2016-05-16T04:49:42.586Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://github.com/2016/05/16/hello-world/</loc>
+    <lastmod>2016-05-16T02:03:27.892Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-05-16T02:03:27.892Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>

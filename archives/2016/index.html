@@ -47,7 +47,7 @@
           isArchive: true,
           isTag: false,
           isCategory: false,
-          open_in_new: false,
+          open_in_new: true,
           fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
           scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.0.9/scrollreveal.min.js"
       }
@@ -60,6 +60,16 @@
   
 
   
+  
+      <script>
+          var _hmt = _hmt || [];
+          (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?a4fc915d19f2dcdc97e75f04ce704e8c";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+          })();
+      </script>
   
 </head>
 <body>
@@ -154,7 +164,7 @@
                             
                                 <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="https://github.com/Huangdongrong" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -232,7 +242,7 @@
                             
                                 <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                                <a class="fa GitHub" target="_blank" href="https://github.com/Huangdongrong" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
                             
@@ -266,7 +276,7 @@
          
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/16/new/">Hello World</a>
+      <a class="archive-article-title" href="/2016/05/16/new/">新文章</a>
     </h1>
   
 
@@ -351,22 +361,6 @@
     </div>
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            var iPad = window.navigator.userAgent.indexOf('iPad');
-            if (iPad > -1 || $(".left-col").css("display") === "none") {
-                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            }
-            else {
-                var backgroundnum = 5;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            }
-        })
-    </script>
 
 
 
