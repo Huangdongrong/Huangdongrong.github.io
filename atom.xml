@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Donie</title>
-  <subtitle>软件开发学习与经验分享</subtitle>
+  <subtitle>个人技术的理解与技术分享经验之谈</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
