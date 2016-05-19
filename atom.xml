@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-05-19T09:42:37.593Z</updated>
+  <updated>2016-05-19T10:24:03.180Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://github.com/2016/05/16/confluence/"/>
     <id>https://github.com/2016/05/16/confluence/</id>
     <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-19T09:42:37.593Z</updated>
+    <updated>2016-05-19T10:24:03.180Z</updated>
     
     <content type="html">&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;atlassian官网：&lt;a href=&quot;https://www.atlassian.com/software/confluence#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.atlassian.com/software/confluence#&lt;/a&gt;&lt;br&gt;atlassian-documentation：&lt;a href=&quot;https://confluence.atlassian.com/alldoc/atlassian-documentation-32243719.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://confluence.atlassian.com/alldoc/atlassian-documentation-32243719.html&lt;/a&gt;&lt;br&gt;Installing Confluence on Windows：&lt;a href=&quot;https://confluence.atlassian.com/doc/installing-confluence-on-windows-255362047.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://confluence.atlassian.com/doc/installing-confluence-on-windows-255362047.html&lt;/a&gt;&lt;br&gt;Confluence Setup Guide：&lt;a href=&quot;https://confluence.atlassian.com/doc/confluence-setup-guide-135691.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://confluence.atlassian.com/doc/confluence-setup-guide-135691.html&lt;/a&gt;&lt;br&gt;Database Configuration：&lt;a href=&quot;https://confluence.atlassian.com/doc/database-configuration-159764.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://confluence.atlassian.com/doc/database-configuration-159764.html&lt;/a&gt;&lt;br&gt;Database Setup For MySQL：&lt;a href=&quot;https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;什么是Confluence&quot;&gt;&lt;a href=&quot;#什么是Confluence&quot; class=&quot;headerlink&quot; title=&quot;什么是Confluence&quot;&gt;&lt;/a&gt;什么是Confluence&lt;/h2&gt;&lt;p&gt;Confluence是一个企业知识库管理软件，用于构建企业wiki，通过它可以实现团队成员之间的协作和知识共享，并且还可以集成缺陷(Bug)跟踪管理工具 - JIRA，&lt;br&gt;还可以集成更多插件工具等等，相关插件请查阅Atlassian官网文档。&lt;/p&gt;
@@ -63,7 +63,7 @@
 &lt;li&gt;恭喜你，到这里就配置完成了，打开&lt;a href=&quot;http://localhost:8090/#all-updates，可以看到空我们创建的Demo空间&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:8090/#all-updates，可以看到空我们创建的Demo空间&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;Confluence汉化&quot;&gt;&lt;a href=&quot;#Confluence汉化&quot; class=&quot;headerlink&quot; title=&quot;Confluence汉化&quot;&gt;&lt;/a&gt;Confluence汉化&lt;/h2&gt;&lt;p&gt;进入安装目录下xx\Atlassian\Confluence点击stop_service.bat停用服务，把下载好语言包Confluence-5.9.4-language-pack-zh_CN.jar放到xx\Atlassian\Confluence\confluence\WEB-INF\lib 目录下，&lt;br&gt;xx\Atlassian\Confluence点击start_service.bat再启动服务，重新打开浏览器&lt;a href=&quot;http://localhost:8090/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:8090/&lt;/a&gt; 汉化成功。&lt;br&gt;&lt;img src=&quot;/img/confluence/24.png&quot; alt=&quot;Confluence配置&quot; title=&quot;Confluence配置&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence破解&quot;&gt;&lt;a href=&quot;#Confluence破解&quot; class=&quot;headerlink&quot; title=&quot;Confluence破解&quot;&gt;&lt;/a&gt;Confluence破解&lt;/h2&gt;&lt;p&gt;搞破坏的事情不敢公开，需要请联系我，或者你在我的github下载&lt;a href=&quot;https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar所需要的包,解压有惊喜哦。&quot;&gt;https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar所需要的包,解压有惊喜哦。&lt;/a&gt;&lt;/p&gt;</content>
+&lt;h2 id=&quot;Confluence破解&quot;&gt;&lt;a href=&quot;#Confluence破解&quot; class=&quot;headerlink&quot; title=&quot;Confluence破解&quot;&gt;&lt;/a&gt;Confluence破解&lt;/h2&gt;&lt;p&gt;搞破坏的事情不敢公开，需要请联系我，或者你在我的github下载 &lt;a href=&quot;https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar&quot;&gt;https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar&lt;/a&gt;  所需要的包,解压有惊喜哦。&lt;/p&gt;</content>
     
     <summary type="html">
     
