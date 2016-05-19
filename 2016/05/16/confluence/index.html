@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://github.com/img/confluence/22.png">
 <meta property="og:image" content="https://github.com/img/confluence/23.png">
 <meta property="og:image" content="https://github.com/img/confluence/24.png">
-<meta property="og:updated_time" content="2016-05-19T08:00:58.595Z">
+<meta property="og:updated_time" content="2016-05-19T09:42:37.593Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Confluence 安装与Confluence配置(一)">
 <meta name="twitter:description" content="Confluence 企业知识库管理wiki与JIRA管理。">
@@ -323,7 +323,7 @@
           
         <h2 id="相关文摘"><a href="#相关文摘" class="headerlink" title="相关文摘"></a>相关文摘</h2><p>atlassian官网：<a href="https://www.atlassian.com/software/confluence#" target="_blank" rel="external">https://www.atlassian.com/software/confluence#</a><br>atlassian-documentation：<a href="https://confluence.atlassian.com/alldoc/atlassian-documentation-32243719.html" target="_blank" rel="external">https://confluence.atlassian.com/alldoc/atlassian-documentation-32243719.html</a><br>Installing Confluence on Windows：<a href="https://confluence.atlassian.com/doc/installing-confluence-on-windows-255362047.html" target="_blank" rel="external">https://confluence.atlassian.com/doc/installing-confluence-on-windows-255362047.html</a><br>Confluence Setup Guide：<a href="https://confluence.atlassian.com/doc/confluence-setup-guide-135691.html" target="_blank" rel="external">https://confluence.atlassian.com/doc/confluence-setup-guide-135691.html</a><br>Database Configuration：<a href="https://confluence.atlassian.com/doc/database-configuration-159764.html" target="_blank" rel="external">https://confluence.atlassian.com/doc/database-configuration-159764.html</a><br>Database Setup For MySQL：<a href="https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html" target="_blank" rel="external">https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html</a></p>
 <h2 id="什么是Confluence"><a href="#什么是Confluence" class="headerlink" title="什么是Confluence"></a>什么是Confluence</h2><p>Confluence是一个企业知识库管理软件，用于构建企业wiki，通过它可以实现团队成员之间的协作和知识共享，并且还可以集成缺陷(Bug)跟踪管理工具 - JIRA，<br>还可以集成更多插件工具等等，相关插件请查阅Atlassian官网文档。</p>
-<h2 id="Confluence安装安装前准备"><a href="#Confluence安装安装前准备" class="headerlink" title="Confluence安装安装前准备"></a>Confluence安装安装前准备</h2><p>Confluence下载：<a href="https://www.atlassian.com/software/confluence/download" target="_blank" rel="external">https://www.atlassian.com/software/confluence/download</a><br>数据库MySQL下载：<a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/</a><br>汉化包：Confluence-5.9.4-language-pack-zh_CN.jar<br>MySQL驱动包：mysql-connector-java-5.1.35.jar<br>我的github下有所需要的包：</p>
+<h2 id="Confluence安装安装前准备"><a href="#Confluence安装安装前准备" class="headerlink" title="Confluence安装安装前准备"></a>Confluence安装安装前准备</h2><p>Confluence下载：<a href="https://www.atlassian.com/software/confluence/download" target="_blank" rel="external">https://www.atlassian.com/software/confluence/download</a><br>数据库MySQL下载：<a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="external">http://dev.mysql.com/downloads/mysql/</a><br>汉化包：Confluence-5.9.4-language-pack-zh_CN.jar<br>MySQL驱动包：mysql-connector-java-5.1.35.jar<br>我的github下有所需要的包：<a href="https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar">https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar</a></p>
 <h2 id="Confluence安装"><a href="#Confluence安装" class="headerlink" title="Confluence安装"></a>Confluence安装</h2><ol>
 <li>打开atlassian-confluence-5.9.7-x64.exe，下一步<br><img src="/img/confluence/0.png" alt="Confluence安装" title="Confluence安装"></li>
 <li>选择自定义安装Confluence<br><img src="/img/confluence/1.png" alt="Confluence安装" title="Confluence安装"></li>
@@ -349,12 +349,11 @@
 <li>复制Licence Key到授权页面的第三个输入框<br><img src="/img/confluence/14.png" alt="Confluence配置" title="Confluence配置"></li>
 <li>Licence Key都填好，Next，进到选择数据库，使用扩展数据库<br><img src="/img/confluence/15.png" alt="Confluence配置" title="Confluence配置"></li>
 <li>点击External Database,如果配置前没有把MySQL驱动包mysql-connector-java-5.1.35.jar，放到放到安装目录xx\Program Files\Atlassian\Confluence\confluence\WEB-INF\lib下，会有以下提示缺少驱动包，先停服务，再启动，再刷浏览器如果出错<br>恭喜你又重装了（请查看卸载篇），成功继续点击External Database<br><img src="/img/confluence/16.png" alt="Confluence配置" title="Confluence配置"></li>
-<li>打开我们SQL客户端，使用root权限连接，执行以下脚本，创建数据库，创建用户密码<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin;</span><br></pre></td></tr></table></figure>
+<li><p>打开我们SQL客户端，使用root权限连接，执行以下脚本，创建数据库，创建用户密码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin;</span><br><span class="line"></span><br><span class="line">GRANT ALL PRIVILEGES ON confluence.* TO <span class="string">'confluenceuser'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'confluencepass'</span>;</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON confluence.* TO <span class="string">'confluenceuser'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'confluencepass'</span>;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>设置数据库信息<br><img src="/img/confluence/17.png" alt="Confluence配置" title="Confluence配置"></li>
+<li><p>设置数据库信息<br><img src="/img/confluence/17.png" alt="Confluence配置" title="Confluence配置"></p>
+</li>
 <li>创建一个例子wiki，能让我们感受到人家怎么在里面写文章的 ，Next<br><img src="/img/confluence/18.png" alt="Confluence配置" title="Confluence配置"></li>
 <li>设置管理员Confluence帐号信息，Next<br><img src="/img/confluence/19.png" alt="Confluence配置" title="Confluence配置"></li>
 <li>以下都是设置管理员信息，都可以跳过，点击SKip SKip SKip SKip<br><img src="/img/confluence/20.png" alt="Confluence配置" title="Confluence配置"></li>
@@ -363,7 +362,7 @@
 <li>恭喜你，到这里就配置完成了，打开<a href="http://localhost:8090/#all-updates，可以看到空我们创建的Demo空间" target="_blank" rel="external">http://localhost:8090/#all-updates，可以看到空我们创建的Demo空间</a></li>
 </ol>
 <h2 id="Confluence汉化"><a href="#Confluence汉化" class="headerlink" title="Confluence汉化"></a>Confluence汉化</h2><p>进入安装目录下xx\Atlassian\Confluence点击stop_service.bat停用服务，把下载好语言包Confluence-5.9.4-language-pack-zh_CN.jar放到xx\Atlassian\Confluence\confluence\WEB-INF\lib 目录下，<br>xx\Atlassian\Confluence点击start_service.bat再启动服务，重新打开浏览器<a href="http://localhost:8090/" target="_blank" rel="external">http://localhost:8090/</a> 汉化成功。<br><img src="/img/confluence/24.png" alt="Confluence配置" title="Confluence配置"></p>
-<h2 id="Confluence破解"><a href="#Confluence破解" class="headerlink" title="Confluence破解"></a>Confluence破解</h2><p>搞破坏的事情不敢公开，需要请联系我，或者你是在我的github下载所需要的zip包下,有惊喜哦。</p>
+<h2 id="Confluence破解"><a href="#Confluence破解" class="headerlink" title="Confluence破解"></a>Confluence破解</h2><p>搞破坏的事情不敢公开，需要请联系我，或者你在我的github下载<a href="https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar所需要的包,解压有惊喜哦。">https://github.com/Huangdongrong/soft-and-jar-repository/blob/master/confluenceInstall.rar所需要的包,解压有惊喜哦。</a></p>
       
     </div>
     
@@ -374,7 +373,7 @@
         <p><span>本文标题:</span><a href="/2016/05/16/confluence/">Confluence 安装与Confluence配置(一)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-19, 16:00:58</p>
+        <p><span>最后更新:</span>2016-05-19, 17:42:37</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/16/confluence/" title="Confluence 安装与Confluence配置(一)">https://github.com/2016/05/16/confluence/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/confluence/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
