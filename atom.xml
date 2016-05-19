@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-05-17T07:46:50.528Z</updated>
+  <updated>2016-05-16T02:03:27.892Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -14,30 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>新文章</title>
-    <link href="https://github.com/2016/05/16/new/"/>
-    <id>https://github.com/2016/05/16/new/</id>
-    <published>2016-05-16T04:49:42.586Z</published>
-    <updated>2016-05-17T07:46:50.528Z</updated>
-    
-    <content type="html">&lt;p&gt;这是一个普通段落。&lt;/p&gt;
-&lt;table&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;Foo&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;
-
-&lt;p&gt;这是另一个普通段落。&lt;/p&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是一个普通段落。&lt;/p&gt;
-&lt;table&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;Foo&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;
-
-&lt;p&gt;这是另一个普通段落。&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
