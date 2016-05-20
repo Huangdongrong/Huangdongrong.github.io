@@ -2,23 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://github.com/2016/05/16/confluence-use/</loc>
+    <loc>https://github.com/2016/05/16/jquery/</loc>
     
-    <lastmod>2016-05-20T05:05:31.935Z</lastmod>
+    <lastmod>2016-05-20T09:02:45.038Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/2016/05/16/Jquery-and-js-design/</loc>
+    
+    <lastmod>2016-05-20T06:51:53.404Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/2016/05/16/jprofiler-introduce-install/</loc>
+    
+    <lastmod>2016-05-20T05:14:59.761Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://github.com/2016/05/16/confluence-install-setting/</loc>
     
-    <lastmod>2016-05-19T11:26:57.001Z</lastmod>
+    <lastmod>2016-05-20T05:12:28.782Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://github.com/2016/05/19/jquery/</loc>
+    <loc>https://github.com/2016/05/16/confluence-use/</loc>
     
-    <lastmod>2016-05-19T11:23:16.881Z</lastmod>
+    <lastmod>2016-05-20T05:08:48.728Z</lastmod>
     
   </url>
   
@@ -47,13 +61,6 @@
     <loc>https://github.com/2016/05/16/hello-world/</loc>
     
     <lastmod>2016-05-16T02:03:27.892Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://github.com/2016/03/09/Maven/</loc>
-    
-    <lastmod>2016-04-28T14:27:14.000Z</lastmod>
     
   </url>
   
