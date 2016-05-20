@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://github.com/2016/05/16/jquery/</loc>
-    <lastmod>2016-05-20T09:02:45.038Z</lastmod>
+    <lastmod>2016-05-20T09:16:01.109Z</lastmod>
     <data>
         <display>
         <title>Jquery常用方法与特殊场景使用的方法</title>
@@ -29,38 +29,8 @@
 
     
   <url>
-    <loc>https://github.com/2016/05/16/Jquery-and-js-design/</loc>
-    <lastmod>2016-05-20T06:51:53.404Z</lastmod>
-    <data>
-        <display>
-        <title>Jquery javascript 组件化设计（高级篇）</title>
-        <pubTime>2016-05-16T10:45:37.000Z</pubTime>
-        
-        <tag>JProfiler</tag>
-         
-        <tag>性能调优</tag>
-         
-        <tag>测试</tag>
-         
-         
-           
-             
-              <breadCrumb title="Jquery" url="https://github.com/categories/Jquery/"/>
-          
-             
-              <breadCrumb title="javascript" url="https://github.com/categories/Jquery/javascript/"/>
-          
-             
-              <breadCrumb title="设计" url="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://github.com/2016/05/16/jprofiler-introduce-install/</loc>
-    <lastmod>2016-05-20T05:14:59.761Z</lastmod>
+    <lastmod>2016-05-20T09:06:02.518Z</lastmod>
     <data>
         <display>
         <title>JProfiler 简介与JProfiler安装</title>
@@ -79,6 +49,36 @@
           
              
               <breadCrumb title="测试" url="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://github.com/2016/05/16/Jquery-and-js-design/</loc>
+    <lastmod>2016-05-20T09:05:46.175Z</lastmod>
+    <data>
+        <display>
+        <title>Jquery javascript 组件化设计（高级篇）</title>
+        <pubTime>2016-05-16T10:45:37.000Z</pubTime>
+        
+        <tag>Jquery</tag>
+         
+        <tag>javascript</tag>
+         
+        <tag>设计</tag>
+         
+         
+           
+             
+              <breadCrumb title="Jquery" url="https://github.com/categories/Jquery/"/>
+          
+             
+              <breadCrumb title="javascript" url="https://github.com/categories/Jquery/javascript/"/>
+          
+             
+              <breadCrumb title="设计" url="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
           
         </display>
     </data>
