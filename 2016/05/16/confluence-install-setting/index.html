@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://github.com/img/confluence/22.png">
 <meta property="og:image" content="https://github.com/img/confluence/23.png">
 <meta property="og:image" content="https://github.com/img/confluence/24.png">
-<meta property="og:updated_time" content="2016-05-20T05:12:28.782Z">
+<meta property="og:updated_time" content="2016-05-24T05:28:21.131Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Confluence 简介与Confluence安装配置(一)">
 <meta name="twitter:description" content="Confluence 企业知识库管理wiki与JIRA管理强大的工具，这章节主要讲解Confluence简介、如何在Windows安装Confluence、如何配置Confluence、">
@@ -350,6 +350,16 @@
 <li>复制Licence Key到授权页面的第三个输入框<br><img src="/img/confluence/14.png" alt="Confluence配置" title="Confluence配置"></li>
 <li>Licence Key都填好，Next，进到选择数据库，使用扩展数据库<br><img src="/img/confluence/15.png" alt="Confluence配置" title="Confluence配置"></li>
 <li>点击External Database,如果配置前没有把MySQL驱动包mysql-connector-java-5.1.35.jar，放到放到安装目录xx\Program Files\Atlassian\Confluence\confluence\WEB-INF\lib下，会有以下提示缺少驱动包，先停服务，再启动，再刷浏览器如果出错<br>恭喜你又重装了（请查看卸载篇），成功继续点击External Database<br><img src="/img/confluence/16.png" alt="Confluence配置" title="Confluence配置"></li>
+<li><p>打开数据库安装目录下的xx\MySQL\MySQL Server 5.1\my.ini文件</p>
+<ol>
+<li><p>default-character-set设置为utf-8</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">default-character-set=utf-8</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在最后面增加以下设置编码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">character-set-server=utf8</span><br><span class="line">collation-server=utf8_bin</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
 <li><p>打开我们SQL客户端，使用root权限连接，执行以下脚本，创建数据库，创建用户密码</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE confluence CHARACTER SET utf8 COLLATE utf8_bin;</span><br><span class="line"></span><br><span class="line">GRANT ALL PRIVILEGES ON confluence.* TO <span class="string">'confluenceuser'</span>@<span class="string">'localhost'</span> IDENTIFIED BY <span class="string">'confluencepass'</span>;</span><br></pre></td></tr></table></figure>
 </li>
@@ -374,7 +384,7 @@
         <p><span>本文标题:</span><a href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-20, 13:12:28</p>
+        <p><span>最后更新:</span>2016-05-24, 13:28:21</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/16/confluence-install-setting/" title="Confluence 简介与Confluence安装配置(一)">https://github.com/2016/05/16/confluence-install-setting/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/confluence-install-setting/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -390,15 +400,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/jquery/">
-                    Jquery,javascript常用方法与特殊场景使用的方法
+                <a href="/2016/05/16/confluence-use/">
+                    Confluence 使用(二)
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/16/confluence-use/">
-                    Confluence 使用(二)
+                <a href="/2016/05/16/jquery/">
+                    Jquery,javascript常用方法与特殊场景使用的方法
                 </a>
             </div>
         
@@ -492,7 +502,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/jquery/" title="上一篇: Jquery,javascript常用方法与特殊场景使用的方法">
+            <a href="/2016/05/16/confluence-use/" title="上一篇: Confluence 使用(二)">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -500,13 +510,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/16/confluence-use/" title="下一篇: Confluence 使用(二)">
+            <a href="/2016/05/16/jquery/" title="下一篇: Jquery,javascript常用方法与特殊场景使用的方法">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
 
 
 
