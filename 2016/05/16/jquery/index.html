@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://github.com/2016/05/16/jquery/index.html">
 <meta property="og:site_name" content="Donie">
 <meta property="og:description" content="Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来">
-<meta property="og:updated_time" content="2016-05-25T05:11:45.282Z">
+<meta property="og:updated_time" content="2016-05-25T05:12:48.465Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery,javascript常用方法与特殊场景使用的方法">
 <meta name="twitter:description" content="Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来">
@@ -343,7 +343,11 @@
 <h3 id="对象的创建"><a href="#对象的创建" class="headerlink" title="对象的创建"></a>对象的创建</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var id=123;</span><br><span class="line">var name=<span class="string">"test"</span>;</span><br><span class="line">var person = &#123;</span><br><span class="line">                id: id,</span><br><span class="line">                name: name,</span><br><span class="line">            &#125;</span><br></pre></td></tr></table></figure>
 <h3 id="获取所有输入框、下拉框、单选的值"><a href="#获取所有输入框、下拉框、单选的值" class="headerlink" title="获取所有输入框、下拉框、单选的值"></a>获取所有输入框、下拉框、单选的值</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#id"</span>).find(<span class="string">'input[name]'</span>).each(<span class="function"><span class="title">function</span></span> () &#123;	//获取输入框的值</span><br><span class="line">    console.log((this).val());</span><br><span class="line">&#125;);</span><br><span class="line">$(scope.imallSearchParamId).find(<span class="string">'select[name]'</span>).each(<span class="function"><span class="title">function</span></span> () &#123;  //获取下拉框的值</span><br><span class="line">   console.log((this).val();</span><br><span class="line"> &#125;);</span><br><span class="line">$(scope.imallSearchParamId).find(<span class="string">"input:radio:checked"</span>).each(<span class="function"><span class="title">function</span></span> () &#123; //获取单选的值</span><br><span class="line">     console.log((this).val();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h3 id="序列化"><a href="#序列化" class="headerlink" title="序列化"></a>序列化</h3><ul>
-<li>序列化对象<figure class="highlight bash"><figcaption><span>var obj = JSON.stringify(orderObj); ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 序列化form表单对象</span><br><span class="line">``` bash var formObj = $(<span class="string">"#ticketOrder"</span>).serialize();</span><br></pre></td></tr></table></figure>
+<li><p>序列化对象</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var obj = JSON.stringify(orderObj);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>序列化form表单对象</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var formObj = $(<span class="string">"#ticketOrder"</span>).serialize();</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h3><ul>
@@ -359,7 +363,7 @@
         <p><span>本文标题:</span><a href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-25, 13:11:45</p>
+        <p><span>最后更新:</span>2016-05-25, 13:12:48</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/16/jquery/" title="Jquery,javascript常用方法与特殊场景使用的方法">https://github.com/2016/05/16/jquery/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/jquery/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -375,15 +379,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/jprofiler-introduce-install/">
-                    JProfiler 简介与JProfiler安装
+                <a href="/2016/05/16/confluence-use/">
+                    Confluence 使用(二)
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/16/hello-world/">
-                    Hello World
+                <a href="/2016/05/16/jprofiler-introduce-install/">
+                    JProfiler 简介与JProfiler安装
                 </a>
             </div>
         
@@ -477,7 +481,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/jprofiler-introduce-install/" title="上一篇: JProfiler 简介与JProfiler安装">
+            <a href="/2016/05/16/confluence-use/" title="上一篇: Confluence 使用(二)">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -485,13 +489,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/16/hello-world/" title="下一篇: Hello World">
+            <a href="/2016/05/16/jprofiler-introduce-install/" title="下一篇: JProfiler 简介与JProfiler安装">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
 
 
 
