@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-05-20T09:05:46.175Z</updated>
+  <updated>2016-05-24T05:28:21.131Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -14,36 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Jquery javascript 组件化设计（高级篇）</title>
-    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
-    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-20T09:05:46.175Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
-    
-    <summary type="html">
-    
-      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，业务处理清晰，且域与域之间隔离， 不会受入其它域的污染。
-    
-    </summary>
-    
-      <category term="Jquery" scheme="https://github.com/categories/Jquery/"/>
-    
-      <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
-    
-      <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
-    
-      <category term="javascript" scheme="https://github.com/tags/javascript/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
   
   <entry>
     <title>Confluence 简介与Confluence安装配置(一)</title>
@@ -122,6 +92,36 @@
   </entry>
   
   <entry>
+    <title>Jquery javascript 组件化设计（高级篇）</title>
+    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
+    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-20T09:05:46.175Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，业务处理清晰，且域与域之间隔离， 不会受入其它域的污染。
+    
+    </summary>
+    
+      <category term="Jquery" scheme="https://github.com/categories/Jquery/"/>
+    
+      <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
+    
+      <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
+    
+      <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Confluence 使用(二)</title>
     <link href="https://github.com/2016/05/16/confluence-use/"/>
     <id>https://github.com/2016/05/16/confluence-use/</id>
@@ -179,39 +179,11 @@
   </entry>
   
   <entry>
-    <title>JProfiler 简介与JProfiler安装</title>
-    <link href="https://github.com/2016/05/16/jprofiler-introduce-install/"/>
-    <id>https://github.com/2016/05/16/jprofiler-introduce-install/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-20T09:06:02.518Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
-    
-    <summary type="html">
-    
-      JProfiler强大的性能优化工具，可以
-    
-    </summary>
-    
-      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
-    
-      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
-    
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Jquery,javascript常用方法与特殊场景使用的方法</title>
     <link href="https://github.com/2016/05/16/jquery/"/>
     <id>https://github.com/2016/05/16/jquery/</id>
     <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-25T04:53:56.218Z</updated>
+    <updated>2016-05-25T04:56:49.156Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;tr&gt;&lt;br&gt;    &lt;td&gt;&lt;br&gt;        欢迎转载，评论，阅读，或者可以提出你们宝贵的建议，你们的评论建议支持，让我更有信心继续分享技术经验心得，转载请保留原文链接及作者，谢谢。&lt;br&gt;    &lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
@@ -226,6 +198,32 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;追加元素&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$($(this).append(html);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;移除classs&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).removeClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;增加classs&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).addClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;获取属性值&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var id = $(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;设置属性值&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;，value);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;常用的判断&quot;&gt;&lt;a href=&quot;#常用的判断&quot; class=&quot;headerlink&quot; title=&quot;常用的判断&quot;&gt;&lt;/a&gt;常用的判断&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;判断元素是否隐藏&lt;/p&gt;
+ &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:hidden&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;checkbox是否选中&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;#checkboxId&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:checked&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;事件绑定&quot;&gt;&lt;a href=&quot;#事件绑定&quot; class=&quot;headerlink&quot; title=&quot;事件绑定&quot;&gt;&lt;/a&gt;事件绑定&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;select标签绑定事件&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;.selected&quot;&lt;/span&gt;).change(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  )&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;常用设置&quot;&gt;&lt;a href=&quot;#常用设置&quot; class=&quot;headerlink&quot; title=&quot;常用设置&quot;&gt;&lt;/a&gt;常用设置&lt;/h3&gt;&lt;ul&gt;
@@ -260,6 +258,34 @@
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
     
       <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JProfiler 简介与JProfiler安装</title>
+    <link href="https://github.com/2016/05/16/jprofiler-introduce-install/"/>
+    <id>https://github.com/2016/05/16/jprofiler-introduce-install/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-20T09:06:02.518Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      JProfiler强大的性能优化工具，可以
+    
+    </summary>
+    
+      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
+    
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
