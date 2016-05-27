@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://github.com/2016/05/16/Jquery-and-js-design/index.html">
 <meta property="og:site_name" content="Donie">
 <meta property="og:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
-<meta property="og:updated_time" content="2016-05-27T04:32:03.849Z">
+<meta property="og:updated_time" content="2016-05-27T04:34:26.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery 组件化设计（高级篇）">
 <meta name="twitter:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
@@ -131,13 +131,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -249,7 +249,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-Jquery-and-js-design" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -296,10 +296,10 @@
         <a id="more"></a>
 <h2 id="Jquery-组件化设计"><a href="#Jquery-组件化设计" class="headerlink" title="Jquery 组件化设计"></a>Jquery 组件化设计</h2><h3 id="JS组件化设计目的"><a href="#JS组件化设计目的" class="headerlink" title="JS组件化设计目的"></a>JS组件化设计目的</h3><p> 开发大项目中，解决混乱无章，可读性非常差，作用域的污染等等问题，JS组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离，避免入侵。</p>
 <h3 id="table组件例子实现"><a href="#table组件例子实现" class="headerlink" title="table组件例子实现"></a>table组件例子实现</h3><ul>
-<li><p>导入jquery</p>
-</li>
-<li><p>创建table.js</p>
-</li>
+<li>导入jquery</li>
+</ul>
+<ul>
+<li>创建table.js</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>($)&#123;</span><br><span class="line">    $.fn.test = <span class="function"><span class="title">function</span></span>()&#123;&#125;;</span><br><span class="line">    $.fn.test.table = <span class="keyword">function</span>(opt) &#123;</span><br><span class="line">        var defaults = &#123;   //默认参数</span><br><span class="line">            tableId:<span class="string">"#tableId"</span>,</span><br><span class="line">        &#125;;</span><br><span class="line">        var options = $.extend(defaults,opt);   //合并参数</span><br><span class="line"></span><br><span class="line">        this._add=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            controller._add();</span><br><span class="line">        &#125;;</span><br><span class="line">        this._delete=<span class="keyword">function</span>(element)&#123;</span><br><span class="line">            controller._delete(element);</span><br><span class="line">        &#125;;</span><br><span class="line">        this._update=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        var controller = &#123;</span><br><span class="line">            _add:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">                var newTr=<span class="string">'&lt;tr&gt;&lt;td&gt;小明&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;&lt;button class="del"&gt;删除&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;'</span>;</span><br><span class="line">               $(options.tableId).append(newTr);</span><br><span class="line">            &#125;,</span><br><span class="line">            _delete:<span class="keyword">function</span>(element)&#123;</span><br><span class="line">                $(element).parents(<span class="string">"tr"</span>).remove();</span><br><span class="line">            &#125;,</span><br><span class="line">            _update:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="built_in">return</span> this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)(jQuery);</span><br></pre></td></tr></table></figure>
 <ul>
@@ -317,17 +317,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
-        <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-27, 12:32:03</p>
+        <p><span>Title:</span><a href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Donie.Huang</a></p>
+        <p><span>Created:</span>2016-05-16, 18:45:37</p>
+        <p><span>Updated:</span>2016-05-27, 12:34:26</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/16/Jquery-and-js-design/" title="Jquery 组件化设计（高级篇）">https://github.com/2016/05/16/Jquery-and-js-design/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/Jquery-and-js-design/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2016/05/16/Jquery-and-js-design/" title="Jquery 组件化设计（高级篇）">https://github.com/2016/05/16/Jquery-and-js-design/</a>
+            <span class="copy-path" data-clipboard-text="From https://github.com/2016/05/16/Jquery-and-js-design/　　By Donie.Huang" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -336,15 +336,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/jmeter-javacode-test/">
-                    Jmeter测试java请求
+                <a href="/2016/05/16/idea-package-jar/">
+                    IDEA下打包JAr
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/16/jprofiler-introduce-install/">
-                    JProfiler 简介与JProfiler安装
+                <a href="/2016/05/16/jmeter-javacode-test/">
+                    Jmeter测试java请求
                 </a>
             </div>
         
@@ -354,7 +354,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
+    <strong class="toc-title">Contents</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Jquery-组件化设计"><span class="toc-number">1.</span> <span class="toc-text">Jquery 组件化设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JS组件化设计目的"><span class="toc-number">1.1.</span> <span class="toc-text">JS组件化设计目的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#table组件例子实现"><span class="toc-number">1.2.</span> <span class="toc-text">table组件例子实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#table组件例子源码"><span class="toc-number">2.</span> <span class="toc-text">table组件例子源码</span></a></li></ol>
 </div>
 <style>
@@ -366,10 +366,10 @@
     }
 </style>
 
-<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 <script>
-    var valueHide = "隐藏目录";
-    var valueShow = "显示目录";
+    var valueHide = "Hide";
+    var valueShow = "Show";
 
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
@@ -438,21 +438,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/jmeter-javacode-test/" title="上一篇: Jmeter测试java请求">
+            <a href="/2016/05/16/idea-package-jar/" title="Pre: IDEA下打包JAr">
                 <i class="fa fa-angle-left"></i>
             </a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/16/jprofiler-introduce-install/" title="下一篇: JProfiler 简介与JProfiler安装">
+            <a href="/2016/05/16/jmeter-javacode-test/" title="Next: Jmeter测试java请求">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
 
 
 
@@ -469,14 +469,14 @@
                 2016 Donie.Huang
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -486,7 +486,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -503,9 +503,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">

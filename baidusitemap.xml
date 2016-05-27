@@ -5,7 +5,7 @@
     
   <url>
     <loc>https://github.com/2016/05/16/Jquery-and-js-design/</loc>
-    <lastmod>2016-05-27T04:32:03.849Z</lastmod>
+    <lastmod>2016-05-27T04:34:26.842Z</lastmod>
     <data>
         <display>
         <title>Jquery 组件化设计（高级篇）</title>
@@ -43,9 +43,9 @@
         
         <tag>测试</tag>
          
-        <tag>jvisualvm</tag>
-         
         <tag>性能调优</tag>
+         
+        <tag>jvisualvm</tag>
          
          
            
@@ -251,9 +251,9 @@
         
         <tag>测试</tag>
          
-        <tag>性能调优</tag>
-         
         <tag>JProfiler</tag>
+         
+        <tag>性能调优</tag>
          
          
            
