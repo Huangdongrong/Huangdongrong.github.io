@@ -3,18 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Donie</title>
+  <title>JProfiler集成IDEA查看Java项目性能（二） | Donie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人技术的理解与技术分享经验之谈">
+  <meta name="description" content="JProfiler强大的JAVA性能分析工具，可以详细分析线程、包、类、方法、对象占用内存与占用CPU的情况，从分析结果进行性能调优，使用程序达到最优，集成IDEA分析JAVA项目性能情况。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Donie">
-<meta property="og:url" content="https://github.com/2016/05/25/angular-mvc-design/index.html">
+<meta property="og:title" content="JProfiler集成IDEA查看Java项目性能（二）">
+<meta property="og:url" content="https://github.com/2016/05/27/jprofiler-use/index.html">
 <meta property="og:site_name" content="Donie">
-<meta property="og:description" content="个人技术的理解与技术分享经验之谈">
-<meta property="og:updated_time" content="2016-05-25T12:43:08.582Z">
+<meta property="og:description" content="JProfiler强大的JAVA性能分析工具，可以详细分析线程、包、类、方法、对象占用内存与占用CPU的情况，从分析结果进行性能调优，使用程序达到最优，集成IDEA分析JAVA项目性能情况。">
+<meta property="og:image" content="https://github.com/img/jprofiler/8.png">
+<meta property="og:image" content="https://github.com/img/jprofiler/9.png">
+<meta property="og:image" content="https://github.com/img/jprofiler/10.png">
+<meta property="og:image" content="https://github.com/img/jprofiler/11.png">
+<meta property="og:image" content="https://github.com/img/jprofiler/12.png">
+<meta property="og:updated_time" content="2016-05-27T11:07:41.909Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Donie">
-<meta name="twitter:description" content="个人技术的理解与技术分享经验之谈">
+<meta name="twitter:title" content="JProfiler集成IDEA查看Java项目性能（二）">
+<meta name="twitter:description" content="JProfiler强大的JAVA性能分析工具，可以详细分析线程、包、类、方法、对象占用内存与占用CPU的情况，从分析结果进行性能调优，使用程序达到最优，集成IDEA分析JAVA项目性能情况。">
+<meta name="twitter:image" content="https://github.com/img/jprofiler/8.png">
   
     <link rel="alternative" href="/atom.xml" title="Donie" type="application/atom+xml">
   
@@ -251,11 +257,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-angular-mvc-design" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-jprofiler-use" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/25/angular-mvc-design/" class="article-date">
-      <time datetime="2016-05-25T12:43:08.582Z" itemprop="datePublished">2016-05-25</time>
+      <a href="/2016/05/27/jprofiler-use/" class="article-date">
+      <time datetime="2016-05-27T10:45:37.000Z" itemprop="datePublished">2016-05-27</time>
 </a>
     </div>
   
@@ -264,10 +270,52 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JProfiler集成IDEA查看Java项目性能（二）
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/性能调优/">性能调优</a><a class="article-category-link" href="/categories/性能调优/测试/">测试</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <a id="more"></a>
+<h4 id="相关文摘"><a href="#相关文摘" class="headerlink" title="相关文摘"></a>相关文摘</h4><p>  JProfiler documentation：<a href="http://resources.ej-technologies.com/jprofiler/help/doc/" target="_blank" rel="external">http://resources.ej-technologies.com/jprofiler/help/doc/</a></p>
+<h2 id="JProfiler集成IDEA查看Java项目性能"><a href="#JProfiler集成IDEA查看Java项目性能" class="headerlink" title="JProfiler集成IDEA查看Java项目性能"></a>JProfiler集成IDEA查看Java项目性能</h2><ol>
+<li>创建Test项目，新建Test类，创建main方法</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">package <span class="built_in">test</span>;</span><br><span class="line">import java.util.concurrent.*;</span><br><span class="line">public class Test &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[]args) throws InterruptedException &#123;</span><br><span class="line">        ExecutorService executorService = Executors.newFixedThreadPool(5);</span><br><span class="line">        final int loopCount=2000000;</span><br><span class="line">        final CountDownLatch latch = new CountDownLatch(loopCount);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (int i=0;i&lt;loopCount;i++)&#123;</span><br><span class="line">            executorService.submit(new <span class="function"><span class="title">Runnable</span></span>() &#123;</span><br><span class="line">                @Override</span><br><span class="line">                public void <span class="function"><span class="title">run</span></span>() &#123;</span><br><span class="line">                    System.out.println(<span class="string">"hello Work"</span>+latch.getCount());</span><br><span class="line">                    latch.countDown();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        latch.await();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>选中Class， profiler ‘test.main’，第一次运行设置profiler安装目录<br><img src="/img/jprofiler/8.png" alt="JProfiler使用" title="JProfiler使用"></li>
+<li><p>运行后，选择Instrumentation，可以查看详细的信息<br><img src="/img/jprofiler/9.png" alt="JProfiler使用" title="JProfiler使用"></p>
+</li>
+<li><p>查看运行中的main方法内存占用情况，选中Live memory-&gt;All Objects<br><img src="/img/jprofiler/10.png" alt="JProfiler使用" title="JProfiler使用"></p>
+</li>
+<li><p>查看CPU占用情况，选中CPU views-&gt;Hot Spots点击按钮<br><img src="/img/jprofiler/11.png" alt="JProfiler使用" title="JProfiler使用"></p>
+</li>
+<li><p>运行中的main方法CPU占用情况<br><img src="/img/jprofiler/12.png" alt="JProfiler使用" title="JProfiler使用"></p>
+</li>
+</ol>
       
     </div>
     
@@ -275,13 +323,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/25/angular-mvc-design/"></a></p>
+        <p><span>本文标题:</span><a href="/2016/05/27/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
-        <p><span>发布时间:</span>2016-05-25, 20:43:08</p>
-        <p><span>最后更新:</span>2016-05-25, 20:43:08</p>
+        <p><span>发布时间:</span>2016-05-27, 18:45:37</p>
+        <p><span>最后更新:</span>2016-05-27, 19:07:41</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/25/angular-mvc-design/" title="">https://github.com/2016/05/25/angular-mvc-design/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/25/angular-mvc-design/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/27/jprofiler-use/" title="JProfiler集成IDEA查看Java项目性能（二）">https://github.com/2016/05/27/jprofiler-use/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/27/jprofiler-use/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -294,15 +342,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/25/angular-Interceptor/">
-                    
+                <a href="/2016/05/27/jprofiler-introduce-install/">
+                    JProfiler简介与JProfiler安装并集成IDEA(一)
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/25/angular-router/">
-                    
+                <a href="/2016/05/26/jvisualvm-use/">
+                    使用jvisualvm监控工具查看CUP、内存使用情况
                 </a>
             </div>
         
@@ -313,7 +361,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#相关文摘"><span class="toc-number">1.</span> <span class="toc-text">相关文摘</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JProfiler集成IDEA查看Java项目性能"><span class="toc-number"></span> <span class="toc-text">JProfiler集成IDEA查看Java项目性能</span></a>
 </div>
 <style>
     .left-col .switch-btn {
@@ -370,7 +418,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"　| Donie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"JProfiler集成IDEA查看Java项目性能（二）　| Donie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -396,7 +444,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/25/angular-Interceptor/" title="上一篇: ">
+            <a href="/2016/05/27/jprofiler-introduce-install/" title="上一篇: JProfiler简介与JProfiler安装并集成IDEA(一)">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -404,7 +452,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/25/angular-router/" title="下一篇: ">
+            <a href="/2016/05/26/jvisualvm-use/" title="下一篇: 使用jvisualvm监控工具查看CUP、内存使用情况">
                 <i class="fa fa-angle-right"></i>
             </a>
         
