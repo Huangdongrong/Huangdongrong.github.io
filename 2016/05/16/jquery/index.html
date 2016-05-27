@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://github.com/2016/05/16/jquery/index.html">
 <meta property="og:site_name" content="Donie">
 <meta property="og:description" content="Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来">
-<meta property="og:updated_time" content="2016-05-25T05:13:49.888Z">
+<meta property="og:updated_time" content="2016-05-26T09:10:23.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery,javascript常用方法与特殊场景使用的方法">
 <meta name="twitter:description" content="Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来">
@@ -176,7 +176,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Confluence/">Confluence</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDEA/">IDEA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jquery/">Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能测试/">性能测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/测试/">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计/">设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运维/">运维</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Confluence/">Confluence</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDEA/">IDEA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jquery/">Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jvisualvm/">jvisualvm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能测试/">性能测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/测试/">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计/">设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运维/">运维</a></li></ul>
                     </div>
                 </section>
                 
@@ -333,9 +333,13 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>($(<span class="string">"#checkboxId"</span>).is(<span class="string">":checked"</span>))&#123;&#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h3><ul>
-<li>select标签绑定事件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".selected"</span>).change(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  )&#125;</span><br></pre></td></tr></table></figure>
+<li><p>select标签绑定事件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".selected"</span>).change(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">  )&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>on绑定事件，绑定未来元素</p>
 </li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#parentId"</span>).on(<span class="string">"click"</span>,<span class="string">".childClass"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h3 id="常用设置"><a href="#常用设置" class="headerlink" title="常用设置"></a>常用设置</h3><ul>
 <li>设置是否禁用disabled Button<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;button <span class="built_in">type</span>=<span class="string">"submit"</span> disabled=<span class="string">"true"</span> id=<span class="string">"buttonId"</span> value=<span class="string">"Submit"</span> &gt;确定&lt;/button&gt;</span><br><span class="line">var isCheck=<span class="literal">true</span>;</span><br><span class="line"><span class="keyword">if</span>(isCheck)&#123;</span><br><span class="line">   $(<span class="string">"#buttonId"</span>).attr(<span class="string">"disabled"</span>,<span class="literal">true</span>);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">   $(<span class="string">"#buttonId"</span>).attr(<span class="string">"disabled"</span>,<span class="literal">false</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -351,8 +355,11 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var formObj = $(<span class="string">"#ticketOrder"</span>).serialize();</span><br></pre></td></tr></table></figure>
 <h3 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h3><ul>
-<li>ajax json提交方式 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var form = $(<span class="string">"#form"</span>).serialize();</span><br><span class="line">$.ajaxSettings[<span class="string">'contentType'</span>] = <span class="string">"application/x-www-form-urlencoded; charset=utf-8"</span>;</span><br><span class="line">$.ajax(&#123;</span><br><span class="line">   <span class="built_in">type</span>: <span class="string">"POST"</span>,</span><br><span class="line">   data: form,</span><br><span class="line">   url: pageParam.ctx + <span class="string">"/tickets/submitOrder.json"</span>,</span><br><span class="line">   success:<span class="keyword">function</span>(data)&#123;</span><br><span class="line">   &#125;,</span><br><span class="line">   error: <span class="keyword">function</span> (data) &#123;</span><br><span class="line">        <span class="keyword">if</span> (XMLHttpRequest.status == 500) &#123;</span><br><span class="line">           var result = <span class="built_in">eval</span>(<span class="string">"("</span> + XMLHttpRequest.responseText + <span class="string">")"</span>);</span><br><span class="line">           alert(result.jsonError.errorText);</span><br><span class="line">        &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   &#125;);</span><br></pre></td></tr></table></figure></li>
+<li>ajax json提交方式 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var form = $(<span class="string">"#form"</span>).serialize();</span><br><span class="line">$.ajaxSettings[<span class="string">'contentType'</span>] = <span class="string">"application/x-www-form-urlencoded; charset=utf-8"</span>;</span><br><span class="line">$.ajax(&#123;</span><br><span class="line">   <span class="built_in">type</span>: <span class="string">"POST"</span>,</span><br><span class="line">   data: form,</span><br><span class="line">   url: pageParam.ctx + <span class="string">"/tickets/submitOrder.json"</span>,</span><br><span class="line">   success:<span class="keyword">function</span>(data)&#123;</span><br><span class="line">   &#125;,</span><br><span class="line">   error: <span class="keyword">function</span> (data) &#123;</span><br><span class="line">        <span class="keyword">if</span> (XMLHttpRequest.status == 500) &#123;</span><br><span class="line">           var result = <span class="built_in">eval</span>(<span class="string">"("</span> + XMLHttpRequest.responseText + <span class="string">")"</span>);</span><br><span class="line">           alert(result.jsonError.errorText);</span><br><span class="line">        &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   &#125;);</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
+<h3 id="定义命名空间方法"><a href="#定义命名空间方法" class="headerlink" title="定义命名空间方法"></a>定义命名空间方法</h3><p>jQuery.test = function(){};<br>jQuery.test.getData = function (){<br>    return “hello work”;<br>};</p>
+<p>alert($.test.getData());</p>
       
     </div>
     
@@ -363,7 +370,7 @@
         <p><span>本文标题:</span><a href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-25, 13:13:49</p>
+        <p><span>最后更新:</span>2016-05-26, 17:10:23</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/16/jquery/" title="Jquery,javascript常用方法与特殊场景使用的方法">https://github.com/2016/05/16/jquery/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/jquery/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -379,15 +386,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/jmeter-javacode-test/">
-                    Jmeter测试java请求
+                <a href="/2016/05/16/confluence-install-setting/">
+                    Confluence 简介与Confluence安装配置(一)
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/16/hello-world/">
-                    Hello World
+                <a href="/2016/05/16/Jquery-and-js-design/">
+                    Jquery 组件化设计（高级篇）
                 </a>
             </div>
         
@@ -398,7 +405,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS"><span class="toc-number">1.</span> <span class="toc-text">JS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#调试"><span class="toc-number">1.1.</span> <span class="toc-text">调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选择器"><span class="toc-number">1.2.</span> <span class="toc-text">选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作元素"><span class="toc-number">1.3.</span> <span class="toc-text">操作元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的判断"><span class="toc-number">1.4.</span> <span class="toc-text">常用的判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件绑定"><span class="toc-number">1.5.</span> <span class="toc-text">事件绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用设置"><span class="toc-number">1.6.</span> <span class="toc-text">常用设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的创建"><span class="toc-number">1.7.</span> <span class="toc-text">对象的创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取所有输入框、下拉框、单选的值"><span class="toc-number">1.8.</span> <span class="toc-text">获取所有输入框、下拉框、单选的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#序列化"><span class="toc-number">1.9.</span> <span class="toc-text">序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#请求方式"><span class="toc-number">1.10.</span> <span class="toc-text">请求方式</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JS"><span class="toc-number">1.</span> <span class="toc-text">JS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#调试"><span class="toc-number">1.1.</span> <span class="toc-text">调试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选择器"><span class="toc-number">1.2.</span> <span class="toc-text">选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作元素"><span class="toc-number">1.3.</span> <span class="toc-text">操作元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用的判断"><span class="toc-number">1.4.</span> <span class="toc-text">常用的判断</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件绑定"><span class="toc-number">1.5.</span> <span class="toc-text">事件绑定</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用设置"><span class="toc-number">1.6.</span> <span class="toc-text">常用设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的创建"><span class="toc-number">1.7.</span> <span class="toc-text">对象的创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取所有输入框、下拉框、单选的值"><span class="toc-number">1.8.</span> <span class="toc-text">获取所有输入框、下拉框、单选的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#序列化"><span class="toc-number">1.9.</span> <span class="toc-text">序列化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#请求方式"><span class="toc-number">1.10.</span> <span class="toc-text">请求方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定义命名空间方法"><span class="toc-number">1.11.</span> <span class="toc-text">定义命名空间方法</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -481,7 +488,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/jmeter-javacode-test/" title="上一篇: Jmeter测试java请求">
+            <a href="/2016/05/16/confluence-install-setting/" title="上一篇: Confluence 简介与Confluence安装配置(一)">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -489,13 +496,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/16/hello-world/" title="下一篇: Hello World">
+            <a href="/2016/05/16/Jquery-and-js-design/" title="下一篇: Jquery 组件化设计（高级篇）">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA打包</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
 
 
 

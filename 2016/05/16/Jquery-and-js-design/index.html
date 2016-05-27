@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Jquery javascript 组件化设计（高级篇） | Donie</title>
+  <title>Jquery 组件化设计（高级篇） | Donie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，业务处理清晰，且域与域之间隔离， 不会受入其它域的污染。">
+  <meta name="description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jquery javascript 组件化设计（高级篇）">
+<meta property="og:title" content="Jquery 组件化设计（高级篇）">
 <meta property="og:url" content="https://github.com/2016/05/16/Jquery-and-js-design/index.html">
 <meta property="og:site_name" content="Donie">
-<meta property="og:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，业务处理清晰，且域与域之间隔离， 不会受入其它域的污染。">
-<meta property="og:updated_time" content="2016-05-20T09:05:46.175Z">
+<meta property="og:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
+<meta property="og:updated_time" content="2016-05-26T09:13:59.314Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jquery javascript 组件化设计（高级篇）">
-<meta name="twitter:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，业务处理清晰，且域与域之间隔离， 不会受入其它域的污染。">
+<meta name="twitter:title" content="Jquery 组件化设计（高级篇）">
+<meta name="twitter:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
   
     <link rel="alternative" href="/atom.xml" title="Donie" type="application/atom+xml">
   
@@ -176,7 +176,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Confluence/">Confluence</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDEA/">IDEA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jquery/">Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能测试/">性能测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/测试/">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计/">设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运维/">运维</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Confluence/">Confluence</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/IDEA/">IDEA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Jquery/">Jquery</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jvisualvm/">jvisualvm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能测试/">性能测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/测试/">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计/">设计</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运维/">运维</a></li></ul>
                     </div>
                 </section>
                 
@@ -268,7 +268,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Jquery javascript 组件化设计（高级篇）
+      Jquery 组件化设计（高级篇）
     </h1>
   
 
@@ -294,6 +294,22 @@
       
           
         <a id="more"></a>
+<h2 id="Jquery-组件化设计"><a href="#Jquery-组件化设计" class="headerlink" title="Jquery 组件化设计"></a>Jquery 组件化设计</h2><h3 id="JS组件化设计目的"><a href="#JS组件化设计目的" class="headerlink" title="JS组件化设计目的"></a>JS组件化设计目的</h3><p> 开发大项目中，解决混乱无章，可读性非常差，作用域的污染等等问题，JS组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离，避免入侵。</p>
+<h3 id="table组件例子实现"><a href="#table组件例子实现" class="headerlink" title="table组件例子实现"></a>table组件例子实现</h3><ul>
+<li><p>导入jquery</p>
+</li>
+<li><p>创建table.js</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>($)&#123;</span><br><span class="line">    $.fn.test = <span class="function"><span class="title">function</span></span>()&#123;&#125;;</span><br><span class="line">    $.fn.test.table = <span class="keyword">function</span>(opt) &#123;</span><br><span class="line">        var defaults = &#123;   //默认参数</span><br><span class="line">            tableId:<span class="string">"#tableId"</span>,</span><br><span class="line">        &#125;;</span><br><span class="line">        var options = $.extend(defaults,opt);   //合并参数</span><br><span class="line"></span><br><span class="line">        this._add=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            controller._add();</span><br><span class="line">        &#125;;</span><br><span class="line">        this._delete=<span class="keyword">function</span>(element)&#123;</span><br><span class="line">            controller._delete(element);</span><br><span class="line">        &#125;;</span><br><span class="line">        this._update=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        var controller = &#123;</span><br><span class="line">            _add:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">                var newTr=<span class="string">'&lt;tr&gt;&lt;td&gt;小明&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;&lt;button class="del"&gt;删除&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;'</span>;</span><br><span class="line">               $(options.tableId).append(newTr);</span><br><span class="line">            &#125;,</span><br><span class="line">            _delete:<span class="keyword">function</span>(element)&#123;</span><br><span class="line">                $(element).parents(<span class="string">"tr"</span>).remove();</span><br><span class="line">            &#125;,</span><br><span class="line">            _update:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="built_in">return</span> this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)(jQuery);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>创建test.html页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt; Jquery javascript 组件化设计（高级篇）&lt;/title&gt;</span><br><span class="line">    &lt;script src=<span class="string">"jquery-1.11.0.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"table.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">        table&#123;  width: 500px;  text-align: center;  &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">        $(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">            //初始化</span><br><span class="line">            table = $(<span class="string">"#tableId"</span>).test.table(&#123;tableId: <span class="string">"#tableId"</span>&#125;);</span><br><span class="line"></span><br><span class="line">            /**</span><br><span class="line">             * 删除</span><br><span class="line">             */</span><br><span class="line">            $(<span class="string">"table"</span>).on(<span class="string">"click"</span>,<span class="string">".del"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">               table._delete(this);</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;);</span><br><span class="line">        /**</span><br><span class="line">         * 增加</span><br><span class="line">         */</span><br><span class="line">        <span class="keyword">function</span> <span class="function"><span class="title">add</span></span>()&#123;</span><br><span class="line">            table._add()</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;button onclick=<span class="string">"add()"</span>&gt;添加&lt;/button&gt;</span><br><span class="line">    &lt;table id=<span class="string">"tableId"</span>&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;th onclick=<span class="string">"add()"</span>&gt;姓名&lt;/th&gt;</span><br><span class="line">            &lt;th&gt;年龄&lt;/th&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;tr&gt;&lt;td&gt;小明&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;&lt;button class=<span class="string">"del"</span>&gt;删除&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;</span><br><span class="line">    &lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>浏览器打开test.html，有没有发现代码结构逻辑非常清晰？</p>
+</li>
+</ul>
+<h2 id="table组件例子源码"><a href="#table组件例子源码" class="headerlink" title="table组件例子源码"></a>table组件例子源码</h2><p>源码地址：<a href="https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test">https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test</a></p>
       
     </div>
     
@@ -301,12 +317,12 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-20, 17:05:46</p>
+        <p><span>最后更新:</span>2016-05-26, 17:13:59</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/16/Jquery-and-js-design/" title="Jquery javascript 组件化设计（高级篇）">https://github.com/2016/05/16/Jquery-and-js-design/</a>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/16/Jquery-and-js-design/" title="Jquery 组件化设计（高级篇）">https://github.com/2016/05/16/Jquery-and-js-design/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/Jquery-and-js-design/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -320,15 +336,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/confluence-install-setting/">
-                    Confluence 简介与Confluence安装配置(一)
+                <a href="/2016/05/16/jquery/">
+                    Jquery,javascript常用方法与特殊场景使用的方法
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/16/confluence-use/">
-                    Confluence 使用(二)
+                <a href="/2016/05/16/jmeter-javacode-test/">
+                    Jmeter测试java请求
                 </a>
             </div>
         
@@ -339,7 +355,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Jquery-组件化设计"><span class="toc-number">1.</span> <span class="toc-text">Jquery 组件化设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#JS组件化设计目的"><span class="toc-number">1.1.</span> <span class="toc-text">JS组件化设计目的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#table组件例子实现"><span class="toc-number">1.2.</span> <span class="toc-text">table组件例子实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#table组件例子源码"><span class="toc-number">2.</span> <span class="toc-text">table组件例子源码</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -396,7 +412,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Jquery javascript 组件化设计（高级篇）　| Donie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"Jquery 组件化设计（高级篇）　| Donie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -422,7 +438,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/confluence-install-setting/" title="上一篇: Confluence 简介与Confluence安装配置(一)">
+            <a href="/2016/05/16/jquery/" title="上一篇: Jquery,javascript常用方法与特殊场景使用的方法">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -430,13 +446,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/16/confluence-use/" title="下一篇: Confluence 使用(二)">
+            <a href="/2016/05/16/jmeter-javacode-test/" title="下一篇: Jmeter测试java请求">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery javascript 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA打包</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
 
 
 

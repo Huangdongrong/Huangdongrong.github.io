@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-05-24T05:28:21.131Z</updated>
+  <updated>2016-05-26T09:49:55.187Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -14,6 +14,104 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用jvisualvm监控工具查看CUP、内存使用情况</title>
+    <link href="https://github.com/2016/05/26/jvisualvm-use/"/>
+    <id>https://github.com/2016/05/26/jvisualvm-use/</id>
+    <published>2016-05-26T10:45:37.000Z</published>
+    <updated>2016-05-26T09:49:55.187Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;jvisualvm&quot;&gt;&lt;a href=&quot;#jvisualvm&quot; class=&quot;headerlink&quot; title=&quot;jvisualvm&quot;&gt;&lt;/a&gt;jvisualvm&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;运行JDK下 xx\Java\jdk1.7.0_21\bin\jvisualvm.exe文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击左边栏选中需要查看运行的java线程，再选择监视查看CPU与内存使用情况&lt;br&gt;&lt;img src=&quot;/img/jvisualvm/1.png&quot; alt=&quot;jvisualvm&quot; title=&quot;jvisualvm&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content>
+    
+    <summary type="html">
+    
+      使用JDK自带jvisualvm监控工具，查看JAVA线程，CUP使用情况，内存使用情况，分析结果作为性能调优方向和指标。
+    
+    </summary>
+    
+      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="jvisualvm" scheme="https://github.com/tags/jvisualvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/2016/05/25/angular-start/"/>
+    <id>https://github.com/2016/05/25/angular-start/</id>
+    <published>2016-05-25T12:44:18.950Z</published>
+    <updated>2016-05-25T12:44:18.950Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/2016/05/25/angular-Interceptor/"/>
+    <id>https://github.com/2016/05/25/angular-Interceptor/</id>
+    <published>2016-05-25T12:43:50.091Z</published>
+    <updated>2016-05-25T12:43:50.091Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/2016/05/25/angular-mvc-design/"/>
+    <id>https://github.com/2016/05/25/angular-mvc-design/</id>
+    <published>2016-05-25T12:43:08.582Z</published>
+    <updated>2016-05-25T12:43:08.582Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://github.com/2016/05/25/angular-router/"/>
+    <id>https://github.com/2016/05/25/angular-router/</id>
+    <published>2016-05-25T12:42:27.685Z</published>
+    <updated>2016-05-25T12:42:27.685Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Confluence 简介与Confluence安装配置(一)</title>
@@ -92,17 +190,129 @@
   </entry>
   
   <entry>
-    <title>Jquery javascript 组件化设计（高级篇）</title>
-    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
-    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
+    <title>Jquery,javascript常用方法与特殊场景使用的方法</title>
+    <link href="https://github.com/2016/05/16/jquery/"/>
+    <id>https://github.com/2016/05/16/jquery/</id>
     <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-20T09:05:46.175Z</updated>
+    <updated>2016-05-26T09:10:23.343Z</updated>
     
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;tr&gt;&lt;br&gt;    &lt;td&gt;&lt;br&gt;        欢迎转载，评论，阅读，或者可以提出你们宝贵的建议，你们的评论建议支持，让我更有信心继续分享技术经验心得，转载请保留原文链接及作者，谢谢。&lt;br&gt;    &lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;h2 id=&quot;JS&quot;&gt;&lt;a href=&quot;#JS&quot; class=&quot;headerlink&quot; title=&quot;JS&quot;&gt;&lt;/a&gt;JS&lt;/h2&gt;&lt;h3 id=&quot;调试&quot;&gt;&lt;a href=&quot;#调试&quot; class=&quot;headerlink&quot; title=&quot;调试&quot;&gt;&lt;/a&gt;调试&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;常用到的,浏览器控制台打印输出&lt;br&gt;console.log(“”);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;选择器&quot;&gt;&lt;a href=&quot;#选择器&quot; class=&quot;headerlink&quot; title=&quot;选择器&quot;&gt;&lt;/a&gt;选择器&lt;/h3&gt;&lt;p&gt;   ID选择器：$(“#id”)&lt;br&gt;   class选择器：$(“.class”)&lt;br&gt;   父选择器：$(this).parents(“ul”)&lt;br&gt;   同辈选择器：$(this).siblings(“li”)&lt;br&gt;   子选择器：$(this).children(“li”)&lt;/p&gt;
+&lt;h3 id=&quot;操作元素&quot;&gt;&lt;a href=&quot;#操作元素&quot; class=&quot;headerlink&quot; title=&quot;操作元素&quot;&gt;&lt;/a&gt;操作元素&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;循环查询元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$($(this).find(&lt;span class=&quot;string&quot;&gt;&quot;li&quot;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console.log((this).html();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;追加元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$($(this).append(html);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;移除class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).removeClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;增加class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).addClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;获取属性值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var id = $(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;设置属性值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;，value);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;常用的判断&quot;&gt;&lt;a href=&quot;#常用的判断&quot; class=&quot;headerlink&quot; title=&quot;常用的判断&quot;&gt;&lt;/a&gt;常用的判断&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;判断元素是否隐藏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:hidden&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;checkbox是否选中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;#checkboxId&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:checked&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;事件绑定&quot;&gt;&lt;a href=&quot;#事件绑定&quot; class=&quot;headerlink&quot; title=&quot;事件绑定&quot;&gt;&lt;/a&gt;事件绑定&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;select标签绑定事件&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;.selected&quot;&lt;/span&gt;).change(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  )&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;on绑定事件，绑定未来元素&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;#parentId&quot;&lt;/span&gt;).on(&lt;span class=&quot;string&quot;&gt;&quot;click&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;.childClass&quot;&lt;/span&gt;,&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;常用设置&quot;&gt;&lt;a href=&quot;#常用设置&quot; class=&quot;headerlink&quot; title=&quot;常用设置&quot;&gt;&lt;/a&gt;常用设置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;设置是否禁用disabled Button&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;button &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;submit&quot;&lt;/span&gt; disabled=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; id=&lt;span class=&quot;string&quot;&gt;&quot;buttonId&quot;&lt;/span&gt; value=&lt;span class=&quot;string&quot;&gt;&quot;Submit&quot;&lt;/span&gt; &amp;gt;确定&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var isCheck=&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(isCheck)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   $(&lt;span class=&quot;string&quot;&gt;&quot;#buttonId&quot;&lt;/span&gt;).attr(&lt;span class=&quot;string&quot;&gt;&quot;disabled&quot;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   $(&lt;span class=&quot;string&quot;&gt;&quot;#buttonId&quot;&lt;/span&gt;).attr(&lt;span class=&quot;string&quot;&gt;&quot;disabled&quot;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;对象的创建&quot;&gt;&lt;a href=&quot;#对象的创建&quot; class=&quot;headerlink&quot; title=&quot;对象的创建&quot;&gt;&lt;/a&gt;对象的创建&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var id=123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var name=&lt;span class=&quot;string&quot;&gt;&quot;test&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var person = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                id: id,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                name: name,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;获取所有输入框、下拉框、单选的值&quot;&gt;&lt;a href=&quot;#获取所有输入框、下拉框、单选的值&quot; class=&quot;headerlink&quot; title=&quot;获取所有输入框、下拉框、单选的值&quot;&gt;&lt;/a&gt;获取所有输入框、下拉框、单选的值&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;#id&quot;&lt;/span&gt;).find(&lt;span class=&quot;string&quot;&gt;&#39;input[name]&#39;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;	//获取输入框的值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console.log((this).val());&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(scope.imallSearchParamId).find(&lt;span class=&quot;string&quot;&gt;&#39;select[name]&#39;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;  //获取下拉框的值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   console.log((this).val();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(scope.imallSearchParamId).find(&lt;span class=&quot;string&quot;&gt;&quot;input:radio:checked&quot;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123; //获取单选的值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     console.log((this).val();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;序列化&quot;&gt;&lt;a href=&quot;#序列化&quot; class=&quot;headerlink&quot; title=&quot;序列化&quot;&gt;&lt;/a&gt;序列化&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;序列化对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj = JSON.stringify(orderObj);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;序列化form表单对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var formObj = $(&lt;span class=&quot;string&quot;&gt;&quot;#ticketOrder&quot;&lt;/span&gt;).serialize();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;请求方式&quot;&gt;&lt;a href=&quot;#请求方式&quot; class=&quot;headerlink&quot; title=&quot;请求方式&quot;&gt;&lt;/a&gt;请求方式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;ajax json提交方式 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var form = $(&lt;span class=&quot;string&quot;&gt;&quot;#form&quot;&lt;/span&gt;).serialize();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.ajaxSettings[&lt;span class=&quot;string&quot;&gt;&#39;contentType&#39;&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&quot;application/x-www-form-urlencoded; charset=utf-8&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.ajax(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;POST&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   data: form,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   url: pageParam.ctx + &lt;span class=&quot;string&quot;&gt;&quot;/tickets/submitOrder.json&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   success:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(data)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   error: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (data) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (XMLHttpRequest.status == 500) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           var result = &lt;span class=&quot;built_in&quot;&gt;eval&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;(&quot;&lt;/span&gt; + XMLHttpRequest.responseText + &lt;span class=&quot;string&quot;&gt;&quot;)&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           alert(result.jsonError.errorText);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;定义命名空间方法&quot;&gt;&lt;a href=&quot;#定义命名空间方法&quot; class=&quot;headerlink&quot; title=&quot;定义命名空间方法&quot;&gt;&lt;/a&gt;定义命名空间方法&lt;/h3&gt;&lt;p&gt;jQuery.test = function(){};&lt;br&gt;jQuery.test.getData = function (){&lt;br&gt;    return “hello work”;&lt;br&gt;};&lt;/p&gt;
+&lt;p&gt;alert($.test.getData());&lt;/p&gt;</content>
     
     <summary type="html">
     
-      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，业务处理清晰，且域与域之间隔离， 不会受入其它域的污染。
+      Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来
+    
+    </summary>
+    
+      <category term="Jquery" scheme="https://github.com/categories/Jquery/"/>
+    
+      <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
+    
+      <category term="工具" scheme="https://github.com/categories/Jquery/javascript/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
+    
+      <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+    
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jquery 组件化设计（高级篇）</title>
+    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
+    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-26T09:13:59.314Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Jquery-组件化设计&quot;&gt;&lt;a href=&quot;#Jquery-组件化设计&quot; class=&quot;headerlink&quot; title=&quot;Jquery 组件化设计&quot;&gt;&lt;/a&gt;Jquery 组件化设计&lt;/h2&gt;&lt;h3 id=&quot;JS组件化设计目的&quot;&gt;&lt;a href=&quot;#JS组件化设计目的&quot; class=&quot;headerlink&quot; title=&quot;JS组件化设计目的&quot;&gt;&lt;/a&gt;JS组件化设计目的&lt;/h3&gt;&lt;p&gt; 开发大项目中，解决混乱无章，可读性非常差，作用域的污染等等问题，JS组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离，避免入侵。&lt;/p&gt;
+&lt;h3 id=&quot;table组件例子实现&quot;&gt;&lt;a href=&quot;#table组件例子实现&quot; class=&quot;headerlink&quot; title=&quot;table组件例子实现&quot;&gt;&lt;/a&gt;table组件例子实现&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;导入jquery&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;创建table.js&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;($)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $.fn.test = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $.fn.test.table = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(opt) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var defaults = &amp;#123;   //默认参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            tableId:&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var options = $.extend(defaults,opt);   //合并参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._add=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            controller._add();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._delete=&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            controller._delete(element);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._update=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var controller = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _add:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                var newTr=&lt;span class=&quot;string&quot;&gt;&#39;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&quot;del&quot;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               $(options.tableId).append(newTr);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _delete:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                $(element).parents(&lt;span class=&quot;string&quot;&gt;&quot;tr&quot;&lt;/span&gt;).remove();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _update:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)(jQuery);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;创建test.html页面&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;html lang=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;meta charset=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;title&amp;gt; Jquery javascript 组件化设计（高级篇）&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;jquery-1.11.0.min.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;table.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;style &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        table&amp;#123;  width: 500px;  text-align: center;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        $(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            //初始化&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            table = $(&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;).test.table(&amp;#123;tableId: &lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             * 删除&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            $(&lt;span class=&quot;string&quot;&gt;&quot;table&quot;&lt;/span&gt;).on(&lt;span class=&quot;string&quot;&gt;&quot;click&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;.del&quot;&lt;/span&gt;,&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               table._delete(this);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         * 增加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            table._add()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;button onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;添加&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;table id=&lt;span class=&quot;string&quot;&gt;&quot;tableId&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;th onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;姓名&amp;lt;/th&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;th&amp;gt;年龄&amp;lt;/th&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&lt;span class=&quot;string&quot;&gt;&quot;del&quot;&lt;/span&gt;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/table&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;浏览器打开test.html，有没有发现代码结构逻辑非常清晰？&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;table组件例子源码&quot;&gt;&lt;a href=&quot;#table组件例子源码&quot; class=&quot;headerlink&quot; title=&quot;table组件例子源码&quot;&gt;&lt;/a&gt;table组件例子源码&lt;/h2&gt;&lt;p&gt;源码地址：&lt;a href=&quot;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&quot;&gt;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&lt;/a&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。
     
     </summary>
     
@@ -118,131 +328,6 @@
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
     
       <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Confluence 使用(二)</title>
-    <link href="https://github.com/2016/05/16/confluence-use/"/>
-    <id>https://github.com/2016/05/16/confluence-use/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-24T06:15:38.471Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Confluence写文章&quot;&gt;&lt;a href=&quot;#Confluence写文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence写文章&quot;&gt;&lt;/a&gt;Confluence写文章&lt;/h2&gt;&lt;p&gt;首先我们需要了解什么是Confluence空间，空间可以理解我们计算机的硬盘，有硬盘才可以装东西，所以文章前我们需要创建空间。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;点击创建空间，选择创建空白空间，下一步&lt;br&gt;&lt;img src=&quot;/img/confluence/25.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;输入空间名标识空间&lt;br&gt;&lt;img src=&quot;/img/confluence/26.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;删除系统自动生成的首页&lt;br&gt;&lt;img src=&quot;/img/confluence/27.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;创建文章，点击创建页面，编写文章，标题是必填的&lt;br&gt;&lt;img src=&quot;/img/confluence/28.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;如果创建到某个分类下，选择文章节点，如下选择“1.confluence使用”，点击创建，编写文章完成后，效果如下：&lt;br&gt;&lt;img src=&quot;/img/confluence/29.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence修改文章&quot;&gt;&lt;a href=&quot;#Confluence修改文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence修改文章&quot;&gt;&lt;/a&gt;Confluence修改文章&lt;/h2&gt;&lt;p&gt;在页面树结构下，选择节点文章，点击编辑。&lt;br&gt;&lt;img src=&quot;/img/confluence/30.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence删除文章&quot;&gt;&lt;a href=&quot;#Confluence删除文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence删除文章&quot;&gt;&lt;/a&gt;Confluence删除文章&lt;/h2&gt;&lt;p&gt; 在页面树结构下，选择节点文章，点击更多，展开操作，点击删除。&lt;br&gt; &lt;img src=&quot;/img/confluence/31.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence备份数据&quot;&gt;&lt;a href=&quot;#Confluence备份数据&quot; class=&quot;headerlink&quot; title=&quot;Confluence备份数据&quot;&gt;&lt;/a&gt;Confluence备份数据&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;点击一般配置，管理员帐号登录&lt;br&gt;&lt;img src=&quot;/img/confluence/32.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;每日备份管理，默认系统开启每天自动备份，备份文件会保存到xx\Atlassian\Application Data\Confluence\backups 目录下&lt;br&gt;&lt;img src=&quot;/img/confluence/33.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;手动备份，点击备份与还原菜单，点击备份，备份文件会保存到xx\Atlassian\Application Data\Confluence\temp 目录下&lt;br&gt;&lt;img src=&quot;/img/confluence/34.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/confluence/35.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence还原恢复数据&quot;&gt;&lt;a href=&quot;#Confluence还原恢复数据&quot; class=&quot;headerlink&quot; title=&quot;Confluence还原恢复数据&quot;&gt;&lt;/a&gt;Confluence还原恢复数据&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;打开数据库安装目录下的xx\MySQL\MySQL Server 5.1\my.ini文件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;default-character-set设置为utf-8&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;default-character-set=utf-8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在最后面增加以下设置编码&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;character-set-server=utf8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;collation-server=utf8_bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;点击备份与还原菜单，还原方式有两种，使用自动备份文件或手动备份文件都可以还原恢复当前备份时间的数据。&lt;br&gt;&lt;img src=&quot;/img/confluence/36.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence添加用户&quot;&gt;&lt;a href=&quot;#Confluence添加用户&quot; class=&quot;headerlink&quot; title=&quot;Confluence添加用户&quot;&gt;&lt;/a&gt;Confluence添加用户&lt;/h2&gt;&lt;p&gt;点击用户菜单，添加用户。&lt;br&gt;&lt;img src=&quot;/img/confluence/37.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence分配权限&quot;&gt;&lt;a href=&quot;#Confluence分配权限&quot; class=&quot;headerlink&quot; title=&quot;Confluence分配权限&quot;&gt;&lt;/a&gt;Confluence分配权限&lt;/h2&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;点击用户安全菜单，编辑&lt;br&gt;&lt;img src=&quot;/img/confluence/38.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;一般会设置匿名可以访问&lt;br&gt;&lt;img src=&quot;/img/confluence/39.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;</content>
-    
-    <summary type="html">
-    
-      这章节主要讲我现在常用到Confluence的功能，如何在Confluence wiki上增删改文章知识共享，Confluence备份数据、还原恢复数据、用户管理、权限管理还有一些常用的管理使用。
-    
-    </summary>
-    
-      <category term="运维" scheme="https://github.com/categories/%E8%BF%90%E7%BB%B4/"/>
-    
-    
-      <category term="Confluence" scheme="https://github.com/tags/Confluence/"/>
-    
-      <category term="运维" scheme="https://github.com/tags/%E8%BF%90%E7%BB%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA打包</title>
-    <link href="https://github.com/2016/05/16/idea-package-jar/"/>
-    <id>https://github.com/2016/05/16/idea-package-jar/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-25T12:39:34.331Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;IDEA打包可执行的JAR包&quot;&gt;&lt;a href=&quot;#IDEA打包可执行的JAR包&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包可执行的JAR包&quot;&gt;&lt;/a&gt;IDEA打包可执行的JAR包&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;创建test 项目，新建test类如下：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class MyTestMain &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[] args) throws Exception &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;hello work&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;点击菜单中选择 File-&amp;gt;project structure&lt;br&gt;&lt;img src=&quot;/img/idea/1.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;选中 Artifacts，点击+选择 JAR-&amp;gt;from modules with dependencies&lt;br&gt;&lt;img src=&quot;/img/idea/2.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;选择打包的模块，要运行的Main class&lt;br&gt;&lt;img src=&quot;/img/idea/3.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;更改Name名称，更改Output directory(输出目录)，勾选Build on make&lt;br&gt;&lt;img src=&quot;/img/idea/4.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;点击编译，在输出目录会看到test.jar的包&lt;br&gt;&lt;img src=&quot;/img/idea/5.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/idea/6.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;运行JAR-main方法&quot;&gt;&lt;a href=&quot;#运行JAR-main方法&quot; class=&quot;headerlink&quot; title=&quot;运行JAR main方法&quot;&gt;&lt;/a&gt;运行JAR main方法&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在Windows控制台进入到输出目录路径&lt;br&gt;&lt;img src=&quot;/img/idea/7.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
-&lt;li&gt;执行main方法&lt;br&gt;&lt;img src=&quot;/img/idea/8.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;a href=&quot;#IDEA打包普通的JAR包&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;/a&gt;IDEA打包普通的JAR包&lt;/h2&gt;&lt;p&gt;与”IDEA打包可执行的JAR包”基本相同，只有在第3点有一点区别，不选择Main Class。&lt;/p&gt;</content>
-    
-    <summary type="html">
-    
-      IDEA打包可执行的JAR包，控制台运行main方法，打包普通JAR包。
-    
-    </summary>
-    
-      <category term="IDEA" scheme="https://github.com/categories/IDEA/"/>
-    
-    
-      <category term="IDEA" scheme="https://github.com/tags/IDEA/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JProfiler 简介与JProfiler安装</title>
-    <link href="https://github.com/2016/05/16/jprofiler-introduce-install/"/>
-    <id>https://github.com/2016/05/16/jprofiler-introduce-install/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-20T09:06:02.518Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
-    
-    <summary type="html">
-    
-      JProfiler强大的性能优化工具，可以
-    
-    </summary>
-    
-      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
-    
-      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
-    
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
   </entry>
   
@@ -314,91 +399,127 @@
   </entry>
   
   <entry>
-    <title>Jquery,javascript常用方法与特殊场景使用的方法</title>
-    <link href="https://github.com/2016/05/16/jquery/"/>
-    <id>https://github.com/2016/05/16/jquery/</id>
+    <title>IDEA下打包JAr</title>
+    <link href="https://github.com/2016/05/16/idea-package-jar/"/>
+    <id>https://github.com/2016/05/16/idea-package-jar/</id>
     <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-25T05:13:49.888Z</updated>
+    <updated>2016-05-25T12:53:42.847Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;tr&gt;&lt;br&gt;    &lt;td&gt;&lt;br&gt;        欢迎转载，评论，阅读，或者可以提出你们宝贵的建议，你们的评论建议支持，让我更有信心继续分享技术经验心得，转载请保留原文链接及作者，谢谢。&lt;br&gt;    &lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
-
-&lt;h2 id=&quot;JS&quot;&gt;&lt;a href=&quot;#JS&quot; class=&quot;headerlink&quot; title=&quot;JS&quot;&gt;&lt;/a&gt;JS&lt;/h2&gt;&lt;h3 id=&quot;调试&quot;&gt;&lt;a href=&quot;#调试&quot; class=&quot;headerlink&quot; title=&quot;调试&quot;&gt;&lt;/a&gt;调试&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;常用到的,浏览器控制台打印输出&lt;br&gt;console.log(“”);&lt;/li&gt;
+&lt;h2 id=&quot;IDEA打包可执行的JAR包&quot;&gt;&lt;a href=&quot;#IDEA打包可执行的JAR包&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包可执行的JAR包&quot;&gt;&lt;/a&gt;IDEA打包可执行的JAR包&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;创建test 项目，新建test类如下：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;选择器&quot;&gt;&lt;a href=&quot;#选择器&quot; class=&quot;headerlink&quot; title=&quot;选择器&quot;&gt;&lt;/a&gt;选择器&lt;/h3&gt;&lt;p&gt;   ID选择器：$(“#id”)&lt;br&gt;   class选择器：$(“.class”)&lt;br&gt;   父选择器：$(this).parents(“ul”)&lt;br&gt;   同辈选择器：$(this).siblings(“li”)&lt;br&gt;   子选择器：$(this).children(“li”)&lt;/p&gt;
-&lt;h3 id=&quot;操作元素&quot;&gt;&lt;a href=&quot;#操作元素&quot; class=&quot;headerlink&quot; title=&quot;操作元素&quot;&gt;&lt;/a&gt;操作元素&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;循环查询元素&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$($(this).find(&lt;span class=&quot;string&quot;&gt;&quot;li&quot;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console.log((this).html();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;追加元素&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$($(this).append(html);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;移除class&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).removeClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;增加class&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).addClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;获取属性值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var id = $(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;设置属性值&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;，value);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;常用的判断&quot;&gt;&lt;a href=&quot;#常用的判断&quot; class=&quot;headerlink&quot; title=&quot;常用的判断&quot;&gt;&lt;/a&gt;常用的判断&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;判断元素是否隐藏&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:hidden&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;checkbox是否选中&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;#checkboxId&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:checked&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;事件绑定&quot;&gt;&lt;a href=&quot;#事件绑定&quot; class=&quot;headerlink&quot; title=&quot;事件绑定&quot;&gt;&lt;/a&gt;事件绑定&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;select标签绑定事件&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;.selected&quot;&lt;/span&gt;).change(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  )&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;常用设置&quot;&gt;&lt;a href=&quot;#常用设置&quot; class=&quot;headerlink&quot; title=&quot;常用设置&quot;&gt;&lt;/a&gt;常用设置&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;设置是否禁用disabled Button&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;button &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;submit&quot;&lt;/span&gt; disabled=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; id=&lt;span class=&quot;string&quot;&gt;&quot;buttonId&quot;&lt;/span&gt; value=&lt;span class=&quot;string&quot;&gt;&quot;Submit&quot;&lt;/span&gt; &amp;gt;确定&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var isCheck=&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(isCheck)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   $(&lt;span class=&quot;string&quot;&gt;&quot;#buttonId&quot;&lt;/span&gt;).attr(&lt;span class=&quot;string&quot;&gt;&quot;disabled&quot;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   $(&lt;span class=&quot;string&quot;&gt;&quot;#buttonId&quot;&lt;/span&gt;).attr(&lt;span class=&quot;string&quot;&gt;&quot;disabled&quot;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;对象的创建&quot;&gt;&lt;a href=&quot;#对象的创建&quot; class=&quot;headerlink&quot; title=&quot;对象的创建&quot;&gt;&lt;/a&gt;对象的创建&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var id=123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var name=&lt;span class=&quot;string&quot;&gt;&quot;test&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var person = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                id: id,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                name: name,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;获取所有输入框、下拉框、单选的值&quot;&gt;&lt;a href=&quot;#获取所有输入框、下拉框、单选的值&quot; class=&quot;headerlink&quot; title=&quot;获取所有输入框、下拉框、单选的值&quot;&gt;&lt;/a&gt;获取所有输入框、下拉框、单选的值&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;#id&quot;&lt;/span&gt;).find(&lt;span class=&quot;string&quot;&gt;&#39;input[name]&#39;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;	//获取输入框的值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    console.log((this).val());&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(scope.imallSearchParamId).find(&lt;span class=&quot;string&quot;&gt;&#39;select[name]&#39;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;  //获取下拉框的值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   console.log((this).val();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$(scope.imallSearchParamId).find(&lt;span class=&quot;string&quot;&gt;&quot;input:radio:checked&quot;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123; //获取单选的值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     console.log((this).val();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;序列化&quot;&gt;&lt;a href=&quot;#序列化&quot; class=&quot;headerlink&quot; title=&quot;序列化&quot;&gt;&lt;/a&gt;序列化&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;序列化对象&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj = JSON.stringify(orderObj);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;序列化form表单对象&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var formObj = $(&lt;span class=&quot;string&quot;&gt;&quot;#ticketOrder&quot;&lt;/span&gt;).serialize();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;请求方式&quot;&gt;&lt;a href=&quot;#请求方式&quot; class=&quot;headerlink&quot; title=&quot;请求方式&quot;&gt;&lt;/a&gt;请求方式&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;ajax json提交方式 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var form = $(&lt;span class=&quot;string&quot;&gt;&quot;#form&quot;&lt;/span&gt;).serialize();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.ajaxSettings[&lt;span class=&quot;string&quot;&gt;&#39;contentType&#39;&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&quot;application/x-www-form-urlencoded; charset=utf-8&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.ajax(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;POST&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   data: form,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   url: pageParam.ctx + &lt;span class=&quot;string&quot;&gt;&quot;/tickets/submitOrder.json&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   success:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(data)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   error: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (data) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (XMLHttpRequest.status == 500) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           var result = &lt;span class=&quot;built_in&quot;&gt;eval&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;(&quot;&lt;/span&gt; + XMLHttpRequest.responseText + &lt;span class=&quot;string&quot;&gt;&quot;)&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;           alert(result.jsonError.errorText);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;   &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;/ul&gt;</content>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class MyTestMain &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[] args) throws Exception &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;hello work&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;点击菜单中选择 File-&amp;gt;project structure&lt;br&gt;&lt;img src=&quot;/img/idea/1.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;选中 Artifacts，点击+选择 JAR-&amp;gt;from modules with dependencies&lt;br&gt;&lt;img src=&quot;/img/idea/2.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;选择打包的模块，要运行的Main class&lt;br&gt;&lt;img src=&quot;/img/idea/3.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;更改Name名称，更改Output directory(输出目录)，勾选Build on make&lt;br&gt;&lt;img src=&quot;/img/idea/4.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;点击编译，在输出目录会看到test.jar的包&lt;br&gt;&lt;img src=&quot;/img/idea/5.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/idea/6.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;运行JAR-main方法&quot;&gt;&lt;a href=&quot;#运行JAR-main方法&quot; class=&quot;headerlink&quot; title=&quot;运行JAR main方法&quot;&gt;&lt;/a&gt;运行JAR main方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在Windows控制台进入到输出目录路径&lt;br&gt;&lt;img src=&quot;/img/idea/7.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
+&lt;li&gt;执行main方法&lt;br&gt;&lt;img src=&quot;/img/idea/8.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;a href=&quot;#IDEA打包普通的JAR包&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;/a&gt;IDEA打包普通的JAR包&lt;/h2&gt;&lt;p&gt;与”IDEA打包可执行的JAR包”基本相同，只有在第3点有一点区别，不选择Main Class。&lt;/p&gt;</content>
     
     <summary type="html">
     
-      Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来
+      在IDEA下打包可执行的JAR包，控制台运行main方法，打包普通JAR包。
     
     </summary>
     
-      <category term="Jquery" scheme="https://github.com/categories/Jquery/"/>
-    
-      <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
-    
-      <category term="工具" scheme="https://github.com/categories/Jquery/javascript/%E5%B7%A5%E5%85%B7/"/>
+      <category term="IDEA" scheme="https://github.com/categories/IDEA/"/>
     
     
-      <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
+      <category term="IDEA" scheme="https://github.com/tags/IDEA/"/>
     
-      <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+  </entry>
+  
+  <entry>
+    <title>Confluence 使用(二)</title>
+    <link href="https://github.com/2016/05/16/confluence-use/"/>
+    <id>https://github.com/2016/05/16/confluence-use/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-24T06:15:38.471Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Confluence写文章&quot;&gt;&lt;a href=&quot;#Confluence写文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence写文章&quot;&gt;&lt;/a&gt;Confluence写文章&lt;/h2&gt;&lt;p&gt;首先我们需要了解什么是Confluence空间，空间可以理解我们计算机的硬盘，有硬盘才可以装东西，所以文章前我们需要创建空间。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击创建空间，选择创建空白空间，下一步&lt;br&gt;&lt;img src=&quot;/img/confluence/25.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;输入空间名标识空间&lt;br&gt;&lt;img src=&quot;/img/confluence/26.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;删除系统自动生成的首页&lt;br&gt;&lt;img src=&quot;/img/confluence/27.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;创建文章，点击创建页面，编写文章，标题是必填的&lt;br&gt;&lt;img src=&quot;/img/confluence/28.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果创建到某个分类下，选择文章节点，如下选择“1.confluence使用”，点击创建，编写文章完成后，效果如下：&lt;br&gt;&lt;img src=&quot;/img/confluence/29.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Confluence修改文章&quot;&gt;&lt;a href=&quot;#Confluence修改文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence修改文章&quot;&gt;&lt;/a&gt;Confluence修改文章&lt;/h2&gt;&lt;p&gt;在页面树结构下，选择节点文章，点击编辑。&lt;br&gt;&lt;img src=&quot;/img/confluence/30.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Confluence删除文章&quot;&gt;&lt;a href=&quot;#Confluence删除文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence删除文章&quot;&gt;&lt;/a&gt;Confluence删除文章&lt;/h2&gt;&lt;p&gt; 在页面树结构下，选择节点文章，点击更多，展开操作，点击删除。&lt;br&gt; &lt;img src=&quot;/img/confluence/31.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Confluence备份数据&quot;&gt;&lt;a href=&quot;#Confluence备份数据&quot; class=&quot;headerlink&quot; title=&quot;Confluence备份数据&quot;&gt;&lt;/a&gt;Confluence备份数据&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;点击一般配置，管理员帐号登录&lt;br&gt;&lt;img src=&quot;/img/confluence/32.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;每日备份管理，默认系统开启每天自动备份，备份文件会保存到xx\Atlassian\Application Data\Confluence\backups 目录下&lt;br&gt;&lt;img src=&quot;/img/confluence/33.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;手动备份，点击备份与还原菜单，点击备份，备份文件会保存到xx\Atlassian\Application Data\Confluence\temp 目录下&lt;br&gt;&lt;img src=&quot;/img/confluence/34.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/confluence/35.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Confluence还原恢复数据&quot;&gt;&lt;a href=&quot;#Confluence还原恢复数据&quot; class=&quot;headerlink&quot; title=&quot;Confluence还原恢复数据&quot;&gt;&lt;/a&gt;Confluence还原恢复数据&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开数据库安装目录下的xx\MySQL\MySQL Server 5.1\my.ini文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;default-character-set设置为utf-8&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;default-character-set=utf-8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在最后面增加以下设置编码&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;character-set-server=utf8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;collation-server=utf8_bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击备份与还原菜单，还原方式有两种，使用自动备份文件或手动备份文件都可以还原恢复当前备份时间的数据。&lt;br&gt;&lt;img src=&quot;/img/confluence/36.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Confluence添加用户&quot;&gt;&lt;a href=&quot;#Confluence添加用户&quot; class=&quot;headerlink&quot; title=&quot;Confluence添加用户&quot;&gt;&lt;/a&gt;Confluence添加用户&lt;/h2&gt;&lt;p&gt;点击用户菜单，添加用户。&lt;br&gt;&lt;img src=&quot;/img/confluence/37.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Confluence分配权限&quot;&gt;&lt;a href=&quot;#Confluence分配权限&quot; class=&quot;headerlink&quot; title=&quot;Confluence分配权限&quot;&gt;&lt;/a&gt;Confluence分配权限&lt;/h2&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;点击用户安全菜单，编辑&lt;br&gt;&lt;img src=&quot;/img/confluence/38.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;一般会设置匿名可以访问&lt;br&gt;&lt;img src=&quot;/img/confluence/39.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
+&lt;/ol&gt;</content>
+    
+    <summary type="html">
+    
+      这章节主要讲我现在常用到Confluence的功能，如何在Confluence wiki上增删改文章知识共享，Confluence备份数据、还原恢复数据、用户管理、权限管理还有一些常用的管理使用。
+    
+    </summary>
+    
+      <category term="运维" scheme="https://github.com/categories/%E8%BF%90%E7%BB%B4/"/>
+    
+    
+      <category term="Confluence" scheme="https://github.com/tags/Confluence/"/>
+    
+      <category term="运维" scheme="https://github.com/tags/%E8%BF%90%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JProfiler 简介与JProfiler安装</title>
+    <link href="https://github.com/2016/05/16/jprofiler-introduce-install/"/>
+    <id>https://github.com/2016/05/16/jprofiler-introduce-install/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-20T09:06:02.518Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      JProfiler强大的性能优化工具，可以
+    
+    </summary>
+    
+      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
+    
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
   </entry>
   
