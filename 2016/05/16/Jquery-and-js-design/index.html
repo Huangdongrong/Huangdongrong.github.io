@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://github.com/2016/05/16/Jquery-and-js-design/index.html">
 <meta property="og:site_name" content="Donie">
 <meta property="og:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
-<meta property="og:updated_time" content="2016-05-26T09:13:59.314Z">
+<meta property="og:updated_time" content="2016-05-27T04:32:03.849Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery 组件化设计（高级篇）">
 <meta name="twitter:description" content="我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。">
@@ -303,11 +303,11 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">(<span class="keyword">function</span>($)&#123;</span><br><span class="line">    $.fn.test = <span class="function"><span class="title">function</span></span>()&#123;&#125;;</span><br><span class="line">    $.fn.test.table = <span class="keyword">function</span>(opt) &#123;</span><br><span class="line">        var defaults = &#123;   //默认参数</span><br><span class="line">            tableId:<span class="string">"#tableId"</span>,</span><br><span class="line">        &#125;;</span><br><span class="line">        var options = $.extend(defaults,opt);   //合并参数</span><br><span class="line"></span><br><span class="line">        this._add=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            controller._add();</span><br><span class="line">        &#125;;</span><br><span class="line">        this._delete=<span class="keyword">function</span>(element)&#123;</span><br><span class="line">            controller._delete(element);</span><br><span class="line">        &#125;;</span><br><span class="line">        this._update=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        var controller = &#123;</span><br><span class="line">            _add:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">                var newTr=<span class="string">'&lt;tr&gt;&lt;td&gt;小明&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;&lt;button class="del"&gt;删除&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;'</span>;</span><br><span class="line">               $(options.tableId).append(newTr);</span><br><span class="line">            &#125;,</span><br><span class="line">            _delete:<span class="keyword">function</span>(element)&#123;</span><br><span class="line">                $(element).parents(<span class="string">"tr"</span>).remove();</span><br><span class="line">            &#125;,</span><br><span class="line">            _update:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="built_in">return</span> this;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)(jQuery);</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>创建test.html页面</p>
+<li>创建test.html页面</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt; Jquery javascript 组件化设计（高级篇）&lt;/title&gt;</span><br><span class="line">    &lt;script src=<span class="string">"jquery-1.11.0.min.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=<span class="string">"table.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">        table&#123;  width: 500px;  text-align: center;  &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">        $(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">            //初始化</span><br><span class="line">            table = $(<span class="string">"#tableId"</span>).test.table(&#123;tableId: <span class="string">"#tableId"</span>&#125;);</span><br><span class="line"></span><br><span class="line">            /**</span><br><span class="line">             * 删除</span><br><span class="line">             */</span><br><span class="line">            $(<span class="string">"table"</span>).on(<span class="string">"click"</span>,<span class="string">".del"</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">               table._delete(this);</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;);</span><br><span class="line">        /**</span><br><span class="line">         * 增加</span><br><span class="line">         */</span><br><span class="line">        <span class="keyword">function</span> <span class="function"><span class="title">add</span></span>()&#123;</span><br><span class="line">            table._add()</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;button onclick=<span class="string">"add()"</span>&gt;添加&lt;/button&gt;</span><br><span class="line">    &lt;table id=<span class="string">"tableId"</span>&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;th onclick=<span class="string">"add()"</span>&gt;姓名&lt;/th&gt;</span><br><span class="line">            &lt;th&gt;年龄&lt;/th&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">        &lt;tr&gt;&lt;td&gt;小明&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;td&gt;&lt;button class=<span class="string">"del"</span>&gt;删除&lt;/button&gt;&lt;/td&gt;&lt;/tr&gt;</span><br><span class="line">    &lt;/table&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>浏览器打开test.html，有没有发现代码结构逻辑非常清晰？</p>
-</li>
+<ul>
+<li>浏览器打开test.html，有没有发现代码结构逻辑非常清晰？</li>
 </ul>
 <h2 id="table组件例子源码"><a href="#table组件例子源码" class="headerlink" title="table组件例子源码"></a>table组件例子源码</h2><p>源码地址：<a href="https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test">https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test</a></p>
       
@@ -320,7 +320,7 @@
         <p><span>本文标题:</span><a href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-26, 17:13:59</p>
+        <p><span>最后更新:</span>2016-05-27, 12:32:03</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/16/Jquery-and-js-design/" title="Jquery 组件化设计（高级篇）">https://github.com/2016/05/16/Jquery-and-js-design/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/Jquery-and-js-design/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -336,15 +336,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/jquery/">
-                    Jquery,javascript常用方法与特殊场景使用的方法
+                <a href="/2016/05/16/jmeter-javacode-test/">
+                    Jmeter测试java请求
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/16/jmeter-javacode-test/">
-                    Jmeter测试java请求
+                <a href="/2016/05/16/jprofiler-introduce-install/">
+                    JProfiler 简介与JProfiler安装
                 </a>
             </div>
         
@@ -438,7 +438,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/jquery/" title="上一篇: Jquery,javascript常用方法与特殊场景使用的方法">
+            <a href="/2016/05/16/jmeter-javacode-test/" title="上一篇: Jmeter测试java请求">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -446,13 +446,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/16/jmeter-javacode-test/" title="下一篇: Jmeter测试java请求">
+            <a href="/2016/05/16/jprofiler-introduce-install/" title="下一篇: JProfiler 简介与JProfiler安装">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jprofiler-introduce-install/">JProfiler 简介与JProfiler安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/hello-world/">Hello World</a></li></ul>
 
 
 
