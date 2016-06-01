@@ -13,13 +13,14 @@
 <meta property="og:description" content="在IDEA下打包可执行的JAR包，控制台运行main方法，打包普通JAR包。">
 <meta property="og:image" content="https://github.com/img/idea/1.png">
 <meta property="og:image" content="https://github.com/img/idea/2.png">
-<meta property="og:image" content="https://github.com/img/idea/3.png">
+<meta property="og:image" content="https://github.com/img/idea/03.jpg">
 <meta property="og:image" content="https://github.com/img/idea/4.png">
 <meta property="og:image" content="https://github.com/img/idea/5.png">
 <meta property="og:image" content="https://github.com/img/idea/6.png">
 <meta property="og:image" content="https://github.com/img/idea/7.png">
 <meta property="og:image" content="https://github.com/img/idea/8.png">
-<meta property="og:updated_time" content="2016-05-27T04:40:12.131Z">
+<meta property="og:image" content="https://github.com/img/idea/3.png">
+<meta property="og:updated_time" content="2016-06-01T11:03:32.439Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IDEA下打包JAr">
 <meta name="twitter:description" content="在IDEA下打包可执行的JAR包，控制台运行main方法，打包普通JAR包。">
@@ -303,14 +304,14 @@
       
           
         <a id="more"></a>
-<h2 id="IDEA打包可执行的JAR包"><a href="#IDEA打包可执行的JAR包" class="headerlink" title="IDEA打包可执行的JAR包"></a>IDEA打包可执行的JAR包</h2><ul>
+<h2 id="IDEA打包可执行的JAR包-方式一"><a href="#IDEA打包可执行的JAR包-方式一" class="headerlink" title="IDEA打包可执行的JAR包(方式一)"></a>IDEA打包可执行的JAR包(方式一)</h2><ul>
 <li>创建test 项目，新建test类如下：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">package <span class="built_in">test</span>;</span><br><span class="line">public class MyTestMain &#123;</span><br><span class="line">    public static void main(String[] args) throws Exception &#123;</span><br><span class="line">        System.out.println(<span class="string">"hello work"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ol>
 <li>点击菜单中选择 File-&gt;project structure<br><img src="/img/idea/1.png" alt="IDEA打包" title="IDEA打包"></li>
 <li>选中 Artifacts，点击+选择 JAR-&gt;from modules with dependencies<br><img src="/img/idea/2.png" alt="IDEA打包" title="IDEA打包"></li>
-<li>选择打包的模块，要运行的Main class<br><img src="/img/idea/3.png" alt="IDEA打包" title="IDEA打包"></li>
+<li>选择打包的模块，要运行的Main class，选择copy to the output … ,*.MF文件一定要放到当前打包项目的resources目录下<br><img src="/img/idea/03.jpg" alt="IDEA打包" title="IDEA打包"></li>
 <li>更改Name名称，更改Output directory(输出目录)，勾选Build on make<br><img src="/img/idea/4.png" alt="IDEA打包" title="IDEA打包"></li>
 <li>点击编译，在输出目录会看到test.jar的包<br><img src="/img/idea/5.png" alt="IDEA打包" title="IDEA打包"><br><img src="/img/idea/6.png" alt="IDEA打包" title="IDEA打包"></li>
 </ol>
@@ -319,6 +320,10 @@
 <li>执行main方法<br><img src="/img/idea/8.png" alt="运行JAR " title="运行JAR "></li>
 </ol>
 <h2 id="IDEA打包普通的JAR包"><a href="#IDEA打包普通的JAR包" class="headerlink" title="IDEA打包普通的JAR包"></a>IDEA打包普通的JAR包</h2><p>与”IDEA打包可执行的JAR包”基本相同，只有在第3点有一点区别，不选择Main Class。</p>
+<h2 id="IDEA打包可执行的JAR包-方式二"><a href="#IDEA打包可执行的JAR包-方式二" class="headerlink" title="IDEA打包可执行的JAR包(方式二)"></a>IDEA打包可执行的JAR包(方式二)</h2><p>与方式一的区别是把所有依赖的class都会打包到一个jar，不适用大项目，项目大不推荐</p>
+<ol>
+<li>就第三点有区别， 选择打包的模块，要运行的Main class<br><img src="/img/idea/3.png" alt="IDEA打包" title="IDEA打包"></li>
+</ol>
       
     </div>
     
@@ -329,7 +334,7 @@
         <p><span>本文标题:</span><a href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2016-05-16, 18:45:37</p>
-        <p><span>最后更新:</span>2016-05-27, 12:40:12</p>
+        <p><span>最后更新:</span>2016-06-01, 19:03:32</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/16/idea-package-jar/" title="IDEA下打包JAr">https://github.com/2016/05/16/idea-package-jar/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/16/idea-package-jar/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -345,8 +350,8 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/16/Jquery-and-js-design/">
-                    Jquery 组件化设计（高级篇）
+                <a href="/2016/05/16/jquery/">
+                    Jquery,javascript常用方法与特殊场景使用的方法
                 </a>
             </div>
         
@@ -364,7 +369,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#IDEA打包可执行的JAR包"><span class="toc-number">1.</span> <span class="toc-text">IDEA打包可执行的JAR包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行JAR-main方法"><span class="toc-number">2.</span> <span class="toc-text">运行JAR main方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IDEA打包普通的JAR包"><span class="toc-number">3.</span> <span class="toc-text">IDEA打包普通的JAR包</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#IDEA打包可执行的JAR包-方式一"><span class="toc-number">1.</span> <span class="toc-text">IDEA打包可执行的JAR包(方式一)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行JAR-main方法"><span class="toc-number">2.</span> <span class="toc-text">运行JAR main方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IDEA打包普通的JAR包"><span class="toc-number">3.</span> <span class="toc-text">IDEA打包普通的JAR包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IDEA打包可执行的JAR包-方式二"><span class="toc-number">4.</span> <span class="toc-text">IDEA打包可执行的JAR包(方式二)</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -447,7 +452,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/16/Jquery-and-js-design/" title="上一篇: Jquery 组件化设计（高级篇）">
+            <a href="/2016/05/16/jquery/" title="上一篇: Jquery,javascript常用方法与特殊场景使用的方法">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -461,7 +466,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/30/java-concurrent-test/">java并发测试例子</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/jprofiler-introduce-install/">JProfiler简介与JProfiler安装并集成IDEA(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/30/java-concurrent-test/">java并发测试例子</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/jprofiler-introduce-install/">JProfiler简介与JProfiler安装并集成IDEA(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-start/">angular-start</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-Interceptor/">angular-Interceptor</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-mvc-design/">angular-mvc-design</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/angular-router/">angular-router</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAr</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li></ul>
 
 
 
