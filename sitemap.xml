@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/2016/05/26/angular-mvc-design/</loc>
+    
+    <lastmod>2016-06-06T10:33:01.439Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/2016/05/26/angular-router/</loc>
+    
+    <lastmod>2016-06-06T10:33:01.435Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/2016/05/26/angular-start/</loc>
+    
+    <lastmod>2016-06-06T10:33:01.419Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/2016/05/26/angular-Interceptor/</loc>
+    
+    <lastmod>2016-06-06T10:33:01.408Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://github.com/2016/06/03/redis/</loc>
     
     <lastmod>2016-06-06T10:04:37.791Z</lastmod>
