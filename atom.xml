@@ -116,52 +116,6 @@
   </entry>
   
   <entry>
-    <title>JProfiler集成IDEA查看Java项目性能（二）</title>
-    <link href="https://github.com/2016/05/27/jprofiler-use/"/>
-    <id>https://github.com/2016/05/27/jprofiler-use/</id>
-    <published>2016-05-27T10:45:37.000Z</published>
-    <updated>2016-05-27T11:07:41.909Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h4 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h4&gt;&lt;p&gt;  JProfiler documentation：&lt;a href=&quot;http://resources.ej-technologies.com/jprofiler/help/doc/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://resources.ej-technologies.com/jprofiler/help/doc/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;JProfiler集成IDEA查看Java项目性能&quot;&gt;&lt;a href=&quot;#JProfiler集成IDEA查看Java项目性能&quot; class=&quot;headerlink&quot; title=&quot;JProfiler集成IDEA查看Java项目性能&quot;&gt;&lt;/a&gt;JProfiler集成IDEA查看Java项目性能&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;创建Test项目，新建Test类，创建main方法&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import java.util.concurrent.*;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Test &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[]args) throws InterruptedException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ExecutorService executorService = Executors.newFixedThreadPool(5);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        final int loopCount=2000000;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        final CountDownLatch latch = new CountDownLatch(loopCount);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (int i=0;i&amp;lt;loopCount;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            executorService.submit(new &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;Runnable&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                @Override&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                public void &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;hello Work&quot;&lt;/span&gt;+latch.getCount());&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    latch.countDown();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        latch.await();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;选中Class， profiler ‘test.main’，第一次运行设置profiler安装目录&lt;br&gt;&lt;img src=&quot;/img/jprofiler/8.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;运行后，选择Instrumentation，可以查看详细的信息&lt;br&gt;&lt;img src=&quot;/img/jprofiler/9.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;查看运行中的main方法内存占用情况，选中Live memory-&amp;gt;All Objects&lt;br&gt;&lt;img src=&quot;/img/jprofiler/10.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;查看CPU占用情况，选中CPU views-&amp;gt;Hot Spots点击按钮&lt;br&gt;&lt;img src=&quot;/img/jprofiler/11.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;运行中的main方法CPU占用情况&lt;br&gt;&lt;img src=&quot;/img/jprofiler/12.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</content>
-    
-    <summary type="html">
-    
-      JProfiler强大的JAVA性能分析工具，可以详细分析线程、包、类、方法、对象占用内存与占用CPU的情况，从分析结果进行性能调优，使用程序达到最优，集成IDEA分析JAVA项目性能情况。
-    
-    </summary>
-    
-      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
-    
-      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
-    
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JProfiler简介与JProfiler安装并集成IDEA(一)</title>
     <link href="https://github.com/2016/05/27/jprofiler-introduce-install/"/>
     <id>https://github.com/2016/05/27/jprofiler-introduce-install/</id>
@@ -210,76 +164,48 @@
   </entry>
   
   <entry>
-    <title>angularJS静态路由与动态路由</title>
-    <link href="https://github.com/2016/05/26/angular-router/"/>
-    <id>https://github.com/2016/05/26/angular-router/</id>
-    <published>2016-05-26T10:45:37.000Z</published>
-    <updated>2016-06-06T10:33:01.435Z</updated>
+    <title>JProfiler集成IDEA查看Java项目性能（二）</title>
+    <link href="https://github.com/2016/05/27/jprofiler-use/"/>
+    <id>https://github.com/2016/05/27/jprofiler-use/</id>
+    <published>2016-05-27T10:45:37.000Z</published>
+    <updated>2016-05-27T11:07:41.909Z</updated>
     
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-      angularJS静态路由与动态路由
-    
-    </summary>
-    
-      <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
-    
-    
-      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
-    
-      <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>angularJS快速入门</title>
-    <link href="https://github.com/2016/05/26/angular-start/"/>
-    <id>https://github.com/2016/05/26/angular-start/</id>
-    <published>2016-05-26T10:45:37.000Z</published>
-    <updated>2016-06-06T10:33:01.419Z</updated>
-    
-    <content type="html"></content>
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h4&gt;&lt;p&gt;  JProfiler documentation：&lt;a href=&quot;http://resources.ej-technologies.com/jprofiler/help/doc/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://resources.ej-technologies.com/jprofiler/help/doc/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;JProfiler集成IDEA查看Java项目性能&quot;&gt;&lt;a href=&quot;#JProfiler集成IDEA查看Java项目性能&quot; class=&quot;headerlink&quot; title=&quot;JProfiler集成IDEA查看Java项目性能&quot;&gt;&lt;/a&gt;JProfiler集成IDEA查看Java项目性能&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;创建Test项目，新建Test类，创建main方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import java.util.concurrent.*;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Test &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[]args) throws InterruptedException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ExecutorService executorService = Executors.newFixedThreadPool(5);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        final int loopCount=2000000;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        final CountDownLatch latch = new CountDownLatch(loopCount);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (int i=0;i&amp;lt;loopCount;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            executorService.submit(new &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;Runnable&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                @Override&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                public void &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;run&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;hello Work&quot;&lt;/span&gt;+latch.getCount());&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    latch.countDown();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        latch.await();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;选中Class， profiler ‘test.main’，第一次运行设置profiler安装目录&lt;br&gt;&lt;img src=&quot;/img/jprofiler/8.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;运行后，选择Instrumentation，可以查看详细的信息&lt;br&gt;&lt;img src=&quot;/img/jprofiler/9.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看运行中的main方法内存占用情况，选中Live memory-&amp;gt;All Objects&lt;br&gt;&lt;img src=&quot;/img/jprofiler/10.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看CPU占用情况，选中CPU views-&amp;gt;Hot Spots点击按钮&lt;br&gt;&lt;img src=&quot;/img/jprofiler/11.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;运行中的main方法CPU占用情况&lt;br&gt;&lt;img src=&quot;/img/jprofiler/12.png&quot; alt=&quot;JProfiler使用&quot; title=&quot;JProfiler使用&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content>
     
     <summary type="html">
     
-      angularJS快速入门
+      JProfiler强大的JAVA性能分析工具，可以详细分析线程、包、类、方法、对象占用内存与占用CPU的情况，从分析结果进行性能调优，使用程序达到最优，集成IDEA分析JAVA项目性能情况。
     
     </summary>
     
-      <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
+      <category term="性能调优" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+      <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
     
-  </entry>
-  
-  <entry>
-    <title>angularJS 拦截器</title>
-    <link href="https://github.com/2016/05/26/angular-Interceptor/"/>
-    <id>https://github.com/2016/05/26/angular-Interceptor/</id>
-    <published>2016-05-26T10:45:37.000Z</published>
-    <updated>2016-06-06T10:33:01.408Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-      angularJS 拦截器。
-    
-    </summary>
-    
-      <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
-    
-    
-      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
   </entry>
   
@@ -301,11 +227,37 @@
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
     
+  </entry>
+  
+  <entry>
+    <title>angularJS静态路由与动态路由</title>
+    <link href="https://github.com/2016/05/26/angular-router/"/>
+    <id>https://github.com/2016/05/26/angular-router/</id>
+    <published>2016-05-26T10:45:37.000Z</published>
+    <updated>2016-06-06T10:33:01.435Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+      angularJS静态路由与动态路由
+    
+    </summary>
+    
+      <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
+    
+    
       <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
+    
+      <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
     
   </entry>
   
@@ -343,6 +295,123 @@
       <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
       <category term="jvisualvm" scheme="https://github.com/tags/jvisualvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>angularJS 拦截器</title>
+    <link href="https://github.com/2016/05/26/angular-Interceptor/"/>
+    <id>https://github.com/2016/05/26/angular-Interceptor/</id>
+    <published>2016-05-26T10:45:37.000Z</published>
+    <updated>2016-06-06T10:33:01.408Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+      angularJS 拦截器。
+    
+    </summary>
+    
+      <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
+    
+    
+      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>angularJS快速入门</title>
+    <link href="https://github.com/2016/05/26/angular-start/"/>
+    <id>https://github.com/2016/05/26/angular-start/</id>
+    <published>2016-05-26T10:45:37.000Z</published>
+    <updated>2016-06-06T10:33:01.419Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+      angularJS快速入门
+    
+    </summary>
+    
+      <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
+    
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
+    
+      <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jmeter测试java请求</title>
+    <link href="https://github.com/2016/05/16/jmeter-javacode-test/"/>
+    <id>https://github.com/2016/05/16/jmeter-javacode-test/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-27T04:40:12.122Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;jmeter官网下载：&lt;a href=&quot;http://jmeter.apache.org/download_jmeter.cgi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jmeter.apache.org/download_jmeter.cgi&lt;/a&gt;&lt;br&gt;jmeter documentation:&lt;a href=&quot;http://jmeter.apache.org/usermanual/get-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jmeter.apache.org/usermanual/get-started.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Windows下安装Jmeter&quot;&gt;&lt;a href=&quot;#Windows下安装Jmeter&quot; class=&quot;headerlink&quot; title=&quot;Windows下安装Jmeter&quot;&gt;&lt;/a&gt;Windows下安装Jmeter&lt;/h2&gt;&lt;p&gt;在Jmeter官网下载zip压缩包，将它解压出来就可以了。&lt;/p&gt;
+&lt;h2 id=&quot;创建Jmeter测试项目&quot;&gt;&lt;a href=&quot;#创建Jmeter测试项目&quot; class=&quot;headerlink&quot; title=&quot;创建Jmeter测试项目&quot;&gt;&lt;/a&gt;创建Jmeter测试项目&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;创建Java项目，名为test项目&lt;/li&gt;
+&lt;li&gt;引用 jmeter E:\developSoft2\apache-jmeter-2.13\lib与E:\developSoft2\apache-jmeter-2.13\lib\ext下的jar包&lt;/li&gt;
+&lt;li&gt;创建Services&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Services &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static String Test(String arg)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; arg;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;创建Client&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.config.Arguments;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.samplers.SampleResult;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Client extends AbstractJavaSamplerClient &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    private static long start = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    private static long end = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * 执行前，初始化代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public void setupTest(JavaSamplerContext arg0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 开始时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        start = System.currentTimeMillis();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * 执行runTest()方法后会调用此方法.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public void teardownTest(JavaSamplerContext arg0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 结束时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        end = System.currentTimeMillis();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 总体耗时&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.err.println(&lt;span class=&quot;string&quot;&gt;&quot;total time:&quot;&lt;/span&gt; + (end - start) / 1000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * JMeter界面中可手工输入参数,代码里面通过此方法获取&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public Arguments &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;getDefaultParameters&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Arguments args = new Arguments();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; args;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * JMeter测试用例入口&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    @Override&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public SampleResult runTest(JavaSamplerContext arg0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        SampleResult sr = new SampleResult();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        try &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            // 开始&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sr.sampleStart();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            // 业务代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            String result = Services.Test(&lt;span class=&quot;string&quot;&gt;&quot;Hello Work!&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sr.setSuccessful(&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            // 结束&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sr.sampleEnd();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; catch (Exception e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            e.printStackTrace();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; sr;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;test项目打包&lt;br&gt;将test项目打包打成JAR,如果你是用IDEA打包，可以参考我这篇文章：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;Jmeter测试java请求&quot;&gt;&lt;a href=&quot;#Jmeter测试java请求&quot; class=&quot;headerlink&quot; title=&quot;Jmeter测试java请求&quot;&gt;&lt;/a&gt;Jmeter测试java请求&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;将打包好的test jar包放到，xx:\apache-jmeter-2.13\lib\ext 目录下&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果有依赖的JAR包，放到xx:\apache-jmeter-2.13\lib\ 目录下&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;点击运行xx:\apache-jmeter-2.13\bin\jmeter.bat文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加线程组，选中测试计划右击，添加-&amp;gt;Threads(Users)-&amp;gt;线程组&lt;br&gt;&lt;img src=&quot;/img/jmeter/1.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加java请求，选中线程组右击，添加-&amp;gt;Sampler-&amp;gt;Java请求&lt;br&gt;&lt;img src=&quot;/img/jmeter/2.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;选择要测试的类&lt;br&gt;&lt;img src=&quot;/img/jmeter/3.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加监听器分析结果，选中Java请求右击，添加-&amp;gt;监听器-&amp;gt;聚合报告&lt;br&gt;&lt;img src=&quot;/img/jmeter/4.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;启动&lt;br&gt;&lt;img src=&quot;/img/jmeter/5.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;保存测试脚本，选择是，输入测试脚本名称保存&lt;br&gt;&lt;img src=&quot;/img/jmeter/6.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/jmeter/7.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不设置线程数与调用次数没什么效果，设置线程数为5线程，调用次数30万&lt;br&gt;&lt;img src=&quot;/img/jmeter/8.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;分析结果&lt;br&gt;Samples：调用总数150万&lt;br&gt;Throughput：吞吐量，并发5客户端每秒完成的请求数最高大达357653.8&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Average ：每个请求的平均响应时间&lt;br&gt;Median ：中值，即50%请求的平均响应时间&lt;br&gt;90%Line ：90%请求的响应时间&lt;br&gt;Min ：最小响应时间 ，Max ：最大的响应时间&lt;br&gt;Error% ：错误响应的概率。即无法响应的概率&lt;br&gt;KB/Sec ：每秒从服务器端接收到的数据量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/jmeter/9.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      Windows 下 安装Jmeter,创建java例子Jmeter测试项目，在Jmeter下测试java请求,测试性能、并发量、吞吐量分析结果。
+    
+    </summary>
+    
+      <category term="Jmeter" scheme="https://github.com/categories/Jmeter/"/>
+    
+      <category term="性能测试" scheme="https://github.com/categories/Jmeter/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="性能测试" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -435,75 +504,6 @@
       <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
     
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jmeter测试java请求</title>
-    <link href="https://github.com/2016/05/16/jmeter-javacode-test/"/>
-    <id>https://github.com/2016/05/16/jmeter-javacode-test/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-27T04:40:12.122Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;jmeter官网下载：&lt;a href=&quot;http://jmeter.apache.org/download_jmeter.cgi&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jmeter.apache.org/download_jmeter.cgi&lt;/a&gt;&lt;br&gt;jmeter documentation:&lt;a href=&quot;http://jmeter.apache.org/usermanual/get-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://jmeter.apache.org/usermanual/get-started.html&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Windows下安装Jmeter&quot;&gt;&lt;a href=&quot;#Windows下安装Jmeter&quot; class=&quot;headerlink&quot; title=&quot;Windows下安装Jmeter&quot;&gt;&lt;/a&gt;Windows下安装Jmeter&lt;/h2&gt;&lt;p&gt;在Jmeter官网下载zip压缩包，将它解压出来就可以了。&lt;/p&gt;
-&lt;h2 id=&quot;创建Jmeter测试项目&quot;&gt;&lt;a href=&quot;#创建Jmeter测试项目&quot; class=&quot;headerlink&quot; title=&quot;创建Jmeter测试项目&quot;&gt;&lt;/a&gt;创建Jmeter测试项目&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;创建Java项目，名为test项目&lt;/li&gt;
-&lt;li&gt;引用 jmeter E:\developSoft2\apache-jmeter-2.13\lib与E:\developSoft2\apache-jmeter-2.13\lib\ext下的jar包&lt;/li&gt;
-&lt;li&gt;创建Services&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Services &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static String Test(String arg)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; arg;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;创建Client&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.config.Arguments;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.apache.jmeter.samplers.SampleResult;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Client extends AbstractJavaSamplerClient &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    private static long start = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    private static long end = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * 执行前，初始化代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public void setupTest(JavaSamplerContext arg0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 开始时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        start = System.currentTimeMillis();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * 执行runTest()方法后会调用此方法.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public void teardownTest(JavaSamplerContext arg0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 结束时间&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        end = System.currentTimeMillis();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 总体耗时&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.err.println(&lt;span class=&quot;string&quot;&gt;&quot;total time:&quot;&lt;/span&gt; + (end - start) / 1000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * JMeter界面中可手工输入参数,代码里面通过此方法获取&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public Arguments &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;getDefaultParameters&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Arguments args = new Arguments();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; args;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     * JMeter测试用例入口&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    @Override&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public SampleResult runTest(JavaSamplerContext arg0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        SampleResult sr = new SampleResult();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        try &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            // 开始&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sr.sampleStart();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            // 业务代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            String result = Services.Test(&lt;span class=&quot;string&quot;&gt;&quot;Hello Work!&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sr.setSuccessful(&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            // 结束&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            sr.sampleEnd();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; catch (Exception e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            e.printStackTrace();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; sr;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;test项目打包&lt;br&gt;将test项目打包打成JAR,如果你是用IDEA打包，可以参考我这篇文章：&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;Jmeter测试java请求&quot;&gt;&lt;a href=&quot;#Jmeter测试java请求&quot; class=&quot;headerlink&quot; title=&quot;Jmeter测试java请求&quot;&gt;&lt;/a&gt;Jmeter测试java请求&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;将打包好的test jar包放到，xx:\apache-jmeter-2.13\lib\ext 目录下&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果有依赖的JAR包，放到xx:\apache-jmeter-2.13\lib\ 目录下&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;点击运行xx:\apache-jmeter-2.13\bin\jmeter.bat文件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;添加线程组，选中测试计划右击，添加-&amp;gt;Threads(Users)-&amp;gt;线程组&lt;br&gt;&lt;img src=&quot;/img/jmeter/1.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;添加java请求，选中线程组右击，添加-&amp;gt;Sampler-&amp;gt;Java请求&lt;br&gt;&lt;img src=&quot;/img/jmeter/2.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;选择要测试的类&lt;br&gt;&lt;img src=&quot;/img/jmeter/3.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;添加监听器分析结果，选中Java请求右击，添加-&amp;gt;监听器-&amp;gt;聚合报告&lt;br&gt;&lt;img src=&quot;/img/jmeter/4.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;启动&lt;br&gt;&lt;img src=&quot;/img/jmeter/5.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;保存测试脚本，选择是，输入测试脚本名称保存&lt;br&gt;&lt;img src=&quot;/img/jmeter/6.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/jmeter/7.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不设置线程数与调用次数没什么效果，设置线程数为5线程，调用次数30万&lt;br&gt;&lt;img src=&quot;/img/jmeter/8.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;分析结果&lt;br&gt;Samples：调用总数150万&lt;br&gt;Throughput：吞吐量，并发5客户端每秒完成的请求数最高大达357653.8&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Average ：每个请求的平均响应时间&lt;br&gt;Median ：中值，即50%请求的平均响应时间&lt;br&gt;90%Line ：90%请求的响应时间&lt;br&gt;Min ：最小响应时间 ，Max ：最大的响应时间&lt;br&gt;Error% ：错误响应的概率。即无法响应的概率&lt;br&gt;KB/Sec ：每秒从服务器端接收到的数据量&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/jmeter/9.png&quot; alt=&quot;Jmeter测试&quot; title=&quot;Jmeter测试&quot;&gt;&lt;/p&gt;</content>
-    
-    <summary type="html">
-    
-      Windows 下 安装Jmeter,创建java例子Jmeter测试项目，在Jmeter下测试java请求,测试性能、并发量、吞吐量分析结果。
-    
-    </summary>
-    
-      <category term="Jmeter" scheme="https://github.com/categories/Jmeter/"/>
-    
-      <category term="性能测试" scheme="https://github.com/categories/Jmeter/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
-    
-    
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="性能测试" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -645,11 +645,11 @@
       <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
     
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
