@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-06-03T11:08:02.899Z</updated>
+  <updated>2016-06-06T10:04:37.791Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redis快速入门</title>
+    <link href="https://github.com/2016/06/03/redis/"/>
+    <id>https://github.com/2016/06/03/redis/</id>
+    <published>2016-06-03T10:45:37.000Z</published>
+    <updated>2016-06-06T10:04:37.791Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    
+    <summary type="html">
+    
+      Redis快速入门
+    
+    </summary>
+    
+      <category term="Redis" scheme="https://github.com/categories/Redis/"/>
+    
+    
+      <category term="Redis" scheme="https://github.com/tags/Redis/"/>
+    
+  </entry>
   
   <entry>
     <title>JVM调优分析</title>
@@ -64,22 +86,6 @@
       <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="Netty" scheme="https://github.com/tags/Netty/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://github.com/2016/06/03/redis/"/>
-    <id>https://github.com/2016/06/03/redis/</id>
-    <published>2016-06-03T10:21:59.011Z</published>
-    <updated>2016-06-03T10:21:59.011Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
@@ -147,13 +153,13 @@
       <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
       <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
+    
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
   </entry>
   
@@ -193,13 +199,13 @@
       <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
       <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
+    
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
   </entry>
   
@@ -230,132 +236,58 @@
       <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="jvisualvm" scheme="https://github.com/tags/jvisualvm/"/>
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
       <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://github.com/2016/05/25/angular-start/"/>
-    <id>https://github.com/2016/05/25/angular-start/</id>
-    <published>2016-05-25T12:44:18.950Z</published>
-    <updated>2016-05-25T12:44:18.950Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
+      <category term="jvisualvm" scheme="https://github.com/tags/jvisualvm/"/>
     
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://github.com/2016/05/25/angular-Interceptor/"/>
-    <id>https://github.com/2016/05/25/angular-Interceptor/</id>
-    <published>2016-05-25T12:43:50.091Z</published>
-    <updated>2016-05-25T12:43:50.091Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://github.com/2016/05/25/angular-mvc-design/"/>
-    <id>https://github.com/2016/05/25/angular-mvc-design/</id>
-    <published>2016-05-25T12:43:08.582Z</published>
-    <updated>2016-05-25T12:43:08.582Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://github.com/2016/05/25/angular-router/"/>
-    <id>https://github.com/2016/05/25/angular-router/</id>
-    <published>2016-05-25T12:42:27.685Z</published>
-    <updated>2016-05-25T12:42:27.685Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RPC Dubbo入门</title>
-    <link href="https://github.com/2016/05/16/dubbo-test/"/>
-    <id>https://github.com/2016/05/16/dubbo-test/</id>
+    <title>IDEA下打包JAR</title>
+    <link href="https://github.com/2016/05/16/idea-package-jar/"/>
+    <id>https://github.com/2016/05/16/idea-package-jar/</id>
     <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-06-06T09:53:48.534Z</updated>
+    <updated>2016-06-01T11:08:17.664Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;dubbo documentation：&lt;a href=&quot;http://dubbo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://dubbo.io/&lt;/a&gt;&lt;br&gt;dubbo 源码：&lt;a href=&quot;https://github.com/alibaba/dubbo&quot;&gt;https://github.com/alibaba/dubbo&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;创建服务端&quot;&gt;&lt;a href=&quot;#创建服务端&quot; class=&quot;headerlink&quot; title=&quot;创建服务端&quot;&gt;&lt;/a&gt;创建服务端&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;将所有模块导入IDEA，打开dubbo-demo-provide模块，在 com.alibaba.dubbo.demo.provider目录下创建服务端&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Provider.java&lt;/li&gt;
+&lt;h2 id=&quot;IDEA打包可执行的JAR包-方式一&quot;&gt;&lt;a href=&quot;#IDEA打包可执行的JAR包-方式一&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包可执行的JAR包(方式一)&quot;&gt;&lt;/a&gt;IDEA打包可执行的JAR包(方式一)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;创建test 项目，新建test类如下：&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package com.alibaba.dubbo.demo.provider;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.springframework.context.support.ClassPathXmlApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Provider &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[] args) throws Exception &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] &amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;META-INF/spring/dubbo-demo-provider.xml&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        context.start();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.in.read(); // 为保证服务一直开着，利用输入流的阻塞来模拟&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;创建dubbo-demo-provider.xml并配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?xml version=&lt;span class=&quot;string&quot;&gt;&quot;1.0&quot;&lt;/span&gt; encoding=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!--&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - Copyright 1999-2011 Alibaba Group.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - Licensed under the Apache License, Version 2.0 (the &lt;span class=&quot;string&quot;&gt;&quot;License&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - you may not use this file except &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; compliance with the License.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - You may obtain a copy of the License at&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -      http://www.apache.org/licenses/LICENSE-2.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - Unless required by applicable law or agreed to &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; writing, software&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - distributed under the License is distributed on an &lt;span class=&quot;string&quot;&gt;&quot;AS IS&quot;&lt;/span&gt; BASIS,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - See the License &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the specific language governing permissions and&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - limitations under the License.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;beans xmlns=&lt;span class=&quot;string&quot;&gt;&quot;http://www.springframework.org/schema/beans&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	xmlns:xsi=&lt;span class=&quot;string&quot;&gt;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	xmlns:dubbo=&lt;span class=&quot;string&quot;&gt;&quot;http://code.alibabatech.com/schema/dubbo&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	xsi:schemaLocation=&lt;span class=&quot;string&quot;&gt;&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:application name=&lt;span class=&quot;string&quot;&gt;&quot;hello-world-app&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;!-- 本机 伪集群 测试 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;!--&amp;lt;dubbo:registry  protocol=&lt;span class=&quot;string&quot;&gt;&quot;zookeeper&quot;&lt;/span&gt;  address=&lt;span class=&quot;string&quot;&gt;&quot;127.0.0.1:2181&quot;&lt;/span&gt;  /&amp;gt;--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:registry protocol=&lt;span class=&quot;string&quot;&gt;&quot;multicast&quot;&lt;/span&gt; address=&lt;span class=&quot;string&quot;&gt;&quot;224.5.6.7:1234&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:protocol name=&lt;span class=&quot;string&quot;&gt;&quot;dubbo&quot;&lt;/span&gt; port=&lt;span class=&quot;string&quot;&gt;&quot;20880&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:service interface=&lt;span class=&quot;string&quot;&gt;&quot;com.alibaba.dubbo.demo.DemoService&quot;&lt;/span&gt; ref=&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt; timeout=&lt;span class=&quot;string&quot;&gt;&quot;1200000&quot;&lt;/span&gt; /&amp;gt;       &amp;lt;!-- 和本地bean一样实现服务 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;bean id=&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt; class=&lt;span class=&quot;string&quot;&gt;&quot;com.alibaba.dubbo.demo.provider.DemoServiceImpl&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/beans&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class MyTestMain &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[] args) throws Exception &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;hello work&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ol&gt;
-&lt;li&gt;运行Provider服务端&lt;/li&gt;
+&lt;li&gt;点击菜单中选择 File-&amp;gt;project structure&lt;br&gt;&lt;img src=&quot;/img/idea/1.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;选中 Artifacts，点击+选择 JAR-&amp;gt;from modules with dependencies&lt;br&gt;&lt;img src=&quot;/img/idea/2.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;选择打包的模块，要运行的Main class，选择copy to the output … ,*.MF文件一定要选择放到当前打包项目的resources目录下&lt;br&gt;&lt;img src=&quot;/img/idea/03.jpg&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt; 更改Name名称，更改Output directory(输出目录)，勾选Build on make&lt;br&gt;&lt;img src=&quot;/img/idea/4.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
+&lt;li&gt;点击编译，在输出目录会看到test.jar的包&lt;br&gt;&lt;img src=&quot;/img/idea/5.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/idea/6.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;创建客户端&quot;&gt;&lt;a href=&quot;#创建客户端&quot; class=&quot;headerlink&quot; title=&quot;创建客户端&quot;&gt;&lt;/a&gt;创建客户端&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;打开dubbo-demo-consumer模块，在com.alibaba.dubbo.demo.consumer目录下创建客户端测试&lt;/li&gt;
+&lt;h2 id=&quot;运行JAR-main方法&quot;&gt;&lt;a href=&quot;#运行JAR-main方法&quot; class=&quot;headerlink&quot; title=&quot;运行JAR main方法&quot;&gt;&lt;/a&gt;运行JAR main方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在Windows控制台进入到输出目录路径&lt;br&gt;&lt;img src=&quot;/img/idea/7.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
+&lt;li&gt;执行main方法&lt;br&gt;&lt;img src=&quot;/img/idea/8.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Consumer.java&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package com.alibaba.dubbo.demo.consumer;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import com.alibaba.dubbo.demo.DemoService;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.springframework.context.support.ClassPathXmlApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Created by Administrator on 2016/6/1.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Consumer &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[]args) throws InterruptedException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext( &lt;span class=&quot;string&quot;&gt;&quot;spring/dubbo-demo-consumer.xml&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Thread.sleep(6000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    DemoService demoService = (DemoService) context.getBean(&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt;); //&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    String hello = demoService.sayHello(&lt;span class=&quot;string&quot;&gt;&quot;tom&quot;&lt;/span&gt;); // ִ&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    System.out.println(hello); //&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;创建dubbo-demo-consumer.xml并配置&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package com.alibaba.dubbo.demo.consumer;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import com.alibaba.dubbo.demo.DemoService;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.springframework.context.support.ClassPathXmlApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Consumer &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[]args) throws InterruptedException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext( &lt;span class=&quot;string&quot;&gt;&quot;spring/dubbo-demo-consumer.xml&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Thread.sleep(6000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    DemoService demoService = (DemoService) context.getBean(&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    String hello = demoService.sayHello(&lt;span class=&quot;string&quot;&gt;&quot;tom&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    System.out.println(hello);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;a href=&quot;#IDEA打包普通的JAR包&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;/a&gt;IDEA打包普通的JAR包&lt;/h2&gt;&lt;p&gt;与”IDEA打包可执行的JAR包”基本相同，只有在第3点有一点区别，不选择Main Class。&lt;/p&gt;
+&lt;h2 id=&quot;IDEA打包可执行的JAR包-方式二&quot;&gt;&lt;a href=&quot;#IDEA打包可执行的JAR包-方式二&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包可执行的JAR包(方式二)&quot;&gt;&lt;/a&gt;IDEA打包可执行的JAR包(方式二)&lt;/h2&gt;&lt;p&gt;与方式一的区别是把所有依赖的class都会打包到一个jar，不适用大项目，项目大不推荐&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;运行Consumer main方法测试，调用成功就OK了，按着dubbo开发指南断点，查看源码&lt;/li&gt;
+&lt;li&gt;就第三点有区别， 选择打包的模块，要运行的Main class&lt;br&gt;&lt;img src=&quot;/img/idea/3.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
 &lt;/ol&gt;</content>
     
     <summary type="html">
     
-      如何运行doubbo源码，快速入门，运行示例Demo。
+      在IDEA下打包可执行的JAR包，控制台运行main方法，打包普通JAR包。
     
     </summary>
     
-      <category term="RPC" scheme="https://github.com/categories/RPC/"/>
+      <category term="IDEA" scheme="https://github.com/categories/IDEA/"/>
     
     
-      <category term="RPC" scheme="https://github.com/tags/RPC/"/>
-    
-      <category term="dubbo" scheme="https://github.com/tags/dubbo/"/>
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="IDEA" scheme="https://github.com/tags/IDEA/"/>
     
   </entry>
   
@@ -420,102 +352,11 @@
       <category term="性能测试" scheme="https://github.com/categories/Jmeter/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
       <category term="性能测试" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Jquery 组件化设计（高级篇）</title>
-    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
-    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-27T04:34:26.842Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Jquery-组件化设计&quot;&gt;&lt;a href=&quot;#Jquery-组件化设计&quot; class=&quot;headerlink&quot; title=&quot;Jquery 组件化设计&quot;&gt;&lt;/a&gt;Jquery 组件化设计&lt;/h2&gt;&lt;h3 id=&quot;JS组件化设计目的&quot;&gt;&lt;a href=&quot;#JS组件化设计目的&quot; class=&quot;headerlink&quot; title=&quot;JS组件化设计目的&quot;&gt;&lt;/a&gt;JS组件化设计目的&lt;/h3&gt;&lt;p&gt; 开发大项目中，解决混乱无章，可读性非常差，作用域的污染等等问题，JS组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离，避免入侵。&lt;/p&gt;
-&lt;h3 id=&quot;table组件例子实现&quot;&gt;&lt;a href=&quot;#table组件例子实现&quot; class=&quot;headerlink&quot; title=&quot;table组件例子实现&quot;&gt;&lt;/a&gt;table组件例子实现&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;导入jquery&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;创建table.js&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;($)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $.fn.test = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $.fn.test.table = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(opt) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var defaults = &amp;#123;   //默认参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            tableId:&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var options = $.extend(defaults,opt);   //合并参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._add=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            controller._add();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._delete=&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            controller._delete(element);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._update=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var controller = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _add:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                var newTr=&lt;span class=&quot;string&quot;&gt;&#39;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&quot;del&quot;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               $(options.tableId).append(newTr);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _delete:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                $(element).parents(&lt;span class=&quot;string&quot;&gt;&quot;tr&quot;&lt;/span&gt;).remove();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _update:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)(jQuery);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;创建test.html页面&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;html lang=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;meta charset=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;title&amp;gt; Jquery javascript 组件化设计（高级篇）&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;jquery-1.11.0.min.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;table.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;style &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        table&amp;#123;  width: 500px;  text-align: center;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        $(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            //初始化&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            table = $(&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;).test.table(&amp;#123;tableId: &lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             * 删除&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            $(&lt;span class=&quot;string&quot;&gt;&quot;table&quot;&lt;/span&gt;).on(&lt;span class=&quot;string&quot;&gt;&quot;click&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;.del&quot;&lt;/span&gt;,&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               table._delete(this);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         * 增加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            table._add()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;button onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;添加&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;table id=&lt;span class=&quot;string&quot;&gt;&quot;tableId&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;th onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;姓名&amp;lt;/th&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;th&amp;gt;年龄&amp;lt;/th&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&lt;span class=&quot;string&quot;&gt;&quot;del&quot;&lt;/span&gt;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/table&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;浏览器打开test.html，有没有发现代码结构逻辑非常清晰？&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;table组件例子源码&quot;&gt;&lt;a href=&quot;#table组件例子源码&quot; class=&quot;headerlink&quot; title=&quot;table组件例子源码&quot;&gt;&lt;/a&gt;table组件例子源码&lt;/h2&gt;&lt;p&gt;源码地址：&lt;a href=&quot;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&quot;&gt;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&lt;/a&gt;&lt;/p&gt;</content>
-    
-    <summary type="html">
-    
-      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。
-    
-    </summary>
-    
-      <category term="Jquery" scheme="https://github.com/categories/Jquery/"/>
-    
-      <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
-    
-      <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
-    
-      <category term="javascript" scheme="https://github.com/tags/javascript/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA下打包JAR</title>
-    <link href="https://github.com/2016/05/16/idea-package-jar/"/>
-    <id>https://github.com/2016/05/16/idea-package-jar/</id>
-    <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-06-01T11:08:17.664Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;IDEA打包可执行的JAR包-方式一&quot;&gt;&lt;a href=&quot;#IDEA打包可执行的JAR包-方式一&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包可执行的JAR包(方式一)&quot;&gt;&lt;/a&gt;IDEA打包可执行的JAR包(方式一)&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;创建test 项目，新建test类如下：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class MyTestMain &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[] args) throws Exception &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;hello work&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;点击菜单中选择 File-&amp;gt;project structure&lt;br&gt;&lt;img src=&quot;/img/idea/1.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;选中 Artifacts，点击+选择 JAR-&amp;gt;from modules with dependencies&lt;br&gt;&lt;img src=&quot;/img/idea/2.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;选择打包的模块，要运行的Main class，选择copy to the output … ,*.MF文件一定要选择放到当前打包项目的resources目录下&lt;br&gt;&lt;img src=&quot;/img/idea/03.jpg&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt; 更改Name名称，更改Output directory(输出目录)，勾选Build on make&lt;br&gt;&lt;img src=&quot;/img/idea/4.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;li&gt;点击编译，在输出目录会看到test.jar的包&lt;br&gt;&lt;img src=&quot;/img/idea/5.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/idea/6.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;运行JAR-main方法&quot;&gt;&lt;a href=&quot;#运行JAR-main方法&quot; class=&quot;headerlink&quot; title=&quot;运行JAR main方法&quot;&gt;&lt;/a&gt;运行JAR main方法&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在Windows控制台进入到输出目录路径&lt;br&gt;&lt;img src=&quot;/img/idea/7.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
-&lt;li&gt;执行main方法&lt;br&gt;&lt;img src=&quot;/img/idea/8.png&quot; alt=&quot;运行JAR &quot; title=&quot;运行JAR &quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;a href=&quot;#IDEA打包普通的JAR包&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包普通的JAR包&quot;&gt;&lt;/a&gt;IDEA打包普通的JAR包&lt;/h2&gt;&lt;p&gt;与”IDEA打包可执行的JAR包”基本相同，只有在第3点有一点区别，不选择Main Class。&lt;/p&gt;
-&lt;h2 id=&quot;IDEA打包可执行的JAR包-方式二&quot;&gt;&lt;a href=&quot;#IDEA打包可执行的JAR包-方式二&quot; class=&quot;headerlink&quot; title=&quot;IDEA打包可执行的JAR包(方式二)&quot;&gt;&lt;/a&gt;IDEA打包可执行的JAR包(方式二)&lt;/h2&gt;&lt;p&gt;与方式一的区别是把所有依赖的class都会打包到一个jar，不适用大项目，项目大不推荐&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;就第三点有区别， 选择打包的模块，要运行的Main class&lt;br&gt;&lt;img src=&quot;/img/idea/3.png&quot; alt=&quot;IDEA打包&quot; title=&quot;IDEA打包&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;</content>
-    
-    <summary type="html">
-    
-      在IDEA下打包可执行的JAR包，控制台运行main方法，打包普通JAR包。
-    
-    </summary>
-    
-      <category term="IDEA" scheme="https://github.com/categories/IDEA/"/>
-    
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="IDEA" scheme="https://github.com/tags/IDEA/"/>
     
   </entry>
   
@@ -608,6 +449,107 @@
       <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
     
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RPC Dubbo入门</title>
+    <link href="https://github.com/2016/05/16/dubbo-test/"/>
+    <id>https://github.com/2016/05/16/dubbo-test/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-06-06T09:53:48.534Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;dubbo documentation：&lt;a href=&quot;http://dubbo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://dubbo.io/&lt;/a&gt;&lt;br&gt;dubbo 源码：&lt;a href=&quot;https://github.com/alibaba/dubbo&quot;&gt;https://github.com/alibaba/dubbo&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;创建服务端&quot;&gt;&lt;a href=&quot;#创建服务端&quot; class=&quot;headerlink&quot; title=&quot;创建服务端&quot;&gt;&lt;/a&gt;创建服务端&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;将所有模块导入IDEA，打开dubbo-demo-provide模块，在 com.alibaba.dubbo.demo.provider目录下创建服务端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Provider.java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package com.alibaba.dubbo.demo.provider;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.springframework.context.support.ClassPathXmlApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Provider &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[] args) throws Exception &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] &amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;META-INF/spring/dubbo-demo-provider.xml&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        context.start();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.in.read(); // 为保证服务一直开着，利用输入流的阻塞来模拟&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;创建dubbo-demo-provider.xml并配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?xml version=&lt;span class=&quot;string&quot;&gt;&quot;1.0&quot;&lt;/span&gt; encoding=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!--&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - Copyright 1999-2011 Alibaba Group.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - Licensed under the Apache License, Version 2.0 (the &lt;span class=&quot;string&quot;&gt;&quot;License&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - you may not use this file except &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; compliance with the License.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - You may obtain a copy of the License at&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -      http://www.apache.org/licenses/LICENSE-2.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - Unless required by applicable law or agreed to &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; writing, software&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - distributed under the License is distributed on an &lt;span class=&quot;string&quot;&gt;&quot;AS IS&quot;&lt;/span&gt; BASIS,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - See the License &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; the specific language governing permissions and&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; - limitations under the License.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;beans xmlns=&lt;span class=&quot;string&quot;&gt;&quot;http://www.springframework.org/schema/beans&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	xmlns:xsi=&lt;span class=&quot;string&quot;&gt;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	xmlns:dubbo=&lt;span class=&quot;string&quot;&gt;&quot;http://code.alibabatech.com/schema/dubbo&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	xsi:schemaLocation=&lt;span class=&quot;string&quot;&gt;&quot;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:application name=&lt;span class=&quot;string&quot;&gt;&quot;hello-world-app&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;!-- 本机 伪集群 测试 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;!--&amp;lt;dubbo:registry  protocol=&lt;span class=&quot;string&quot;&gt;&quot;zookeeper&quot;&lt;/span&gt;  address=&lt;span class=&quot;string&quot;&gt;&quot;127.0.0.1:2181&quot;&lt;/span&gt;  /&amp;gt;--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:registry protocol=&lt;span class=&quot;string&quot;&gt;&quot;multicast&quot;&lt;/span&gt; address=&lt;span class=&quot;string&quot;&gt;&quot;224.5.6.7:1234&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:protocol name=&lt;span class=&quot;string&quot;&gt;&quot;dubbo&quot;&lt;/span&gt; port=&lt;span class=&quot;string&quot;&gt;&quot;20880&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;dubbo:service interface=&lt;span class=&quot;string&quot;&gt;&quot;com.alibaba.dubbo.demo.DemoService&quot;&lt;/span&gt; ref=&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt; timeout=&lt;span class=&quot;string&quot;&gt;&quot;1200000&quot;&lt;/span&gt; /&amp;gt;       &amp;lt;!-- 和本地bean一样实现服务 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;lt;bean id=&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt; class=&lt;span class=&quot;string&quot;&gt;&quot;com.alibaba.dubbo.demo.provider.DemoServiceImpl&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/beans&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;运行Provider服务端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;创建客户端&quot;&gt;&lt;a href=&quot;#创建客户端&quot; class=&quot;headerlink&quot; title=&quot;创建客户端&quot;&gt;&lt;/a&gt;创建客户端&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;打开dubbo-demo-consumer模块，在com.alibaba.dubbo.demo.consumer目录下创建客户端测试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Consumer.java&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package com.alibaba.dubbo.demo.consumer;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import com.alibaba.dubbo.demo.DemoService;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.springframework.context.support.ClassPathXmlApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Created by Administrator on 2016/6/1.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Consumer &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[]args) throws InterruptedException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext( &lt;span class=&quot;string&quot;&gt;&quot;spring/dubbo-demo-consumer.xml&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Thread.sleep(6000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    DemoService demoService = (DemoService) context.getBean(&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt;); //&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    String hello = demoService.sayHello(&lt;span class=&quot;string&quot;&gt;&quot;tom&quot;&lt;/span&gt;); // ִ&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    System.out.println(hello); //&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;创建dubbo-demo-consumer.xml并配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;package com.alibaba.dubbo.demo.consumer;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import com.alibaba.dubbo.demo.DemoService;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;import org.springframework.context.support.ClassPathXmlApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;public class Consumer &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    public static void main(String[]args) throws InterruptedException &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext( &lt;span class=&quot;string&quot;&gt;&quot;spring/dubbo-demo-consumer.xml&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Thread.sleep(6000);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    DemoService demoService = (DemoService) context.getBean(&lt;span class=&quot;string&quot;&gt;&quot;demoService&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    String hello = demoService.sayHello(&lt;span class=&quot;string&quot;&gt;&quot;tom&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    System.out.println(hello);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol&gt;
+&lt;li&gt;运行Consumer main方法测试，调用成功就OK了，按着dubbo开发指南断点，查看源码&lt;/li&gt;
+&lt;/ol&gt;</content>
+    
+    <summary type="html">
+    
+      如何运行doubbo源码，快速入门，运行示例Demo。
+    
+    </summary>
+    
+      <category term="RPC" scheme="https://github.com/categories/RPC/"/>
+    
+    
+      <category term="RPC" scheme="https://github.com/tags/RPC/"/>
+    
+      <category term="dubbo" scheme="https://github.com/tags/dubbo/"/>
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jquery 组件化设计（高级篇）</title>
+    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
+    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
+    <published>2016-05-16T10:45:37.000Z</published>
+    <updated>2016-05-27T04:34:26.842Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Jquery-组件化设计&quot;&gt;&lt;a href=&quot;#Jquery-组件化设计&quot; class=&quot;headerlink&quot; title=&quot;Jquery 组件化设计&quot;&gt;&lt;/a&gt;Jquery 组件化设计&lt;/h2&gt;&lt;h3 id=&quot;JS组件化设计目的&quot;&gt;&lt;a href=&quot;#JS组件化设计目的&quot; class=&quot;headerlink&quot; title=&quot;JS组件化设计目的&quot;&gt;&lt;/a&gt;JS组件化设计目的&lt;/h3&gt;&lt;p&gt; 开发大项目中，解决混乱无章，可读性非常差，作用域的污染等等问题，JS组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离，避免入侵。&lt;/p&gt;
+&lt;h3 id=&quot;table组件例子实现&quot;&gt;&lt;a href=&quot;#table组件例子实现&quot; class=&quot;headerlink&quot; title=&quot;table组件例子实现&quot;&gt;&lt;/a&gt;table组件例子实现&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;导入jquery&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;创建table.js&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;($)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $.fn.test = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $.fn.test.table = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(opt) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var defaults = &amp;#123;   //默认参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            tableId:&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var options = $.extend(defaults,opt);   //合并参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._add=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            controller._add();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._delete=&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            controller._delete(element);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        this._update=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        var controller = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _add:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                var newTr=&lt;span class=&quot;string&quot;&gt;&#39;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&quot;del&quot;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               $(options.tableId).append(newTr);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _delete:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                $(element).parents(&lt;span class=&quot;string&quot;&gt;&quot;tr&quot;&lt;/span&gt;).remove();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            _update:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)(jQuery);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;创建test.html页面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;html lang=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;meta charset=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;title&amp;gt; Jquery javascript 组件化设计（高级篇）&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;jquery-1.11.0.min.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;table.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;style &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        table&amp;#123;  width: 500px;  text-align: center;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;script &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        $(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            //初始化&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            table = $(&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;).test.table(&amp;#123;tableId: &lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             * 删除&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;             */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            $(&lt;span class=&quot;string&quot;&gt;&quot;table&quot;&lt;/span&gt;).on(&lt;span class=&quot;string&quot;&gt;&quot;click&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;.del&quot;&lt;/span&gt;,&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               table._delete(this);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        /**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         * 增加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;         */&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            table._add()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;button onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;添加&amp;lt;/button&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;table id=&lt;span class=&quot;string&quot;&gt;&quot;tableId&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;th onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;姓名&amp;lt;/th&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;lt;th&amp;gt;年龄&amp;lt;/th&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&lt;span class=&quot;string&quot;&gt;&quot;del&quot;&lt;/span&gt;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;lt;/table&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器打开test.html，有没有发现代码结构逻辑非常清晰？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;table组件例子源码&quot;&gt;&lt;a href=&quot;#table组件例子源码&quot; class=&quot;headerlink&quot; title=&quot;table组件例子源码&quot;&gt;&lt;/a&gt;table组件例子源码&lt;/h2&gt;&lt;p&gt;源码地址：&lt;a href=&quot;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&quot;&gt;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&lt;/a&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。
+    
+    </summary>
+    
+      <category term="Jquery" scheme="https://github.com/categories/Jquery/"/>
+    
+      <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
+    
+      <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+      <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
+    
+      <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
