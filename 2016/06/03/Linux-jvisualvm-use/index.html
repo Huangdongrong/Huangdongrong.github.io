@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: 性能调优 | Donie</title>
+  <title>Linux下使用jvisualvm监控工具查看CUP、内存使用情况 | Donie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人技术的理解与技术分享经验之谈">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Donie">
-<meta property="og:url" content="https://github.com/categories/性能调优/index.html">
+  <meta name="description" content="使用jvisualvm远程监控Linux下Java进程看不到CPU的情况，不知道jvisualvm为什么不支持，因为公司要求性能报告要有图表，所以不能用TOP数据出性能报告，因此只能在Linux下 [安装X](http://jingyan.baidu.com/article/ca2d939dd1dabbeb6c31ce24.html)，在Linux服务器上启动jvisualvm监控查看CUP、内存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux下使用jvisualvm监控工具查看CUP、内存使用情况">
+<meta property="og:url" content="https://github.com/2016/06/03/Linux-jvisualvm-use/index.html">
 <meta property="og:site_name" content="Donie">
-<meta property="og:description" content="个人技术的理解与技术分享经验之谈">
+<meta property="og:description" content="使用jvisualvm远程监控Linux下Java进程看不到CPU的情况，不知道jvisualvm为什么不支持，因为公司要求性能报告要有图表，所以不能用TOP数据出性能报告，因此只能在Linux下 [安装X](http://jingyan.baidu.com/article/ca2d939dd1dabbeb6c31ce24.html)，在Linux服务器上启动jvisualvm监控查看CUP、内存">
+<meta property="og:image" content="https://github.com/img/jvisualvm/01.png">
+<meta property="og:image" content="https://github.com/img/jvisualvm/2.png">
+<meta property="og:image" content="https://github.com/img/jvisualvm/3.png">
+<meta property="og:updated_time" content="2016-06-06T10:37:44.499Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Donie">
-<meta name="twitter:description" content="个人技术的理解与技术分享经验之谈">
+<meta name="twitter:title" content="Linux下使用jvisualvm监控工具查看CUP、内存使用情况">
+<meta name="twitter:description" content="使用jvisualvm远程监控Linux下Java进程看不到CPU的情况，不知道jvisualvm为什么不支持，因为公司要求性能报告要有图表，所以不能用TOP数据出性能报告，因此只能在Linux下 [安装X](http://jingyan.baidu.com/article/ca2d939dd1dabbeb6c31ce24.html)，在Linux服务器上启动jvisualvm监控查看CUP、内存">
+<meta name="twitter:image" content="https://github.com/img/jvisualvm/01.png">
   
     <link rel="alternative" href="/atom.xml" title="Donie" type="application/atom+xml">
   
@@ -43,10 +48,10 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
-          isCategory: true,
+          isCategory: false,
           open_in_new: true,
           fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
           scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.0.9/scrollreveal.min.js"
@@ -250,163 +255,214 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Linux-jvisualvm-use" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/06/03/Linux-jvisualvm-use/" class="archive-article-date">
-      <time datetime="2016-06-03T10:45:37.000Z" itemprop="datePublished">06-03</time>
+    <div class="article-meta">
+      <a href="/2016/06/03/Linux-jvisualvm-use/" class="article-date">
+      <time datetime="2016-06-03T10:45:37.000Z" itemprop="datePublished">2016-06-03</time>
 </a>
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/03/Linux-jvisualvm-use/">Linux下使用jvisualvm监控工具查看CUP、内存使用情况</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Linux下使用jvisualvm监控工具查看CUP、内存使用情况
     </h1>
   
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/性能调优/">性能调优</a><a class="article-category-link" href="/categories/性能调优/jvisualvm/">jvisualvm</a>
     </div>
 
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jvisualvm/">jvisualvm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <a id="more"></a>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>Linux下安装X(桌面)：<a href="http://jingyan.baidu.com/article/ca2d939dd1dabbeb6c31ce24.html" target="_blank" rel="external">http://jingyan.baidu.com/article/ca2d939dd1dabbeb6c31ce24.html</a><br>JDK环境：<a href="http://jingyan.baidu.com/article/c74d60007b85510f6a595dfa.html" target="_blank" rel="external">http://jingyan.baidu.com/article/c74d60007b85510f6a595dfa.html</a><br>远程桌面工具：<a href="http://www.techspot.com/downloads/5760-vnc-viewer.html" target="_blank" rel="external">http://www.techspot.com/downloads/5760-vnc-viewer.html</a><br>jvisualvm下载：<a href="http://visualvm.java.net/download.html" target="_blank" rel="external">http://visualvm.java.net/download.html</a></p>
+<h2 id="安装jvisualvm"><a href="#安装jvisualvm" class="headerlink" title="安装jvisualvm"></a>安装jvisualvm</h2><ol>
+<li><p>通过SHH工具将下载好的jvisualvm上传到服务器解压，使用vncviewer连接上服务器</p>
+</li>
+<li><p>进入到visualvm目录下，运行visualvm安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost /]<span class="comment"># cd opt/visualvm_138/</span></span><br><span class="line">[root@localhost visualvm_138]<span class="comment"># bin/visualvm</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>点击同意，启动visualvm<br><img src="/img/jvisualvm/01.png" alt="jvisualvm" title="jvisualvm"><br><img src="/img/jvisualvm/2.png" alt="jvisualvm" title="jvisualvm"></p>
+</li>
+<li><p>下次启动直接运行以下打开就可以了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost visualvm_138]<span class="comment"># bin/visualvm</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看CUP、内存使用情况<br><img src="/img/jvisualvm/3.png" alt="jvisualvm" title="jvisualvm"></p>
+</li>
+</ol>
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/06/03/Linux-jvisualvm-use/">Linux下使用jvisualvm监控工具查看CUP、内存使用情况</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
+        <p><span>发布时间:</span>2016-06-03, 18:45:37</p>
+        <p><span>最后更新:</span>2016-06-06, 18:37:44</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/06/03/Linux-jvisualvm-use/" title="Linux下使用jvisualvm监控工具查看CUP、内存使用情况">https://github.com/2016/06/03/Linux-jvisualvm-use/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/06/03/Linux-jvisualvm-use/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/06/03/jvm/">
+                    JVM调优分析
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/06/03/netty-jvm/">
+                    Netty调优
+                </a>
+            </div>
+        
+    </nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/05/27/jprofiler-introduce-install/" class="archive-article-date">
-      <time datetime="2016-05-27T10:45:37.000Z" itemprop="datePublished">05-27</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/27/jprofiler-introduce-install/">JProfiler简介与JProfiler安装并集成IDEA(一)</a>
-    </h1>
-  
 
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/性能调优/">性能调优</a><a class="article-category-link" href="/categories/性能调优/测试/">测试</a>
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装jvisualvm"><span class="toc-number">2.</span> <span class="toc-text">安装jvisualvm</span></a></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Linux下使用jvisualvm监控工具查看CUP、内存使用情况　| Donie　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+        <section class="youyan" id="comments">
+  <div id="uyan_frame"></div>
+  <script src="http://v2.uyan.cc/code/uyan.js?uid=2100258"></script>
+</section>
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2016/06/03/jvm/" title="上一篇: JVM调优分析">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/06/03/netty-jvm/" title="下一篇: Netty调优">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
 
-
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/05/27/jprofiler-use/" class="archive-article-date">
-      <time datetime="2016-05-27T10:45:37.000Z" itemprop="datePublished">05-27</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/27/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/性能调优/">性能调优</a><a class="article-category-link" href="/categories/性能调优/测试/">测试</a>
-    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/06/03/redis/">Redis快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/03/Linux-jvisualvm-use/">Linux下使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/03/netty-jvm/">Netty调优</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/03/jvm/">JVM调优分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/30/java-concurrent-test/">java并发测试例子</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/jprofiler-introduce-install/">JProfiler简介与JProfiler安装并集成IDEA(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/angular-Interceptor/">angularJS 拦截器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/angular-start/">angularJS快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/angular-mvc-design/">使用angularJS MVC设计后台前端架构</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/angular-router/">angularJS静态路由与动态路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/jvisualvm-use/">Windows下使用jvisualvm监控工具查看CPU、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/idea-package-jar/">IDEA下打包JAR</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/dubbo-test/">RPC Dubbo入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li></ul>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JProfiler/">JProfiler</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a href="/2016/05/26/jvisualvm-use/" class="archive-article-date">
-      <time datetime="2016-05-26T10:45:37.000Z" itemprop="datePublished">05-26</time>
-</a>
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/26/jvisualvm-use/">Windows下使用jvisualvm监控工具查看CPU、内存使用情况</a>
-    </h1>
-  
-
-        <div class="article-info info-on-archive">
-          
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/性能调优/">性能调优</a><a class="article-category-link" href="/categories/性能调优/测试/">测试</a>
-    </div>
 
 
-          
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jvisualvm/">jvisualvm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/工具/">工具</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/性能调优/">性能调优</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
-    </div>
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
