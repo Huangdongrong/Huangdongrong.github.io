@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-06-08T12:29:22.341Z</updated>
+  <updated>2016-06-08T12:21:18.026Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -14,31 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>React.Js学习</title>
-    <link href="https://github.com/2016/06/08/reactjs-start/"/>
-    <id>https://github.com/2016/06/08/reactjs-start/</id>
-    <published>2016-06-08T10:45:37.000Z</published>
-    <updated>2016-06-08T12:29:22.341Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;环境需求&quot;&gt;&lt;a href=&quot;#环境需求&quot; class=&quot;headerlink&quot; title=&quot;环境需求&quot;&gt;&lt;/a&gt;环境需求&lt;/h2&gt;&lt;p&gt;安装Node.js，不需要必要的，但是你发现学习的时候看官网文档或例子，常常会用到Node.js，快速入门了解Node.js是有必要的&lt;a href=&quot;http://huangdongrong.github.io/2016/06/08/nodejs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://huangdongrong.github.io/2016/06/08/nodejs/&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;React-JSX-代码JS文件编译标准的-JavaScript&quot;&gt;&lt;a href=&quot;#React-JSX-代码JS文件编译标准的-JavaScript&quot; class=&quot;headerlink&quot; title=&quot;React JSX 代码JS文件编译标准的 JavaScript&quot;&gt;&lt;/a&gt;React JSX 代码JS文件编译标准的 JavaScript&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://reactjs.cn/react/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://reactjs.cn/react/docs/getting-started.html&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;React入门推荐文章&quot;&gt;&lt;a href=&quot;#React入门推荐文章&quot; class=&quot;headerlink&quot; title=&quot;React入门推荐文章&quot;&gt;&lt;/a&gt;React入门推荐文章&lt;/h2&gt;&lt;p&gt;中文社区：&lt;a href=&quot;http://reactjs.cn/react/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://reactjs.cn/react/docs/getting-started.html&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;react官网：&lt;a href=&quot;http://facebook.github.io/react/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://facebook.github.io/react/docs/getting-started.html&lt;/a&gt;。&lt;/p&gt;</content>
-    
-    <summary type="html">
-    
-      记录React环境搭建，React学习那些坑，React学习中比较难理解的地方。
-    
-    </summary>
-    
-      <category term="React" scheme="https://github.com/categories/React/"/>
-    
-    
-      <category term="React" scheme="https://github.com/tags/React/"/>
-    
-  </entry>
   
   <entry>
     <title>Node.js 快速入门</title>
@@ -86,6 +61,31 @@ $ npm install multer --save
   </entry>
   
   <entry>
+    <title>React.js学习</title>
+    <link href="https://github.com/2016/06/08/reactjs-start/"/>
+    <id>https://github.com/2016/06/08/reactjs-start/</id>
+    <published>2016-06-08T10:45:37.000Z</published>
+    <updated>2016-06-08T12:30:07.647Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;环境需求&quot;&gt;&lt;a href=&quot;#环境需求&quot; class=&quot;headerlink&quot; title=&quot;环境需求&quot;&gt;&lt;/a&gt;环境需求&lt;/h2&gt;&lt;p&gt;安装Node.js，不需要必要的，但是你发现学习的时候看官网文档或例子，常常会用到Node.js，快速入门了解Node.js是有必要的&lt;a href=&quot;http://huangdongrong.github.io/2016/06/08/nodejs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://huangdongrong.github.io/2016/06/08/nodejs/&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;React-JSX-代码JS文件编译标准的-JavaScript&quot;&gt;&lt;a href=&quot;#React-JSX-代码JS文件编译标准的-JavaScript&quot; class=&quot;headerlink&quot; title=&quot;React JSX 代码JS文件编译标准的 JavaScript&quot;&gt;&lt;/a&gt;React JSX 代码JS文件编译标准的 JavaScript&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://reactjs.cn/react/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://reactjs.cn/react/docs/getting-started.html&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;React入门推荐文章&quot;&gt;&lt;a href=&quot;#React入门推荐文章&quot; class=&quot;headerlink&quot; title=&quot;React入门推荐文章&quot;&gt;&lt;/a&gt;React入门推荐文章&lt;/h2&gt;&lt;p&gt;中文社区：&lt;a href=&quot;http://reactjs.cn/react/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://reactjs.cn/react/docs/getting-started.html&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;react官网：&lt;a href=&quot;http://facebook.github.io/react/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://facebook.github.io/react/docs/getting-started.html&lt;/a&gt;。&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      记录React环境搭建，React学习那些坑，React学习中比较难理解的地方。
+    
+    </summary>
+    
+      <category term="React" scheme="https://github.com/categories/React/"/>
+    
+    
+      <category term="React" scheme="https://github.com/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用angularJS MVC设计后台前端架构</title>
     <link href="https://github.com/2016/05/30/angular-mvc-design/"/>
     <id>https://github.com/2016/05/30/angular-mvc-design/</id>
@@ -103,9 +103,9 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
-    
       <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
     
@@ -151,9 +151,9 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
-    
       <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
     
@@ -177,9 +177,9 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
-    
       <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
     
