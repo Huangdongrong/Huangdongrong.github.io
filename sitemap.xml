@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/2016/06/08/nodejs/</loc>
+    
+    <lastmod>2016-06-08T12:19:36.655Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://github.com/2016/06/08/reactjs-start/</loc>
+    
+    <lastmod>2016-06-08T12:19:30.641Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://github.com/2016/05/24/netty-jvm/</loc>
     
     <lastmod>2016-06-07T11:29:02.382Z</lastmod>
