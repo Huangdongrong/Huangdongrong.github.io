@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   <title>java并发测试例子 | Donie</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
   <meta name="description" content="java实现模拟客户端并发，测试性能，测试每秒的并发是多少，这是一个简单的例子。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java并发测试例子">
@@ -72,7 +72,7 @@
           })();
       </script>
   
-</head>
+</head></html>
 <body>
   <!--[if lt IE 9]>
 <style> body { background: orange !important;} div#container { display: none;} </style>
@@ -131,13 +131,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>Menu</li>
-                        <li>Tags</li>
+                        <li>菜单</li>
+                        <li>标签</li>
                         
-                        <li>Friends</li>
+                        <li>友情链接</li>
                         
                         
-                        <li>About Me</li>
+                        <li>关于我</li>
                         
                     </ul>
                 </div>
@@ -249,7 +249,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
       <div class="body-wrap"><article id="post-java-concurrent-test" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -261,31 +261,22 @@
   
   <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
+      <input type="hidden" class="isFancy">
     
     
       <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
+        <h1 class="article-title" itemprop="name">
       java并发测试例子
     </h1>
-  
-
       </header>
       
       <div class="article-info article-info-post">
-        
-    <div class="article-category tagcloud">
+        <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/例子/">例子</a>
     </div>
-
-
-        
-    <div class="article-tag tagcloud">
+        <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/例子/">例子</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/测试/">测试</a></li></ul>
     </div>
-
         <div class="clearfix"></div>
       </div>
       
@@ -293,27 +284,26 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="java并发测试例子"><a href="#java并发测试例子" class="headerlink" title="java并发测试例子"></a>java并发测试例子</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line">package concurrent;</span><br><span class="line">import java.util.concurrent.CountDownLatch;</span><br><span class="line">import java.util.concurrent.ExecutorService;</span><br><span class="line">import java.util.concurrent.Executors;</span><br><span class="line">public class Test &#123;</span><br><span class="line"></span><br><span class="line">    public static final CountDownLatch startLatch = new CountDownLatch(1);</span><br><span class="line">    ;</span><br><span class="line">    public static CountDownLatch endLatch;</span><br><span class="line">    public static int loopCount;</span><br><span class="line">    int clientNum;</span><br><span class="line"></span><br><span class="line">    public Test(String[] args) &#123;</span><br><span class="line">        <span class="keyword">if</span> (args == null || args.length &lt; 2) &#123;</span><br><span class="line">            throw new RuntimeException(<span class="string">"must input 2 paramter:clientNum,loopCount"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        clientNum = Integer.parseInt(args[0]);</span><br><span class="line">        loopCount = Integer.parseInt(args[1]);</span><br><span class="line">        endLatch = new CountDownLatch(clientNum);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void <span class="function"><span class="title">start</span></span>() &#123;</span><br><span class="line">        ExecutorService executor = Executors.newFixedThreadPool(clientNum);</span><br><span class="line">        <span class="keyword">for</span> (int j = 0; j &lt; clientNum; j++) &#123;</span><br><span class="line">            executor.submit(new <span class="function"><span class="title">Runnable</span></span>() &#123;</span><br><span class="line">                public void <span class="function"><span class="title">run</span></span>() &#123;</span><br><span class="line">                    <span class="built_in">exec</span>(startLatch, endLatch);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">        try &#123;</span><br><span class="line">            startLatch.countDown();</span><br><span class="line">            long start = System.currentTimeMillis();</span><br><span class="line">            endLatch.await();</span><br><span class="line">            long used = System.currentTimeMillis() - start;</span><br><span class="line">            System.out.println(<span class="string">"client num:"</span> + clientNum + <span class="string">",execute loopCount client:"</span> + loopCount + <span class="string">",total execute:"</span> + loopCount * clientNum + <span class="string">",total time:"</span> + used / 1000 + <span class="string">"s, tps:"</span> + loopCount * clientNum * 1000.0 / used);</span><br><span class="line">            executor.shutdown();</span><br><span class="line">            System.exit(0);</span><br><span class="line">        &#125; catch (InterruptedException e) &#123;</span><br><span class="line">            Thread.currentThread().interrupt();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void <span class="built_in">exec</span>(CountDownLatch startLatch, CountDownLatch endLatch) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            startLatch.await();</span><br><span class="line">        &#125; catch (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        new Client().start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) throws InterruptedException &#123;</span><br><span class="line">        /*加载配置文件</span><br><span class="line">        ApplicationContext context = new ClassPathXmlApplicationContext(<span class="string">"spring.xml"</span>);</span><br><span class="line">        Thread.sleep(6000);*/</span><br><span class="line"></span><br><span class="line">        args = new String[2];</span><br><span class="line">        args[0] = <span class="string">"200"</span>;     //客户端并发数</span><br><span class="line">        args[1] = <span class="string">"300000"</span>; //调用次数</span><br><span class="line">        new Test(args).start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">package concurrent;</span><br><span class="line">public class Client &#123;</span><br><span class="line">    public void <span class="function"><span class="title">start</span></span>() &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            long start = System.currentTimeMillis();</span><br><span class="line">            int count = Test.loopCount;</span><br><span class="line">            Services services = new Services();</span><br><span class="line">            <span class="keyword">for</span> (int i = 0; i &lt; count; i++) &#123;</span><br><span class="line">                String result = services.hello(<span class="string">"donie"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            Test.endLatch.countDown();</span><br><span class="line">            long used = System.currentTimeMillis() - start;</span><br><span class="line">            System.out.println(<span class="string">"tps "</span> + count * 1000.0 / used);</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">package concurrent;</span><br><span class="line">public class Services &#123;</span><br><span class="line">    public String hello(String str)&#123;</span><br><span class="line">        <span class="built_in">return</span> str;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="java并发测试例子"><a href="#java并发测试例子" class="headerlink" title="java并发测试例子"></a>java并发测试例子</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line">package concurrent;</div><div class="line">import java.util.concurrent.CountDownLatch;</div><div class="line">import java.util.concurrent.ExecutorService;</div><div class="line">import java.util.concurrent.Executors;</div><div class="line">public class Test &#123;</div><div class="line"></div><div class="line">    public static final CountDownLatch startLatch = new CountDownLatch(1);</div><div class="line">    ;</div><div class="line">    public static CountDownLatch endLatch;</div><div class="line">    public static int loopCount;</div><div class="line">    int clientNum;</div><div class="line"></div><div class="line">    public Test(String[] args) &#123;</div><div class="line">        <span class="keyword">if</span> (args == null || args.length &lt; 2) &#123;</div><div class="line">            throw new RuntimeException(<span class="string">"must input 2 paramter:clientNum,loopCount"</span>);</div><div class="line">        &#125;</div><div class="line">        clientNum = Integer.parseInt(args[0]);</div><div class="line">        loopCount = Integer.parseInt(args[1]);</div><div class="line">        endLatch = new CountDownLatch(clientNum);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void <span class="function"><span class="title">start</span></span>() &#123;</div><div class="line">        ExecutorService executor = Executors.newFixedThreadPool(clientNum);</div><div class="line">        <span class="keyword">for</span> (int j = 0; j &lt; clientNum; j++) &#123;</div><div class="line">            executor.submit(new <span class="function"><span class="title">Runnable</span></span>() &#123;</div><div class="line">                public void <span class="function"><span class="title">run</span></span>() &#123;</div><div class="line">                    <span class="built_in">exec</span>(startLatch, endLatch);</div><div class="line">                &#125;</div><div class="line">            &#125;);</div><div class="line">        &#125;</div><div class="line">        try &#123;</div><div class="line">            startLatch.countDown();</div><div class="line">            long start = System.currentTimeMillis();</div><div class="line">            endLatch.await();</div><div class="line">            long used = System.currentTimeMillis() - start;</div><div class="line">            System.out.println(<span class="string">"client num:"</span> + clientNum + <span class="string">",execute loopCount client:"</span> + loopCount + <span class="string">",total execute:"</span> + loopCount * clientNum + <span class="string">",total time:"</span> + used / 1000 + <span class="string">"s, tps:"</span> + loopCount * clientNum * 1000.0 / used);</div><div class="line">            executor.shutdown();</div><div class="line">            System.exit(0);</div><div class="line">        &#125; catch (InterruptedException e) &#123;</div><div class="line">            Thread.currentThread().interrupt();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void <span class="built_in">exec</span>(CountDownLatch startLatch, CountDownLatch endLatch) &#123;</div><div class="line">        try &#123;</div><div class="line">            startLatch.await();</div><div class="line">        &#125; catch (InterruptedException e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">        new Client().start();</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    public static void main(String[] args) throws InterruptedException &#123;</div><div class="line">        /*加载配置文件</div><div class="line">        ApplicationContext context = new ClassPathXmlApplicationContext(<span class="string">"spring.xml"</span>);</div><div class="line">        Thread.sleep(6000);*/</div><div class="line"></div><div class="line">        args = new String[2];</div><div class="line">        args[0] = <span class="string">"200"</span>;     //客户端并发数</div><div class="line">        args[1] = <span class="string">"300000"</span>; //调用次数</div><div class="line">        new Test(args).start();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">package concurrent;</div><div class="line">public class Client &#123;</div><div class="line">    public void <span class="function"><span class="title">start</span></span>() &#123;</div><div class="line">        try &#123;</div><div class="line">            long start = System.currentTimeMillis();</div><div class="line">            int count = Test.loopCount;</div><div class="line">            Services services = new Services();</div><div class="line">            <span class="keyword">for</span> (int i = 0; i &lt; count; i++) &#123;</div><div class="line">                String result = services.hello(<span class="string">"donie"</span>);</div><div class="line">            &#125;</div><div class="line">            Test.endLatch.countDown();</div><div class="line">            long used = System.currentTimeMillis() - start;</div><div class="line">            System.out.println(<span class="string">"tps "</span> + count * 1000.0 / used);</div><div class="line">        &#125; catch (Exception e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">package concurrent;</div><div class="line">public class Services &#123;</div><div class="line">    public String hello(String str)&#123;</div><div class="line">        <span class="built_in">return</span> str;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
   </div>
   
-    
     <div class="copyright">
-        <p><span>Title:</span><a href="/2016/05/22/java-concurrent-test/">java并发测试例子</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">Donie.Huang</a></p>
-        <p><span>Created:</span>2016-05-22, 18:45:37</p>
-        <p><span>Updated:</span>2016-06-06, 18:53:14</p>
+        <p><span>本文标题:</span><a href="/2016/05/22/java-concurrent-test/">java并发测试例子</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
+        <p><span>发布时间:</span>2016-05-22, 18:45:37</p>
+        <p><span>最后更新:</span>2016-06-06, 18:53:14</p>
         <p>
-            <span>Full URL:</span><a class="post-url" href="/2016/05/22/java-concurrent-test/" title="java并发测试例子">https://github.com/2016/05/22/java-concurrent-test/</a>
-            <span class="copy-path" data-clipboard-text="From https://github.com/2016/05/22/java-concurrent-test/　　By Donie.Huang" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/22/java-concurrent-test/" title="java并发测试例子">https://github.com/2016/05/22/java-concurrent-test/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/2016/05/22/java-concurrent-test/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -335,12 +325,11 @@
             </div>
         
     </nav>
-
   
 </article>
 
     <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
+    <strong class="toc-title">文章目录</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#java并发测试例子"><span class="toc-number">1.</span> <span class="toc-text">java并发测试例子</span></a></li></ol>
 </div>
 <style>
@@ -352,10 +341,10 @@
     }
 </style>
 
-<input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
+<input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
 <script>
-    var valueHide = "Hide";
-    var valueShow = "Show";
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
 
     if ($(".left-col").is(":hidden")) {
         $("#tocButton").attr("value", valueShow);
@@ -382,10 +371,7 @@
 
 
 
-
-
-    
-<div class="share">
+    <div class="share">
     
         <div class="bdsharebuttonbox">
             <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
@@ -394,7 +380,7 @@
             <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
             <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
             <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
         </div>
         <script>
             window._bd_share_config={
@@ -407,46 +393,36 @@
 
 
 
-
-
-
-
     
         <section class="youyan" id="comments">
   <div id="uyan_frame"></div>
   <script src="http://v2.uyan.cc/code/uyan.js?uid=2100258"></script>
 </section>
-
     
 
 
-
-
-    <div class="scroll" id="post-nav-button">
+<div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/23/redis/" title="Pre: Redis快速入门">
+            <a href="/2016/05/23/redis/" title="上一篇: Redis快速入门">
                 <i class="fa fa-angle-left"></i>
             </a>
         
 
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/21/jmeter-javacode-test/" title="Next: Jmeter测试java请求">
+            <a href="/2016/05/21/jmeter-javacode-test/" title="下一篇: Jmeter测试java请求">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/reactjs-start/">React.js学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/08/nodejs/">Node.js 快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/30/angular-mvc-design/">使用angularJS MVC设计后台前端架构</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/29/angular-Interceptor/">angularJS 拦截器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/28/angular-router/">angularJS静态路由与动态路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/angular-start/">angularJS快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/dubbo-test/">RPC Dubbo入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/jvm/">JVM调优分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/netty-jvm/">Netty调优</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/23/redis/">Redis快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/java-concurrent-test/">java并发测试例子</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/21/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/Linux-jvisualvm-use/">Linux下使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/jvisualvm-use/">Windows下使用jvisualvm监控工具查看CPU、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/18/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/18/jprofiler-introduce-install/">JProfiler简介与JProfiler安装并集成IDEA(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/17/idea-package-jar/">IDEA下打包JAR</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li></ul>
-
-
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/reactjs-start/">React.js学习</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/08/nodejs/">Node.js 快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/30/angular-mvc-design/">使用angularJS MVC设计后台前端架构</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/29/angular-Interceptor/">angularJS 拦截器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/28/angular-router/">angularJS静态路由与动态路由</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/27/angular-start/">angularJS快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/dubbo-test/">RPC Dubbo入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/jvm/">JVM调优分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/netty-jvm/">Netty调优</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/23/redis/">Redis快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/java-concurrent-test/">java并发测试例子</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/21/jmeter-javacode-test/">Jmeter测试java请求</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/20/Linux-jvisualvm-use/">Linux下使用jvisualvm监控工具查看CUP、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/jvisualvm-use/">Windows下使用jvisualvm监控工具查看CPU、内存使用情况</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/18/jprofiler-use/">JProfiler集成IDEA查看Java项目性能（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/18/jprofiler-introduce-install/">JProfiler简介与JProfiler安装并集成IDEA(一)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/17/idea-package-jar/">IDEA下打包JAR</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/jquery/">Jquery,javascript常用方法与特殊场景使用的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/16/Jquery-and-js-design/">Jquery 组件化设计（高级篇）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-use/">Confluence 使用(二)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/15/confluence-install-setting/">Confluence 简介与Confluence安装配置(一)</a></li></ul>
 
 
     <script>
         
-    </script>
-</div>
+    </script></div>
       <footer id="footer">
     <div class="outer">
         <div id="footer-info">
@@ -455,14 +431,14 @@
                 2016 Donie.Huang
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >Site Visitors: 
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit">本站到访数: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -471,8 +447,8 @@
                     <span>, </span>
                 
                 
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">Page Hits: 
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit">本页阅读量: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -482,20 +458,17 @@
     </div>
 </footer>
     </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
-
+    <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
 
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" title="Comments"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>
 </body>
-</html>
