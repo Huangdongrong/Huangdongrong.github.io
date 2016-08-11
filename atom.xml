@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-07-06T09:43:20.527Z</updated>
+  <updated>2016-07-07T13:10:06.265Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nodejs打包js模块并发布到npm使用或者直接打包到本地使用</title>
+    <link href="https://github.com/2016/07/07/nodejs-package/"/>
+    <id>https://github.com/2016/07/07/nodejs-package/</id>
+    <published>2016-07-07T10:45:37.000Z</published>
+    <updated>2016-07-07T13:10:06.265Z</updated>
+    
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://segmentfault.com/q/1010000005857558&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://segmentfault.com/q/1010000005857558&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/mz121star/archive/2012/11/15/nodejsandnom.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/mz121star/archive/2012/11/15/nodejsandnom.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.ynpxrz.com/n973286c2025.aspx&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ynpxrz.com/n973286c2025.aspx&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/pigtail/archive/2013/01/14/2859555.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/pigtail/archive/2013/01/14/2859555.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://zccst.iteye.com/blog/2215317&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://zccst.iteye.com/blog/2215317&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000002904199&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://segmentfault.com/a/1190000002904199&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;模块定义-ES5&quot;&gt;&lt;a href=&quot;#模块定义-ES5&quot; class=&quot;headerlink&quot; title=&quot;模块定义 ES5&quot;&gt;&lt;/a&gt;模块定义 ES5&lt;/h2&gt;&lt;p&gt;module.exports方式定义模块&lt;br&gt;创建模块a.js&lt;br&gt;module.exports = function(name, age) {&lt;br&gt;    this.name = name;&lt;br&gt;    this.age = age;&lt;br&gt;    this.about = function() {&lt;br&gt;        console.log(this.name +’ is ‘+ this.age +’ years old’);&lt;br&gt;    };&lt;br&gt;};&lt;/p&gt;
+&lt;p&gt;使用模块测试b.js&lt;br&gt;var a=require(‘./a’);&lt;br&gt;var r = new a(“donie”,24);&lt;br&gt;r.about();&lt;/p&gt;
+&lt;p&gt;exports方式定义模块&lt;/p&gt;
+&lt;p&gt;创建模块a.js&lt;br&gt; function getName() {&lt;br&gt;    return “hello Name”;&lt;br&gt;}&lt;br&gt;exports.getAge=function () {&lt;br&gt;    return “hello age”;&lt;br&gt;}&lt;br&gt;exports.getName=getName;&lt;/p&gt;
+&lt;p&gt;使用模块测试b.js&lt;br&gt;var h=require(‘./a’);&lt;br&gt;h.getName();&lt;br&gt;h.getAge();&lt;/p&gt;
+&lt;h2 id=&quot;js打包-ES5&quot;&gt;&lt;a href=&quot;#js打包-ES5&quot; class=&quot;headerlink&quot; title=&quot;js打包 ES5&quot;&gt;&lt;/a&gt;js打包 ES5&lt;/h2&gt;&lt;p&gt;F:\react\react-demos\package-js&amp;gt;npm init&lt;/p&gt;
+&lt;p&gt;npm adduser&lt;br&gt;npm publish&lt;br&gt;npm pack&lt;/p&gt;
+&lt;p&gt;npm install ./iportal/file-mgr-frontend/FileMgr-1.0.0.tgz&lt;/p&gt;
+&lt;p&gt;import React, { PropTypes, Component } from ‘react’;&lt;/p&gt;
+&lt;p&gt;var React = require(‘react’);&lt;br&gt;var {PropTypes, Component} = React&lt;/p&gt;
+&lt;p&gt;var React = require(‘react’);&lt;br&gt;var PropTypes = React.PropTypes;&lt;br&gt;var Component = React.Component;&lt;/p&gt;
+&lt;p&gt;nodejs支持es6&lt;br&gt;&lt;a href=&quot;http://www.open-open.com/lib/view/open1452169232870.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.open-open.com/lib/view/open1452169232870.html&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/diligenceday/p/5453523.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/diligenceday/p/5453523.html&lt;/a&gt;&lt;/p&gt;</content>
+    
+    <summary type="html">
+    
+      nodejs打包js，发布到npm，使用自己发布的js,或者不发布到npm直接打包到本地使用。
+    
+    </summary>
+    
+      <category term="nodejs" scheme="https://github.com/categories/nodejs/"/>
+    
+    
+      <category term="nodejs" scheme="https://github.com/tags/nodejs/"/>
+    
+  </entry>
   
   <entry>
     <title>React.js学习</title>
@@ -103,11 +138,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -151,11 +186,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -177,11 +212,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -793,70 +828,11 @@ $ npm install multer --save
       <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
     
     
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
       <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
     
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Confluence 使用(二)</title>
-    <link href="https://github.com/2016/05/15/confluence-use/"/>
-    <id>https://github.com/2016/05/15/confluence-use/</id>
-    <published>2016-05-15T11:45:37.000Z</published>
-    <updated>2016-05-27T04:40:18.716Z</updated>
-    
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Confluence写文章&quot;&gt;&lt;a href=&quot;#Confluence写文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence写文章&quot;&gt;&lt;/a&gt;Confluence写文章&lt;/h2&gt;&lt;p&gt;首先我们需要了解什么是Confluence空间，空间可以理解我们计算机的硬盘，有硬盘才可以装东西，所以文章前我们需要创建空间。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;点击创建空间，选择创建空白空间，下一步&lt;br&gt;&lt;img src=&quot;/img/confluence/25.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;输入空间名标识空间&lt;br&gt;&lt;img src=&quot;/img/confluence/26.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;删除系统自动生成的首页&lt;br&gt;&lt;img src=&quot;/img/confluence/27.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;创建文章，点击创建页面，编写文章，标题是必填的&lt;br&gt;&lt;img src=&quot;/img/confluence/28.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;如果创建到某个分类下，选择文章节点，如下选择“1.confluence使用”，点击创建，编写文章完成后，效果如下：&lt;br&gt;&lt;img src=&quot;/img/confluence/29.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence修改文章&quot;&gt;&lt;a href=&quot;#Confluence修改文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence修改文章&quot;&gt;&lt;/a&gt;Confluence修改文章&lt;/h2&gt;&lt;p&gt;在页面树结构下，选择节点文章，点击编辑。&lt;br&gt;&lt;img src=&quot;/img/confluence/30.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence删除文章&quot;&gt;&lt;a href=&quot;#Confluence删除文章&quot; class=&quot;headerlink&quot; title=&quot;Confluence删除文章&quot;&gt;&lt;/a&gt;Confluence删除文章&lt;/h2&gt;&lt;p&gt; 在页面树结构下，选择节点文章，点击更多，展开操作，点击删除。&lt;br&gt; &lt;img src=&quot;/img/confluence/31.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence备份数据&quot;&gt;&lt;a href=&quot;#Confluence备份数据&quot; class=&quot;headerlink&quot; title=&quot;Confluence备份数据&quot;&gt;&lt;/a&gt;Confluence备份数据&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;点击一般配置，管理员帐号登录&lt;br&gt;&lt;img src=&quot;/img/confluence/32.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;每日备份管理，默认系统开启每天自动备份，备份文件会保存到xx\Atlassian\Application Data\Confluence\backups 目录下&lt;br&gt;&lt;img src=&quot;/img/confluence/33.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;手动备份，点击备份与还原菜单，点击备份，备份文件会保存到xx\Atlassian\Application Data\Confluence\temp 目录下&lt;br&gt;&lt;img src=&quot;/img/confluence/34.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;br&gt;&lt;img src=&quot;/img/confluence/35.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence还原恢复数据&quot;&gt;&lt;a href=&quot;#Confluence还原恢复数据&quot; class=&quot;headerlink&quot; title=&quot;Confluence还原恢复数据&quot;&gt;&lt;/a&gt;Confluence还原恢复数据&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;打开数据库安装目录下的xx\MySQL\MySQL Server 5.1\my.ini文件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;default-character-set设置为utf-8&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;default-character-set=utf-8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在最后面增加以下设置编码&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;character-set-server=utf8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;collation-server=utf8_bin&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;点击备份与还原菜单，还原方式有两种，使用自动备份文件或手动备份文件都可以还原恢复当前备份时间的数据。&lt;br&gt;&lt;img src=&quot;/img/confluence/36.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence添加用户&quot;&gt;&lt;a href=&quot;#Confluence添加用户&quot; class=&quot;headerlink&quot; title=&quot;Confluence添加用户&quot;&gt;&lt;/a&gt;Confluence添加用户&lt;/h2&gt;&lt;p&gt;点击用户菜单，添加用户。&lt;br&gt;&lt;img src=&quot;/img/confluence/37.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Confluence分配权限&quot;&gt;&lt;a href=&quot;#Confluence分配权限&quot; class=&quot;headerlink&quot; title=&quot;Confluence分配权限&quot;&gt;&lt;/a&gt;Confluence分配权限&lt;/h2&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;点击用户安全菜单，编辑&lt;br&gt;&lt;img src=&quot;/img/confluence/38.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;li&gt;一般会设置匿名可以访问&lt;br&gt;&lt;img src=&quot;/img/confluence/39.png&quot; alt=&quot;Confluence使用&quot; title=&quot;Confluence使用&quot;&gt;&lt;/li&gt;
-&lt;/ol&gt;</content>
-    
-    <summary type="html">
-    
-      这章节主要讲我现在常用到Confluence的功能，如何在Confluence wiki上增删改文章知识共享，Confluence备份数据、还原恢复数据、用户管理、权限管理还有一些常用的管理使用。
-    
-    </summary>
-    
-      <category term="运维" scheme="https://github.com/categories/%E8%BF%90%E7%BB%B4/"/>
-    
-    
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="Confluence" scheme="https://github.com/tags/Confluence/"/>
-    
-      <category term="运维" scheme="https://github.com/tags/%E8%BF%90%E7%BB%B4/"/>
     
   </entry>
   
