@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/"/>
-  <updated>2016-10-22T07:35:35.919Z</updated>
+  <updated>2016-10-22T07:41:05.766Z</updated>
   <id>https://github.com/</id>
   
   <author>
@@ -20,13 +20,12 @@
     <link href="https://github.com/2016/08/25/quartz/"/>
     <id>https://github.com/2016/08/25/quartz/</id>
     <published>2016-08-25T10:45:37.000Z</published>
-    <updated>2016-10-22T07:35:35.919Z</updated>
+    <updated>2016-10-22T07:41:05.766Z</updated>
     
     <content type="html">&lt;h2 id=&quot;相关文摘&quot;&gt;&lt;a href=&quot;#相关文摘&quot; class=&quot;headerlink&quot; title=&quot;相关文摘&quot;&gt;&lt;/a&gt;相关文摘&lt;/h2&gt;&lt;p&gt;quartz官网：&lt;a href=&quot;http://www.quartz-scheduler.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.quartz-scheduler.org/&lt;/a&gt;&lt;br&gt;quartz官网Examples教程：&lt;a href=&quot;http://www.quartz-scheduler.org/documentation/quartz-2.2.x/examples/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.quartz-scheduler.org/documentation/quartz-2.2.x/examples/&lt;/a&gt;&lt;br&gt;quartz官网源码与Examples例子：&lt;a href=&quot;https://github.com/Huangdongrong/quartz&quot;&gt;https://github.com/Huangdongrong/quartz&lt;/a&gt;&lt;br&gt;quartz概念：&lt;a href=&quot;http://student-lp.iteye.com/blog/2093395&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://student-lp.iteye.com/blog/2093395&lt;/a&gt;&lt;br&gt;quartz基本概念及原理：&lt;a href=&quot;https://www.ibm.com/developerworks/cn/opensource/os-cn-quartz/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.ibm.com/developerworks/cn/opensource/os-cn-quartz/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;添加quartz依赖包&quot;&gt;&lt;a href=&quot;#添加quartz依赖包&quot; class=&quot;headerlink&quot; title=&quot;添加quartz依赖包&quot;&gt;&lt;/a&gt;添加quartz依赖包&lt;/h2&gt;&lt;p&gt;本文例子以maven项目实现，在pom文件添加quartz的依赖&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;artifactId&amp;gt;quartz&amp;lt;/artifactId&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;dependency&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;groupId&amp;gt;org.quartz-scheduler&amp;lt;/groupId&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;artifactId&amp;gt;quartz-jobs&amp;lt;/artifactId&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;version&amp;gt;2.2.1&amp;lt;/version&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/dependency&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&quot;实现简单的触发器SimpleTrigger&quot;&gt;&lt;a href=&quot;#实现简单的触发器SimpleTrigger&quot; class=&quot;headerlink&quot; title=&quot;实现简单的触发器SimpleTrigger&quot;&gt;&lt;/a&gt;实现简单的触发器SimpleTrigger&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;实现简单的触发器定时任务主要几点：&lt;/p&gt;
-&lt;ol&gt;
+&lt;li&gt;实现简单的触发器定时任务主要几点：&lt;ol&gt;
 &lt;li&gt;初始化SchedulerFactory&lt;/li&gt;
 &lt;li&gt;获取Scheduler实例&lt;/li&gt;
 &lt;li&gt;创建Job任务&lt;/li&gt;
@@ -35,8 +34,7 @@
 &lt;li&gt;启动调度，定时工作&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;SimpleTrigger例子&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;SimpleTrigger例子&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;创建Job任务&lt;/p&gt;
@@ -240,11 +238,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -288,11 +286,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -314,11 +312,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -369,11 +367,11 @@ $ npm install multer --save
       <category term="RPC" scheme="https://github.com/categories/RPC/"/>
     
     
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
       <category term="RPC" scheme="https://github.com/tags/RPC/"/>
     
       <category term="dubbo" scheme="https://github.com/tags/dubbo/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -571,9 +569,9 @@ $ npm install multer --save
       <category term="性能测试" scheme="https://github.com/categories/Jmeter/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="性能测试" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     
@@ -614,13 +612,13 @@ $ npm install multer --save
       <category term="jvisualvm" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/jvisualvm/"/>
     
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="jvisualvm" scheme="https://github.com/tags/jvisualvm/"/>
     
       <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -651,13 +649,13 @@ $ npm install multer --save
       <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
-      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
-    
       <category term="jvisualvm" scheme="https://github.com/tags/jvisualvm/"/>
     
       <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+    
+      <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
@@ -697,11 +695,11 @@ $ npm install multer --save
       <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
       <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
     
@@ -745,11 +743,11 @@ $ npm install multer --save
       <category term="测试" scheme="https://github.com/categories/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/%E6%B5%8B%E8%AF%95/"/>
     
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
     
       <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
-      <category term="性能调优" scheme="https://github.com/tags/%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98/"/>
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="JProfiler" scheme="https://github.com/tags/JProfiler/"/>
     
@@ -792,9 +790,9 @@ $ npm install multer --save
       <category term="IDEA" scheme="https://github.com/categories/IDEA/"/>
     
     
-      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
-    
       <category term="测试" scheme="https://github.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="工具" scheme="https://github.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
       <category term="IDEA" scheme="https://github.com/tags/IDEA/"/>
     
@@ -838,11 +836,11 @@ $ npm install multer --save
       <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
     
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
