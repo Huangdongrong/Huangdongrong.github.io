@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://github.com/2015/03/01/svn/index.html">
 <meta property="og:site_name" content="Donie">
 <meta property="og:description" content="记录SVN搭建的各种坑。">
-<meta property="og:updated_time" content="2016-10-18T09:47:00.665Z">
+<meta property="og:updated_time" content="2016-10-22T08:20:11.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SVN">
 <meta name="twitter:description" content="记录SVN搭建的各种坑。">
@@ -284,8 +284,94 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="相关文摘"><a href="#相关文摘" class="headerlink" title="相关文摘"></a>相关文摘</h2><p>apache：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.2.23.tar.gz" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.2.23.tar.gz</a><br>apr-util：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-util-1.5.1.tar.gz" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-util-1.5.1.tar.gz</a><br>apr：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-1.4.6.tar.gz" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-1.4.6.tar.gz</a><br>openssl：<a href="http://openssl.org/source/openssl-1.0.1c.tar.gz" target="_blank" rel="external">http://openssl.org/source/openssl-1.0.1c.tar.gz</a><br>subversion：<a href="http://www.fayea.com/apache-mirror/subversion/subversion-1.7.7.tar.gz" target="_blank" rel="external">http://www.fayea.com/apache-mirror/subversion/subversion-1.7.7.tar.gz</a><br>sqlite：<a href="http://sqlite.org/sqlite-autoconf-3071401.tar.gz" target="_blank" rel="external">http://sqlite.org/sqlite-autoconf-3071401.tar.gz</a><br>neon：<a href="http://www.webdav.org/neon/neon-0.29.6.tar.gz" target="_blank" rel="external">http://www.webdav.org/neon/neon-0.29.6.tar.gz</a></p>
+        <h2 id="相关文摘"><a href="#相关文摘" class="headerlink" title="相关文摘"></a>相关文摘</h2><p>apache：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.2.23.tar.gz" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.2.23.tar.gz</a><br>apr-util：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-util-1.5.1.tar.gz" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-util-1.5.1.tar.gz</a><br>apr：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-1.4.6.tar.gz" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/apr/apr-1.4.6.tar.gz</a><br>openssl：<a href="http://openssl.org/source/openssl-1.0.1c.tar.gz" target="_blank" rel="external">http://openssl.org/source/openssl-1.0.1c.tar.gz</a><br>subversion：<a href="http://www.fayea.com/apache-mirror/subversion/subversion-1.7.7.tar.gz" target="_blank" rel="external">http://www.fayea.com/apache-mirror/subversion/subversion-1.7.7.tar.gz</a><br>sqlite：<a href="http://sqlite.org/sqlite-autoconf-3071401.tar.gz" target="_blank" rel="external">http://sqlite.org/sqlite-autoconf-3071401.tar.gz</a><br>neon：<a href="http://www.webdav.org/neon/neon-0.29.6.tar.gz" target="_blank" rel="external">http://www.webdav.org/neon/neon-0.29.6.tar.gz</a><br>expat(2.1.0) ：<a href="http://sourceforge.net/project/showfiles.php?group_id=10127" target="_blank" rel="external">http://sourceforge.net/project/showfiles.php?group_id=10127</a><br>pcre(8.36) :   <a href="http://sourceforge.net/projects/pcre/files/pcre/8.36/" target="_blank" rel="external">http://sourceforge.net/projects/pcre/files/pcre/8.36/</a><br>zlib(zlib-1.2.8.tar.gz)：<a href="http://zlib.net/" target="_blank" rel="external">http://zlib.net/</a></p>
 <p>我的github下包括所有下载文件：</p>
+<h2 id="SVN安装"><a href="#SVN安装" class="headerlink" title="SVN安装"></a>SVN安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div></pre></td><td class="code"><pre><div class="line">* STEP01 安装apr</div><div class="line">shell<span class="comment"># tar -zxvf apr-1.4.6.tar.gz</span></div><div class="line">shell<span class="comment"># cd apr-1.4.6/</span></div><div class="line">shell<span class="comment"># ./configure --prefix=/home/svn/apps/apr</span></div><div class="line">shell<span class="comment"># make &amp;&amp; make install</span></div><div class="line">* STEP02 安装apr-util</div><div class="line">shell<span class="comment"># tar -zxvf apr-util-1.5.1.tar.gz</span></div><div class="line">shell<span class="comment"># cd apr-util-1.5.1/</span></div><div class="line">shell<span class="comment"># ./configure --prefix=/home/svn/apps/apr-util --with-apr=/home/svn/apps/apr/</span></div><div class="line">shell<span class="comment"># make &amp; make install</span></div><div class="line">* STEP03 安装SQLite</div><div class="line">shell<span class="comment"># tar -zxvf sqlite-autoconf-3071401.tar.gz</span></div><div class="line">shell<span class="comment"># cd sqlite-autoconf-3071401/</span></div><div class="line">shell<span class="comment"># ./configure --prefix=/home/svn/apps/sqlite</span></div><div class="line">shell<span class="comment"># make &amp;&amp; make install</span></div><div class="line">* STEP04 安装openssl</div><div class="line">shell<span class="comment"># tar -zxvf openssl-1.0.1c.tar.gz</span></div><div class="line">shell<span class="comment"># cd openssl-1.0.1c/</span></div><div class="line">shell<span class="comment"># ./config --prefix=/home/svn/apps/ssl shared</span></div><div class="line">shell<span class="comment"># make &amp;&amp; make install</span></div><div class="line">* STEP05 安装expat</div><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span></div><div class="line">tar -xvzf expat2.tar.gz</div><div class="line"><span class="built_in">cd</span> expat2</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">* STEP06 安装neon</div><div class="line">shell<span class="comment"># tar -zxvf neon-0.29.6.tar.gz</span></div><div class="line">shell<span class="comment"># cd neon-0.29.6/</span></div><div class="line">shell<span class="comment"># ./configure --prefix=/home/svn/apps/neon --with-ssl --with-libs=/home/svn/apps/ssl --enable-shared</span></div><div class="line">shell<span class="comment"># make &amp;&amp; make install</span></div><div class="line">* STEP07 安装zlib</div><div class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span></div><div class="line">tar -xvzf zlib-1.2.5.tar.gz</div><div class="line"><span class="built_in">cd</span> zlib-1.2.5</div><div class="line">./configure</div><div class="line">make</div><div class="line">make install</div><div class="line">* STEP08 安装gcc</div><div class="line">yum install -y gcc-c++</div><div class="line">* STEP09 安装pcre</div><div class="line"><span class="comment">#unzip -o pcre-8.10.zip</span></div><div class="line"><span class="comment">#cd pcre-8.10</span></div><div class="line"><span class="comment">#./configure --prefix=/usr/local/pcre</span></div><div class="line"><span class="comment">#make</span></div><div class="line"><span class="comment">#make install</span></div><div class="line">* STEP10 安装Apache(httpd)</div><div class="line">hell<span class="comment"># tar -zxvf httpd-2.2.23.tar.gz</span></div><div class="line">shell<span class="comment"># cd httpd-2.2.23</span></div><div class="line">shell<span class="comment">#</span></div><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/apache --with-pcre=/usr/<span class="built_in">local</span>/pcre --with-apr=/usr/<span class="built_in">local</span>/apr --with-apr-util=/usr/<span class="built_in">local</span>/apr-util --with-included-apr</div><div class="line">--enable-modules=so --enable-dav --enable-maintainer-mode --enable-rewrite</div><div class="line">需要apr重命为apr不要带版本号和apr-utils也是一样，一定要使用没有编译过的源码包,并解压到， Apache的./srclib/ 目录下, 再进行编译</div><div class="line">shell<span class="comment"># make &amp; make install</span></div><div class="line">[root@getlnx05 conf]<span class="comment"># vi httpd.conf</span></div><div class="line">编辑httpd.conf配置文件，添加SeraverName的具体IP地址。如下所示</div><div class="line">ServerName 192.168.9.122:80</div><div class="line">启动：</div><div class="line">[root@getlnx05 conf]<span class="comment"># /usr/local/apache/bin/apachectl restart</span></div><div class="line">* STEP11安装SVN</div><div class="line">shell<span class="comment"># tar -zxvf subversion-1.7.7.tar.gz</span></div><div class="line">shell<span class="comment"># cd subversion-1.7.7</span></div><div class="line">shell<span class="comment"># ./configure --prefix=/usr/local/svn --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-ssl=/usr/local/ssl  --with-sqlite=/usr/local/sqlite --with-apxs=/usr/local/apache/bin/apxs --with-neon=/usr/local/neon --with-openssl</span></div><div class="line">make</div><div class="line">shell<span class="comment"># make &amp; make install</span></div><div class="line">* 验证是否安装成功</div><div class="line">[root@localhost develop]<span class="comment"># /usr/local/svn/bin/svnserve --version</span></div><div class="line"> STEP12 SVN+Apache</div><div class="line"><span class="comment">#cp /usr/local/svn/libexec/mod_dav_svn.so /usr/local/apache/modules/</span></div><div class="line"><span class="comment">#cp /usr/local/svn/libexec/mod_authz_svn.so /usr/local/apache/modules/</span></div><div class="line"><span class="comment">#vi /usr/local/apache/conf/httpd.conf</span></div><div class="line">配置 Apache的vi /usr/<span class="built_in">local</span>/apache/conf/httpd.conf 文件</div><div class="line">1.修改User和Group为donie账号启动</div><div class="line">User donie</div><div class="line">Group donie</div><div class="line">2. 把下面两个行前面的<span class="comment">#号去掉，注意行前不能有空格：</span></div><div class="line">LoadModule dav_module modules/mod_dav.so</div><div class="line">LoadModule dav_fs_module modules/mod_dav_fs.so</div><div class="line">3. 在模块加载的最后添加下面两句：</div><div class="line">LoadModule dav_svn_module modules/mod_dav_svn.so</div><div class="line">LoadModule authz_svn_module modules/mod_authz_svn.so</div><div class="line">* STEP13 SVN版本库创建</div><div class="line">1. 创建文件夹</div><div class="line">$ mkdir /etc/svn/</div><div class="line">$ mkdir /etc/svn/repos</div><div class="line">$ svnadmin create /etc/svn/repos</div><div class="line"></div><div class="line">2. 配置 Apache的vi /usr/<span class="built_in">local</span>/apache/conf/httpd.conf 文件,在最后增加</div><div class="line">&lt;Location /repos&gt;</div><div class="line">  DAV svn</div><div class="line">  SVNPath /etc/svn/repos</div><div class="line">&lt;/Location&gt;</div><div class="line"></div><div class="line">3. 启动</div><div class="line">[root@getlnx05 conf]<span class="comment"># /usr/local/apache/bin/apachectl restart</span></div></pre></td></tr></table></figure>
+<p>/<strong><strong><strong><strong><strong><strong><strong><strong><em>*</em></strong></strong></strong></strong></strong></strong></strong></strong>参考文章<strong><strong><strong><strong><strong><strong><strong><strong><strong><em>*</em></strong></strong></strong></strong></strong></strong></strong></strong></strong>/<br>SVN安装</p>
+<p><a href="http://www.cnblogs.com/motadou/archive/2012/07/01/2572075.html" target="_blank" rel="external">http://www.cnblogs.com/motadou/archive/2012/07/01/2572075.html</a></p>
+<p><a href="http://www.cnblogs.com/qinwanlin/archive/2012/12/03/2797339.html" target="_blank" rel="external">http://www.cnblogs.com/qinwanlin/archive/2012/12/03/2797339.html</a></p>
+<p><a href="http://hanqunfeng.iteye.com/blog/688295" target="_blank" rel="external">http://hanqunfeng.iteye.com/blog/688295</a></p>
+<p><a href="http://www.zihou.me/html/2011/05/04/3899.html" target="_blank" rel="external">http://www.zihou.me/html/2011/05/04/3899.html</a></p>
+<p>创建SVN库</p>
+<p><a href="http://blog.csdn.net/wwww1988600/article/details/24182919" target="_blank" rel="external">http://blog.csdn.net/wwww1988600/article/details/24182919</a></p>
+<p>SVN+apache整合</p>
+<p><a href="http://www.cnblogs.com/wwl1991/p/3752696.html" target="_blank" rel="external">http://www.cnblogs.com/wwl1991/p/3752696.html</a></p>
+<p>SVN+apache IMB(sucess)  注意创建仓库不能使用root用户，不然只能读不能写</p>
+<p><a href="https://www.ibm.com/developerworks/cn/java/j-lo-apache-subversion/" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-lo-apache-subversion/</a></p>
+<h2 id="SVN安装错误问题收集"><a href="#SVN安装错误问题收集" class="headerlink" title="SVN安装错误问题收集"></a>SVN安装错误问题收集</h2><p>SVN安装</p>
+<p><a href="http://www.cnblogs.com/motadou/archive/2012/07/01/2572075.html" target="_blank" rel="external">http://www.cnblogs.com/motadou/archive/2012/07/01/2572075.html</a></p>
+<p><a href="http://www.cnblogs.com/qinwanlin/archive/2012/12/03/2797339.html" target="_blank" rel="external">http://www.cnblogs.com/qinwanlin/archive/2012/12/03/2797339.html</a></p>
+<p><a href="http://hanqunfeng.iteye.com/blog/688295" target="_blank" rel="external">http://hanqunfeng.iteye.com/blog/688295</a></p>
+<p><a href="http://www.zihou.me/html/2011/05/04/3899.html" target="_blank" rel="external">http://www.zihou.me/html/2011/05/04/3899.html</a></p>
+<p>STEP05 安装neon之前需要安装</p>
+<ol>
+<li><p>expat</p>
+<p>configure配置SVN时可能提示如下错误信息：</p>
+</li>
+</ol>
+<p>configure: error: no XML parser was found: expat or libxml 2.x required</p>
+<p>错误提示需要安装expat</p>
+<p>下载expat ：<a href="http://sourceforge.net/project/showfiles.php?group_id=10127" target="_blank" rel="external">http://sourceforge.net/project/showfiles.php?group_id=10127</a></p>
+<p>下载：<a href="http://sourceforge.net/projects/expat/files/expat/2.1.0/" target="_blank" rel="external">http://sourceforge.net/projects/expat/files/expat/2.1.0/</a></p>
+<p>cd /usr/local</p>
+<p>tar -xvzf expat2.tar.gz</p>
+<p>cd expat2</p>
+<p>./configure</p>
+<p>make</p>
+<p>make install</p>
+<p>/apache/httpd/</p>
+<p>下载：<a href="http://mirrors.tuna.tsinghua.edu.cn/apache/httpd/" target="_blank" rel="external">http://mirrors.tuna.tsinghua.edu.cn/apache/httpd/</a></p>
+<p>configure: error: pcre-config for libpcre not found. PCRE is required and available from <a href="http://pcre.org/" target="_blank" rel="external">http://pcre.org/</a></p>
+<p>下载：<a href="http://sourceforge.net/projects/pcre/files/pcre/8.36/" target="_blank" rel="external">http://sourceforge.net/projects/pcre/files/pcre/8.36/</a></p>
+<p>#unzip -o pcre-8.10.zip</p>
+<p>#cd pcre-8.10</p>
+<p>#./configure –prefix=/usr/local/pcre</p>
+<p>#make</p>
+<p>#make install</p>
+<p>继续安装Apache/httpd，./configure 时加上参数</p>
+<p>–with-apr=/usr/local/apr/ –with-apr-util=/usr/local/apr-util/ –with-pcre=/usr/local/pcre，这个问题就解决了</p>
+<p>./configure –prefix=/usr/local/apache –with-apr=/usr/local/apr –with-apr-util=/usr/local/apr-util –with-pcre=/usr/local/pcre –with-ssl=/usr/local/ssl –enable-dav –enable-so –enable-ssl –enable-rewrite</p>
+<p>安装pcre-8.10错误：</p>
+<p>configure: error: You need a C++ compiler for C++ support.</p>
+<p>安装gcc</p>
+<p>–yum install -y gcc gcc-c++</p>
+<p>yum install -y gcc-c++</p>
+<p>Linux系统安装Apache 2.4.6</p>
+<p>./configure –prefix=/usr/local/apache –with-pcre=/usr/local/pcre –with-apr=/usr/local/apr –with-apr-util=/usr/local/apr-util –with-included-apr</p>
+<p>–enable-modules=so –enable-dav –enable-maintainer-mode –enable-rewrite</p>
+<p>安装Apache 2.4.6错误</p>
+<p> configure: error: Bundled APR requested but not found at ./srclib/. Download and unpack the corresponding apr and apr-util packages to ./srclib/.</p>
+<p> 需要下载apr和apr-utils一定要使用没有编译过的源码包,并解压到， Apache的./srclib/ 目录下, 再进行编译。</p>
+<p> <a href="http://www.cnblogs.com/kerrycode/p/3261101.html" target="_blank" rel="external">http://www.cnblogs.com/kerrycode/p/3261101.html</a></p>
+<p><a href="http://www.cnblogs.com/JemBai/archive/2012/11/07/2759139.html" target="_blank" rel="external">http://www.cnblogs.com/JemBai/archive/2012/11/07/2759139.html</a></p>
+<p>安装Apache 2.4.6错误</p>
+<p>AH00558: httpd: Could not reliably determine the server’s fully qualified domain name, using localhost.localdomain. Set the ‘ServerName’ directive globally to suppress this message</p>
+<p>[root@getlnx05 conf]# vi httpd.conf</p>
+<p>编辑httpd.conf配置文件，添加SeraverName的具体IP地址。如下所示</p>
+<p>ServerName 192.168.9.122:80</p>
+<p>[root@getlnx05 conf]# /usr/local/apache/bin/apachectl restart</p>
+<p>下载zlb：<a href="http://zlib.net/" target="_blank" rel="external">http://zlib.net/</a></p>
+<p>cd /usr/local</p>
+<p>tar -xvzf zlib-1.2.5.tar.gz</p>
+<p>cd zlib-1.2.5</p>
+<p>./configure</p>
+<p>make</p>
+<p>make install</p>
+<p>SVN安装</p>
+<p>./configure –prefix=/usr/local/svn –with-apr=/usr/local/apr –with-apr-util=/usr/local/apr-util –with-ssl=/usr/local/ssl  –with-sqlite=/usr/local/sqlite –with-apxs=/usr/local/apache/bin/apxs –with-neon=/usr/local/neon –with-openssl</p>
+<p>make</p>
+<p>make install</p>
+<p>验证是否安装成功</p>
+<p>[root@localhost develop]# /usr/local/svn/bin/svnserve –version</p>
+<p>创建SVN库</p>
+<p><a href="http://blog.csdn.net/wwww1988600/article/details/24182919" target="_blank" rel="external">http://blog.csdn.net/wwww1988600/article/details/24182919</a></p>
+<p>SVN+apache</p>
+<p><a href="http://www.cnblogs.com/wwl1991/p/3752696.html" target="_blank" rel="external">http://www.cnblogs.com/wwl1991/p/3752696.html</a></p>
+<p>SVN+apache IMB(sucess)  注意创建仓库不能使用root用户，不然只能读不能写</p>
+<p><a href="https://www.ibm.com/developerworks/cn/java/j-lo-apache-subversion/" target="_blank" rel="external">https://www.ibm.com/developerworks/cn/java/j-lo-apache-subversion/</a></p>
+<h2 id="Svnmanager图形管理工具"><a href="#Svnmanager图形管理工具" class="headerlink" title="Svnmanager图形管理工具"></a>Svnmanager图形管理工具</h2><p>windows 7 SVN服务器端口：8443</p>
+<p>[donie@localhost subversion-1.6.1]$ ./configure –with-openssl=/usr/local/ssl –with-zlib=/usr/local/zlib -without-serf -enable-maintainer-mode<br> svn –version<br>[root@localhost subversion-1.6.1] echo “export PATH=$PATH:/usr/local/svn/bin/“&gt;&gt;/etc/profile<br>[root@localhost subversion-1.6.1]source /etc/profile<br>[root@localhost subversion-1.6.1]# mkdir -p /opt/svn/<br>[root@localhost subversion-1.6.1]# mkdir -p /opt/svn/svntest/<br>[root@localhost subversion-1.6.1]# svnadmin create /opt/svn/svntest/<br>[root@localhost subversion-1.6.1]# cd /opt/svn/svntest/conf/<br>[root@localhost conf]# ll<br>[root@localhost conf]# vi svnserve.conf<br>[general]<br>anon-access = none<br>auth-access = write<br>password-db = passwd<br>authz-db = authz<br>[root@localhost conf]# vi authz<br>[svntest:/]<br>lipeng=rw<br>[root@localhost conf]# vi passwd<br>lipeng = 123456<br>[root@localhost conf]# svnserve -d -r /opt/svn/<br>加端口号启动 svnserve -d –listen-port 9999 -r /opt/svn/<br>停止：killall svnserve<br>[root@localhost conf]# netstat -tunlp | grep svn<br>svn checkout svn://192.168.1.97/svntest<br>3690默认端口</p>
+<p>SVN　Linux客户端使用<br><a href="http://www.centoscn.com/CentosServer/ftp/2014/0202/2409.html" target="_blank" rel="external">http://www.centoscn.com/CentosServer/ftp/2014/0202/2409.html</a><br>Apache<br><a href="http://blog.csdn.net/zhangskd/article/details/7666197" target="_blank" rel="external">http://blog.csdn.net/zhangskd/article/details/7666197</a><br>参考文章<br><a href="http://www.douban.com/note/275224818/" target="_blank" rel="external">http://www.douban.com/note/275224818/</a><br><a href="http://www.zihou.me/html/2011/05/04/3899.html" target="_blank" rel="external">http://www.zihou.me/html/2011/05/04/3899.html</a><br><a href="http://hanqunfeng.iteye.com/blog/688295" target="_blank" rel="external">http://hanqunfeng.iteye.com/blog/688295</a><br><a href="http://www.cnblogs.com/qinwanlin/archive/2012/12/03/2797339.html" target="_blank" rel="external">http://www.cnblogs.com/qinwanlin/archive/2012/12/03/2797339.html</a><br><a href="http://www.cnblogs.com/motadou/archive/2012/07/01/2572075.html" target="_blank" rel="external">http://www.cnblogs.com/motadou/archive/2012/07/01/2572075.html</a></p>
       
     </div>
     
@@ -295,7 +381,7 @@
         <p><span>本文标题:</span><a href="/2015/03/01/svn/">SVN</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Donie.Huang</a></p>
         <p><span>发布时间:</span>2015-03-01, 18:45:37</p>
-        <p><span>最后更新:</span>2016-10-18, 17:47:00</p>
+        <p><span>最后更新:</span>2016-10-22, 16:20:11</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2015/03/01/svn/" title="SVN">https://github.com/2015/03/01/svn/</a>
             <span class="copy-path" data-clipboard-text="原文: https://github.com/2015/03/01/svn/　　作者: Donie.Huang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -323,7 +409,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关文摘"><span class="toc-number">1.</span> <span class="toc-text">相关文摘</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#相关文摘"><span class="toc-number">1.</span> <span class="toc-text">相关文摘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SVN安装"><span class="toc-number">2.</span> <span class="toc-text">SVN安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SVN安装错误问题收集"><span class="toc-number">3.</span> <span class="toc-text">SVN安装错误问题收集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Svnmanager图形管理工具"><span class="toc-number">4.</span> <span class="toc-text">Svnmanager图形管理工具</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {

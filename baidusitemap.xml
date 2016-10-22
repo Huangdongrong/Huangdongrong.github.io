@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://github.com/2015/03/01/svn/</loc>
+    <lastmod>2016-10-22T08:20:11.528Z</lastmod>
+    <data>
+        <display>
+        <title>SVN</title>
+        <pubTime>2015-03-01T10:45:37.000Z</pubTime>
+        
+        <tag>SVN</tag>
+         
+        <tag>版本管理工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="SVN" url="https://github.com/categories/SVN/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://github.com/2016/08/25/quartz/</loc>
     <lastmod>2016-10-22T07:46:57.895Z</lastmod>
     <data>
@@ -27,28 +49,6 @@
           
              
               <breadCrumb title="定时器" url="https://github.com/categories/Quartz/Scheduler/%E5%AE%9A%E6%97%B6%E5%99%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://github.com/2015/03/01/svn/</loc>
-    <lastmod>2016-10-18T09:47:00.665Z</lastmod>
-    <data>
-        <display>
-        <title>SVN</title>
-        <pubTime>2015-03-01T10:45:37.000Z</pubTime>
-        
-        <tag>SVN</tag>
-         
-        <tag>版本管理工具</tag>
-         
-         
-           
-             
-              <breadCrumb title="SVN" url="https://github.com/categories/SVN/"/>
           
         </display>
     </data>
