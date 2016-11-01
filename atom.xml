@@ -236,11 +236,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -284,11 +284,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -310,11 +310,11 @@ $ npm install multer --save
       <category term="angularJS" scheme="https://github.com/categories/angularJS/"/>
     
     
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
-    
       <category term="angularJS" scheme="https://github.com/tags/angularJS/"/>
     
       <category term="架构" scheme="https://github.com/tags/%E6%9E%B6%E6%9E%84/"/>
+    
+      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
@@ -374,17 +374,18 @@ $ npm install multer --save
   </entry>
   
   <entry>
-    <title>JVM调优分析</title>
+    <title>理解JVM，JVM调优分析</title>
     <link href="https://github.com/2016/05/25/jvm/"/>
     <id>https://github.com/2016/05/25/jvm/</id>
     <published>2016-05-25T10:45:37.000Z</published>
-    <updated>2016-06-06T10:55:13.894Z</updated>
+    <updated>2016-10-24T14:38:39.450Z</updated>
     
-    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;</content>
+    <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;##&lt;/p&gt;</content>
     
     <summary type="html">
     
-      最近这段时间一直在做压力测试，总结分析JVM调优经验。
+      理解JVM，最近这段时间一直在做压力测试，总结分析JVM调优经验。
     
     </summary>
     
@@ -797,33 +798,83 @@ $ npm install multer --save
   </entry>
   
   <entry>
-    <title>Jquery 组件化设计（高级篇）</title>
-    <link href="https://github.com/2016/05/16/Jquery-and-js-design/"/>
-    <id>https://github.com/2016/05/16/Jquery-and-js-design/</id>
+    <title>Jquery,javascript常用方法与特殊场景使用的方法</title>
+    <link href="https://github.com/2016/05/16/jquery/"/>
+    <id>https://github.com/2016/05/16/jquery/</id>
     <published>2016-05-16T10:45:37.000Z</published>
-    <updated>2016-05-27T04:34:26.842Z</updated>
+    <updated>2016-05-27T04:39:24.640Z</updated>
     
     <content type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;Jquery-组件化设计&quot;&gt;&lt;a href=&quot;#Jquery-组件化设计&quot; class=&quot;headerlink&quot; title=&quot;Jquery 组件化设计&quot;&gt;&lt;/a&gt;Jquery 组件化设计&lt;/h2&gt;&lt;h3 id=&quot;JS组件化设计目的&quot;&gt;&lt;a href=&quot;#JS组件化设计目的&quot; class=&quot;headerlink&quot; title=&quot;JS组件化设计目的&quot;&gt;&lt;/a&gt;JS组件化设计目的&lt;/h3&gt;&lt;p&gt; 开发大项目中，解决混乱无章，可读性非常差，作用域的污染等等问题，JS组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离，避免入侵。&lt;/p&gt;
-&lt;h3 id=&quot;table组件例子实现&quot;&gt;&lt;a href=&quot;#table组件例子实现&quot; class=&quot;headerlink&quot; title=&quot;table组件例子实现&quot;&gt;&lt;/a&gt;table组件例子实现&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;导入jquery&lt;/li&gt;
+&lt;tr&gt;&lt;br&gt;    &lt;td&gt;&lt;br&gt;        欢迎转载，评论，阅读，或者可以提出你们宝贵的建议，你们的评论建议支持，让我更有信心继续分享技术经验心得，转载请保留原文链接及作者，谢谢。&lt;br&gt;    &lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;
+
+&lt;h2 id=&quot;JS&quot;&gt;&lt;a href=&quot;#JS&quot; class=&quot;headerlink&quot; title=&quot;JS&quot;&gt;&lt;/a&gt;JS&lt;/h2&gt;&lt;h3 id=&quot;调试&quot;&gt;&lt;a href=&quot;#调试&quot; class=&quot;headerlink&quot; title=&quot;调试&quot;&gt;&lt;/a&gt;调试&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;常用到的,浏览器控制台打印输出&lt;br&gt;console.log(“”);&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&quot;选择器&quot;&gt;&lt;a href=&quot;#选择器&quot; class=&quot;headerlink&quot; title=&quot;选择器&quot;&gt;&lt;/a&gt;选择器&lt;/h3&gt;&lt;p&gt;   ID选择器：$(“#id”)&lt;br&gt;   class选择器：$(“.class”)&lt;br&gt;   父选择器：$(this).parents(“ul”)&lt;br&gt;   同辈选择器：$(this).siblings(“li”)&lt;br&gt;   子选择器：$(this).children(“li”)&lt;/p&gt;
+&lt;h3 id=&quot;操作元素&quot;&gt;&lt;a href=&quot;#操作元素&quot; class=&quot;headerlink&quot; title=&quot;操作元素&quot;&gt;&lt;/a&gt;操作元素&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;循环查询元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$($(this).find(&lt;span class=&quot;string&quot;&gt;&quot;li&quot;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    console.log((this).html();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; &amp;#125;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;创建table.js&lt;/li&gt;
+&lt;li&gt;追加元素&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;30&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;31&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;($)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    $.fn.test = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    $.fn.test.table = &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(opt) &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        var defaults = &amp;#123;   //默认参数&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            tableId:&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        var options = $.extend(defaults,opt);   //合并参数&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        this._add=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            controller._add();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        this._delete=&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            controller._delete(element);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        this._update=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        var controller = &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            _add:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                var newTr=&lt;span class=&quot;string&quot;&gt;&#39;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&quot;del&quot;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&#39;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               $(options.tableId).append(newTr);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            _delete:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(element)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                $(element).parents(&lt;span class=&quot;string&quot;&gt;&quot;tr&quot;&lt;/span&gt;).remove();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            _update:&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;return&lt;/span&gt; this;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;)(jQuery);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$($(this).append(html);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;创建test.html页面&lt;/li&gt;
+&lt;li&gt;移除class&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;16&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;17&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;18&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;19&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;20&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;21&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;22&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;23&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;24&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;25&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;26&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;27&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;28&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;29&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;30&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;31&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;32&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;33&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;34&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;35&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;36&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;37&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;38&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;39&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;40&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;41&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;html lang=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;head&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;meta charset=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;title&amp;gt; Jquery javascript 组件化设计（高级篇）&amp;lt;/title&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;jquery-1.11.0.min.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;script src=&lt;span class=&quot;string&quot;&gt;&quot;table.js&quot;&lt;/span&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;style &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        table&amp;#123;  width: 500px;  text-align: center;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;/style&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;script &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        $(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            //初始化&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            table = $(&lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;).test.table(&amp;#123;tableId: &lt;span class=&quot;string&quot;&gt;&quot;#tableId&quot;&lt;/span&gt;&amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            /**&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;             * 删除&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;             */&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            $(&lt;span class=&quot;string&quot;&gt;&quot;table&quot;&lt;/span&gt;).on(&lt;span class=&quot;string&quot;&gt;&quot;click&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;.del&quot;&lt;/span&gt;,&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;               table._delete(this);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;)&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        /**&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;         * 增加&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;         */&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;add&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            table._add()&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;/script&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/head&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;body&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;button onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;添加&amp;lt;/button&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;table id=&lt;span class=&quot;string&quot;&gt;&quot;tableId&quot;&lt;/span&gt;&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;lt;th onclick=&lt;span class=&quot;string&quot;&gt;&quot;add()&quot;&lt;/span&gt;&amp;gt;姓名&amp;lt;/th&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;lt;th&amp;gt;年龄&amp;lt;/th&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;lt;/tr&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;小明&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;28&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;button class=&lt;span class=&quot;string&quot;&gt;&quot;del&quot;&lt;/span&gt;&amp;gt;删除&amp;lt;/button&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;lt;/table&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/body&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;/html&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(this).removeClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;浏览器打开test.html，有没有发现代码结构逻辑非常清晰？&lt;/li&gt;
+&lt;li&gt;增加class&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;table组件例子源码&quot;&gt;&lt;a href=&quot;#table组件例子源码&quot; class=&quot;headerlink&quot; title=&quot;table组件例子源码&quot;&gt;&lt;/a&gt;table组件例子源码&lt;/h2&gt;&lt;p&gt;源码地址：&lt;a href=&quot;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&quot;&gt;https://github.com/Huangdongrong/soft-and-jar-repository/tree/master/test&lt;/a&gt;&lt;/p&gt;</content>
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(this).addClass(&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;获取属性值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var id = $(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;设置属性值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(this).attr(&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;，value);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;常用的判断&quot;&gt;&lt;a href=&quot;#常用的判断&quot; class=&quot;headerlink&quot; title=&quot;常用的判断&quot;&gt;&lt;/a&gt;常用的判断&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;判断元素是否隐藏&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;p&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:hidden&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;checkbox是否选中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&quot;#checkboxId&quot;&lt;/span&gt;).is(&lt;span class=&quot;string&quot;&gt;&quot;:checked&quot;&lt;/span&gt;))&amp;#123;&amp;#125;;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;事件绑定&quot;&gt;&lt;a href=&quot;#事件绑定&quot; class=&quot;headerlink&quot; title=&quot;事件绑定&quot;&gt;&lt;/a&gt;事件绑定&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;select标签绑定事件&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;.selected&quot;&lt;/span&gt;).change(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  )&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;on绑定事件，绑定未来元素&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;#parentId&quot;&lt;/span&gt;).on(&lt;span class=&quot;string&quot;&gt;&quot;click&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;.childClass&quot;&lt;/span&gt;,&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;()&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;)&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;常用设置&quot;&gt;&lt;a href=&quot;#常用设置&quot; class=&quot;headerlink&quot; title=&quot;常用设置&quot;&gt;&lt;/a&gt;常用设置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;设置是否禁用disabled Button&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;button &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;submit&quot;&lt;/span&gt; disabled=&lt;span class=&quot;string&quot;&gt;&quot;true&quot;&lt;/span&gt; id=&lt;span class=&quot;string&quot;&gt;&quot;buttonId&quot;&lt;/span&gt; value=&lt;span class=&quot;string&quot;&gt;&quot;Submit&quot;&lt;/span&gt; &amp;gt;确定&amp;lt;/button&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var isCheck=&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt;(isCheck)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   $(&lt;span class=&quot;string&quot;&gt;&quot;#buttonId&quot;&lt;/span&gt;).attr(&lt;span class=&quot;string&quot;&gt;&quot;disabled&quot;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   $(&lt;span class=&quot;string&quot;&gt;&quot;#buttonId&quot;&lt;/span&gt;).attr(&lt;span class=&quot;string&quot;&gt;&quot;disabled&quot;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;对象的创建&quot;&gt;&lt;a href=&quot;#对象的创建&quot; class=&quot;headerlink&quot; title=&quot;对象的创建&quot;&gt;&lt;/a&gt;对象的创建&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var id=123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var name=&lt;span class=&quot;string&quot;&gt;&quot;test&quot;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var person = &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                id: id,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;                name: name,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;            &amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;获取所有输入框、下拉框、单选的值&quot;&gt;&lt;a href=&quot;#获取所有输入框、下拉框、单选的值&quot; class=&quot;headerlink&quot; title=&quot;获取所有输入框、下拉框、单选的值&quot;&gt;&lt;/a&gt;获取所有输入框、下拉框、单选的值&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$(&lt;span class=&quot;string&quot;&gt;&quot;#id&quot;&lt;/span&gt;).find(&lt;span class=&quot;string&quot;&gt;&#39;input[name]&#39;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;	//获取输入框的值&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    console.log((this).val());&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$(scope.imallSearchParamId).find(&lt;span class=&quot;string&quot;&gt;&#39;select[name]&#39;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;  //获取下拉框的值&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   console.log((this).val();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; &amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$(scope.imallSearchParamId).find(&lt;span class=&quot;string&quot;&gt;&quot;input:radio:checked&quot;&lt;/span&gt;).each(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123; //获取单选的值&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;     console.log((this).val();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;序列化&quot;&gt;&lt;a href=&quot;#序列化&quot; class=&quot;headerlink&quot; title=&quot;序列化&quot;&gt;&lt;/a&gt;序列化&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;序列化对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var obj = JSON.stringify(orderObj);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;序列化form表单对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var formObj = $(&lt;span class=&quot;string&quot;&gt;&quot;#ticketOrder&quot;&lt;/span&gt;).serialize();&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;请求方式&quot;&gt;&lt;a href=&quot;#请求方式&quot; class=&quot;headerlink&quot; title=&quot;请求方式&quot;&gt;&lt;/a&gt;请求方式&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;ajax json提交方式 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;12&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;13&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;14&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;15&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;var form = $(&lt;span class=&quot;string&quot;&gt;&quot;#form&quot;&lt;/span&gt;).serialize();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$.ajaxSettings[&lt;span class=&quot;string&quot;&gt;&#39;contentType&#39;&lt;/span&gt;] = &lt;span class=&quot;string&quot;&gt;&quot;application/x-www-form-urlencoded; charset=utf-8&quot;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$.ajax(&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &lt;span class=&quot;built_in&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;POST&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   data: form,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   url: pageParam.ctx + &lt;span class=&quot;string&quot;&gt;&quot;/tickets/submitOrder.json&quot;&lt;/span&gt;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   success:&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(data)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &amp;#125;,&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   error: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (data) &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (XMLHttpRequest.status == 500) &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           var result = &lt;span class=&quot;built_in&quot;&gt;eval&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;(&quot;&lt;/span&gt; + XMLHttpRequest.responseText + &lt;span class=&quot;string&quot;&gt;&quot;)&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;           alert(result.jsonError.errorText);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;        &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;   &amp;#125;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;定义命名空间方法&quot;&gt;&lt;a href=&quot;#定义命名空间方法&quot; class=&quot;headerlink&quot; title=&quot;定义命名空间方法&quot;&gt;&lt;/a&gt;定义命名空间方法&lt;/h3&gt;&lt;p&gt;jQuery.test = function(){};&lt;br&gt;jQuery.test.getData = function (){&lt;br&gt;    return “hello work”;&lt;br&gt;};&lt;/p&gt;
+&lt;p&gt;alert($.test.getData());&lt;/p&gt;</content>
     
     <summary type="html">
     
-      我们开发中项目在了，js使用，jquery代码随处可见，混乱无章，可读性非常差，作用域的污染等等问题，没有得到很好的管理设计，js组件化设计实现可读性高，实现可插拔，代码结构清晰，命名空间不同，且作用域与作用域之间隔离， 不会受入其它域的污染。
+      Jquery,javascript常用方法的方法收集，因版本差异，或者比较特殊的方法，在我开发中经常会遇到，所以把它所集整理记录下来
     
     </summary>
     
@@ -831,14 +882,10 @@ $ npm install multer --save
     
       <category term="javascript" scheme="https://github.com/categories/Jquery/javascript/"/>
     
-      <category term="设计" scheme="https://github.com/categories/Jquery/javascript/%E8%AE%BE%E8%AE%A1/"/>
-    
     
       <category term="Jquery" scheme="https://github.com/tags/Jquery/"/>
     
       <category term="javascript" scheme="https://github.com/tags/javascript/"/>
-    
-      <category term="设计" scheme="https://github.com/tags/%E8%AE%BE%E8%AE%A1/"/>
     
   </entry>
   
